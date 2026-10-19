@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home decor inspiration | FURNIQOS Blog</title>
+  <meta name="description" content="Home decor inspiration from FURNIQOS: build a calm base palette, mix materials and textures, light in layers and style with restraint.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/post.css">
+  <!-- Supabase CDN (Ready for direct client queries if needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="page-blog page-post">
+
+  <!-- 1. TOP TICKER (Frame 2147238918) -->
+  <div class="top-ticker" id="topTicker">
+    <p class="ticker-text" id="dynamicTickerText">LUXURY FURNITURE SOURCING • PREMIUM CHINA MANUFACTURERS</p>
+  </div>
+
+  <!-- 2. MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      <!-- Left: Navigation Menu Trigger (Frame 2147238842) -->
+      <button class="menu-trigger" id="menuToggle" aria-label="Open Navigation Menu">
+        <div class="menu-lines">
+          <span></span>
+          <span></span>
+        </div>
+        <span class="menu-label">Menu</span>
+      </button>
+
+      <!-- Center spacer keeping left and right buttons balanced for traveling logo -->
+      <!-- Static brand logo (inner pages have no traveling hero logo) -->
+      <a href="/" class="header-static-logo" aria-label="FURNIQOS Home">
+        <img src="/assets/images/furniqos_logo_hero.png" alt="FURNIQOS">
+      </a>
+
+      <!-- Right: Contact Us Button (Frame 2147238905) -->
+      <button class="header-cta-btn open-lead-modal" id="headerContactBtn" aria-label="Contact Us">
+        <div class="header-cta-inner">
+          <span class="header-cta-text">Contact us</span>
+          <span class="plus-icon-circle" aria-hidden="true">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 0.5V8.5M0.5 4.5H8.5" stroke="#000000" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- SLIDE-OUT MENU DRAWER -->
+  <div class="menu-drawer" id="menuDrawer">
+    <button class="modal-close-btn" id="closeDrawer" aria-label="Close Menu">&times;</button>
+    <ul class="drawer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#solutions">Categories</a></li>
+      <li><a href="/#projects">Featured Projects</a></li>
+      <li><a href="/#process">Our Process</a></li>
+      <li><a href="/#why-furniqos">Why Furniqos</a></li>
+      <li><a href="/#testimonials">Testimonials</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/blog">Our Blogs</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/admin" style="font-size: 1.1rem; color: var(--gold-primary);">★ Admin CRM Portal</a></li>
+    </ul>
+  </div>
+
+  <!-- POST HERO (Figma " Blog Discription Page") -->
+  <section class="pt-hero" id="post-hero">
+    <picture class="pt-hero-bg">
+      <source media="(max-width: 602px)" srcset="/assets/images/post_decor_hero_mobile.jpg">
+      <img src="/assets/images/post_decor_hero.jpg" alt="" aria-hidden="true">
+    </picture>
+    <div class="pt-hero-inner">
+      <div class="pt-hero-main">
+        <div class="pt-meta">
+          <span class="pt-category">Living Space</span>
+          <time class="pt-date" datetime="2026-01-10">January 10, 2026</time>
+        </div>
+        <h1 class="pt-title">Home decor inspiration</h1>
+      </div>
+      <div class="pt-author">
+        <span class="pt-author-avatar" aria-hidden="true"><img src="/assets/images/furniqos_icon.png" alt=""></span>
+        <div>
+          <div class="pt-author-label">Author</div>
+          <div class="pt-author-name">Furniqos Editorial Team</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <article class="pt-article" id="article">
+    <div class="pt-container pt-body">
+        <p class="pt-lead">The most memorable homes are not decorated all at once. They are built slowly, around pieces you love and spaces that work for the way you live. This home decor inspiration will help you bring warmth, character and a sense of calm into every room.</p>
+        <h2>Start with a calm base</h2>
+        <p>A neutral palette gives every room a quiet backdrop that lets furniture and décor stand out. Soft whites, warm greys, sand and taupe work well together and age gracefully, so the space never feels dated.</p>
+        <p>Use the base palette on walls, floors and large furniture, then bring in colour through cushions, art and smaller accents. This makes it easy to refresh a room with the seasons without starting again.</p>
+        <figure class="pt-figure pt-mobile-only"><img src="/assets/images/about_story_main_f04c1341.jpg" alt="Living room with a cream curved sofa and abstract artwork" loading="lazy"></figure>
+        <h2>Mix materials and textures</h2>
+        <p>Texture is what turns a neutral room into a welcoming one. Pair soft upholstery with solid wood, stone and metal, and layer natural fabrics such as linen, wool and bouclé. The contrast adds depth while keeping the palette calm.</p>
+        <ul>
+          <li>Pair a soft bouclé or linen sofa with a solid wood or stone coffee table.</li>
+          <li>Layer rugs and throws in natural fibres to add warmth underfoot.</li>
+          <li>Bring in handmade ceramics and vases for an organic, crafted feel.</li>
+          <li>Repeat one wood tone across the room to keep it cohesive.</li>
+        </ul>
+        <h2>Light every room in layers</h2>
+        <p>Good lighting changes how a home feels from day to night. Combine ambient light with table and floor lamps, and use wall lights or picture lights to highlight special pieces. Warm bulbs and dimmers make a living room feel relaxed in the evening.</p>
+        <figure class="pt-photos">
+          <img src="/assets/images/about_story_main_f04c1341.jpg" alt="Living room with a cream curved sofa and abstract artwork" class="pt-desktop-only" loading="lazy">
+          <img src="/assets/images/20_image_31_188d18d0.jpg" alt="Reading corner with a round mirror and cream lounge chair" loading="lazy">
+        </figure>
+        <p>Create small moments around the home, such as a reading corner by the window or a console with a lamp and a few favourite objects. These details make a home feel lived in and personal.</p>
+        <h2>Style with restraint</h2>
+        <p>Decorating is as much about what you leave out as what you add. Give each piece room to breathe and group objects in small, considered arrangements rather than spreading them across every surface.</p>
+        <ul>
+          <li>Group décor in odd numbers and vary the heights for a natural look.</li>
+          <li>Keep surfaces partly clear so each object stands out.</li>
+          <li>Choose fewer, better pieces that you will keep for years.</li>
+          <li>Edit seasonally: swap textiles and accessories instead of furniture.</li>
+        </ul>
+        <h2>Make it personal</h2>
+        <p>The best homes tell the story of the people who live in them. Mix new pieces with things you have collected over time, such as art from your travels, family heirlooms or books you love. Personal objects give a room warmth that no catalogue can recreate.</p>
+    </div>
+  </article>
+
+  <!-- RELATED ARTICLES -->
+  <section class="pt-related" id="related">
+    <div class="pt-container">
+      <h2 class="pt-related-title"><span class="pt-desktop-only">Related Articles</span><span class="pt-mobile-only">Our Blogs</span></h2>
+      <div class="pt-related-grid">
+        <a href="/blog/design-styling-tips" class="bl-card pt-related-card">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/m_0108d55b.jpg">
+            <img src="/assets/images/17_image_56_119faaaa.jpg" alt="Woman in a tweed coat on a cream sofa" class="bl-card-img" loading="lazy">
+          </picture>
+          <div class="bl-card-body">
+            <span class="bl-tag">Furniture Guides</span>
+            <h3 class="bl-card-title">Design styling tips</h3>
+          </div>
+        </a>
+        <a href="/blog/office-setup-ideas" class="bl-card pt-related-card">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/m_23f30f5b.jpg">
+            <img src="/assets/images/15_image_62_a7e98c40.jpg" alt="Home office with a curved walnut desk" class="bl-card-img" loading="lazy">
+          </picture>
+          <div class="bl-card-body">
+            <span class="bl-tag">Office Design</span>
+            <h3 class="bl-card-title">Office setup ideas</h3>
+          </div>
+        </a>
+        <a href="/blog/home-decor-inspiration" class="bl-card pt-related-card">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/m_79746048.jpg">
+            <img src="/assets/images/20_image_31_188d18d0.jpg" alt="Reading corner with a round mirror and lounge chair" class="bl-card-img" loading="lazy">
+          </picture>
+          <div class="bl-card-body">
+            <span class="bl-tag">Living Space</span>
+            <h3 class="bl-card-title">Home decor inspiration</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <!-- Watermark Brand Logo (image 50) -->
+      <div class="footer-top-watermark">
+        <picture>
+          <source media="(max-width: 602px)" srcset="/assets/images/m_footer_wordmark.png">
+          <img src="/assets/images/furniqos_wordmark_cream.png" alt="FURNIQOS" class="footer-watermark-img">
+        </picture>
+      </div>
+
+      <!-- Links & Contact 4-Column Grid (Frame 13) -->
+      <div class="footer-grid">
+        <!-- Col 1: QUICK LINKS (Frame 8) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blogs</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: CATEGORY (Frame 9) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CATEGORY</h4>
+          <ul class="footer-links">
+            <li><a href="/#solutions">Residential</a></li>
+            <li><a href="/#solutions">Commercial</a></li>
+            <li><a href="/#solutions">Hospitality</a></li>
+            <li><a href="/#solutions">Custom Pieces</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: COMPANY (Frame 10) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/#projects">Project</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: CONTACT (Frame 2147238897) -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">CONTACT</h4>
+          <div class="footer-contact-items">
+            <!-- Email -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 6L12 13L2 6"/>
+              </svg>
+              <a href="mailto:furniqos@gmail.com" class="footer-contact-link">furniqos@gmail.com</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <div class="footer-phones">
+                <a href="tel:+919811271461" class="footer-contact-link">+91 98112 71461</a>, 
+                <a href="tel:+919810028893" class="footer-contact-link">+91 98100 28893</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="footer-contact-row align-top">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span class="footer-contact-text">Unit No. LG-2, Agarwal Cyber Plaza 1 Netaji Subhash Place, Pitampura, Delhi 110034</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Line 1: Divider -->
+      <div class="footer-divider-line"></div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">&copy; 2026 Furniqos. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEAD CAPTURE MODAL -->
+  <div class="modal-overlay" id="leadModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeModal">&times;</button>
+      <h3 class="modal-title">Book a Consultation</h3>
+      <p class="modal-subtitle">Share your requirements and our interior design concierge will reach out within 24 hours.</p>
+
+      <form id="leadCaptureForm">
+        <div class="form-group">
+          <label class="form-label" for="leadName">Your Name *</label>
+          <input type="text" id="leadName" class="form-input" placeholder="e.g. Yash Chauhan" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadEmail">Email Address *</label>
+          <input type="email" id="leadEmail" class="form-input" placeholder="e.g. yash@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadPhone">Phone Number</label>
+          <input type="tel" id="leadPhone" class="form-input" placeholder="+91 98765 43210">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadProjectType">Project Type</label>
+          <select id="leadProjectType" class="form-select">
+            <option value="Residential">Residential Villa / Apartment</option>
+            <option value="Commercial">Commercial Office / Co-working</option>
+            <option value="Wardrobes">Bespoke Wardrobes & Kitchens</option>
+            <option value="Styling">Furniture & Styling Sourcing</option>
+            <option value="Turnkey">Turnkey Complete Fit-out</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadMessage">Project Details / Message</label>
+          <textarea id="leadMessage" class="form-textarea" rows="3" placeholder="Tell us about the space area, timeline, and furniture preferences..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn" id="submitLeadBtn">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTICE -->
+  <div class="toast-notice" id="toastNotice">
+    <div id="toastMessage">Inquiry submitted successfully!</div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
