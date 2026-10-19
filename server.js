@@ -184,6 +184,15 @@ app.get('/blog', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'blog.html'));
 });
 
+// Blog posts: /blog/<slug> -> public/blog-<slug>.html
+app.get('/blog/:slug', (req, res, next) => {
+  const slug = String(req.params.slug).toLowerCase();
+  if (!/^[a-z0-9-]+$/.test(slug)) return next();
+  const file = path.join(__dirname, 'public', `blog-${slug}.html`);
+  if (!fs.existsSync(file)) return res.redirect('/blog');
+  res.sendFile(file);
+});
+
 app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin.html'));
 });

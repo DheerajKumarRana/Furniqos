@@ -1,0 +1,398 @@
+/* ==========================================================================
+   BLOG POST PAGE (Figma " Blog Discription Page" 1440 × 4377, mobile "iPhone 16 & 17 Pro - 4")
+   Card styles for Related Articles (.bl-card…) come from blog.css.
+   ========================================================================== */
+.pt-container {
+  max-width: 1333px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: content-box;
+}
+
+.pt-mobile-only {
+  display: none;
+}
+
+/* ---- Hero (1440 × 753) ---- */
+.pt-hero {
+  position: relative;
+  height: 753px;
+  overflow: hidden;
+  background: #2D2016;
+}
+
+.pt-hero-bg,
+.pt-hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pt-hero-bg img {
+  object-fit: cover; /* exported from Figma with its dark overlay already applied */
+}
+
+.pt-hero-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  max-width: calc(1333px + 48px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px 42px;
+  box-sizing: border-box;
+}
+
+.pt-hero-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 7px;
+}
+
+.pt-meta {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.pt-category {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 20px;
+  background: rgba(248, 249, 244, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.4px;
+  color: #F8F9F4;
+}
+
+.pt-date {
+  padding: 0 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.4px;
+  text-transform: uppercase;
+  color: #F8F9F4;
+}
+
+.pt-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(44px, 4.45vw, 64px);
+  line-height: 1.22;
+  color: #F8F9F4;
+  margin: 0;
+}
+
+.pt-author {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  margin-bottom: 7px;
+}
+
+.pt-author-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #F8F9F4;
+  flex-shrink: 0;
+}
+
+.pt-author-avatar img {
+  width: 60%;
+  height: auto;
+}
+
+.pt-author-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26.8px;
+  color: #F8F9F4;
+}
+
+.pt-author-name {
+  margin-top: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.9px;
+  color: #F8F9F4;
+}
+
+/* ---- Article body ---- */
+.pt-article {
+  padding: 50px 0 70px;
+}
+
+.pt-body > * {
+  margin: 0;
+}
+
+.pt-body p,
+.pt-body li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(56, 56, 56, 0.75);
+}
+
+.pt-body p + p,
+.pt-body p + ul {
+  margin-top: 15px;
+}
+
+.pt-body h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.3px;
+  color: #383838;
+}
+
+.pt-body ul {
+  padding-left: 24px;
+  list-style: none;
+}
+
+.pt-body li {
+  position: relative;
+}
+
+.pt-body li::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 10.5px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(56, 56, 56, 0.75);
+}
+
+/* Two-photo panel in a white frame */
+.pt-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin: 50px 0 !important;
+  padding: 12px 13px;
+  background: #FFFFFF;
+}
+
+.pt-photos img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 642 / 502;
+  object-fit: cover;
+}
+
+/* ---- Related articles ---- */
+.pt-related {
+  padding: 42px 0 40px;
+  background: #EEEEEA;
+}
+
+.pt-related-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43.9px;
+  text-align: center;
+  color: #383838;
+  margin: 0 0 41px;
+}
+
+.pt-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.pt-related-grid .bl-card {
+  grid-column: auto;
+}
+
+.pt-related-card picture {
+  position: absolute;
+  inset: 0;
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .pt-hero-inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+  .pt-hero-inner {
+    justify-content: flex-start; /* column-reverse: flex-start is the bottom edge */
+  }
+  .pt-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+/* ==========================================================================
+   Phone (Figma "iPhone 16 & 17 Pro - 4", 402 wide)
+   ========================================================================== */
+@media (max-width: 602px) {
+  .pt-mobile-only {
+    display: block;
+  }
+  .pt-desktop-only {
+    display: none !important;
+  }
+  .pt-container {
+    padding: 0 22px;
+  }
+
+  /* 402 × 686 hero: author above, tag + date, then the title */
+  .pt-hero {
+    height: 686px;
+  }
+  .pt-hero-inner {
+    gap: 77px;
+    padding: 0 23px 17px;
+  }
+  .pt-hero-main {
+    gap: 6px;
+    padding-left: 0;
+  }
+  .pt-category {
+    height: 37px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .pt-date {
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .pt-title {
+    font-size: 31px;
+    line-height: 37.8px;
+  }
+  .pt-author {
+    gap: 17px;
+    margin: 0;
+  }
+  .pt-author-avatar {
+    width: 41px;
+    height: 41px;
+  }
+  .pt-author-label {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+  .pt-author-name {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 14.6px;
+  }
+
+  .pt-article {
+    padding: 40px 0 47px;
+  }
+  .pt-body p,
+  .pt-body li {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .pt-body li::before {
+    top: 9px;
+  }
+  .pt-body h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24.4px;
+  }
+  .pt-body > p.pt-lead + h2 {
+    margin-top: 20px;
+  }
+
+  /* Photos go full-bleed, one at a time */
+  .pt-figure,
+  .pt-photos {
+    display: block;
+    margin: 30px -22px !important;
+    padding: 0;
+    background: none;
+  }
+  .pt-figure img,
+  .pt-photos img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 402 / 316;
+    object-fit: cover;
+  }
+  .pt-figure + h2,
+  .pt-photos + p {
+    margin-top: 0;
+  }
+
+  /* "Our Blogs" swipe strip, like the home page */
+  .pt-related {
+    padding: 40px 0 30px;
+  }
+  .pt-related .pt-container {
+    padding: 0;
+  }
+  .pt-related-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .pt-related-grid {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 14px;
+    scrollbar-width: none;
+  }
+  .pt-related-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .pt-related-grid .bl-card {
+    flex: 0 0 327px;
+    height: 383px;
+    aspect-ratio: auto;
+    border-radius: 6px;
+    scroll-snap-align: center;
+  }
+  .pt-related-grid .bl-card:nth-child(n) {
+    display: block;
+  }
+  .pt-related-grid .bl-card-img {
+    --zoom: 1 !important;
+  }
+}

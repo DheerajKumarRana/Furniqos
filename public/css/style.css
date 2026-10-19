@@ -3302,6 +3302,7 @@ button, input, select, textarea {
     flex-direction: column;
     gap: 0;
     font-size: 0;
+    line-height: 0; /* the hidden ", " between the numbers must not leave an empty line */
   }
   .footer-phones .footer-contact-link {
     display: block;
