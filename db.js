@@ -4,17 +4,40 @@ const path = require('path');
 const { createClient } = require('@supabase/supabase-js');
 require('dotenv').config();
 
-const DATA_DIR = path.join(__dirname, 'data');
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-}
+// On serverless hosts (Vercel) the project folder is read-only, so local data lives in /tmp.
+// /tmp is temporary there: Supabase is the permanent store for leads in production.
+const BUNDLED_DATA_DIR = path.join(__dirname, 'data');
+const IS_SERVERLESS = !!(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+const DATA_DIR = IS_SERVERLESS ? path.join('/tmp', 'furniqos-data') : BUNDLED_DATA_DIR;
 
 const LEADS_FILE = path.join(DATA_DIR, 'leads.json');
 const CONTENT_FILE = path.join(DATA_DIR, 'content.json');
 
+// Never let a file-system error crash the server
+function safeWrite(file, data) {
+  try {
+    fs.writeFileSync(file, JSON.stringify(data, null, 2));
+    return true;
+  } catch (e) {
+    console.warn(`Could not write ${file}: ${e.message}`);
+    return false;
+  }
+}
+
+try {
+  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+  // Seed the writable copy of the CRM content from the version committed to the repo
+  const bundledContent = path.join(BUNDLED_DATA_DIR, 'content.json');
+  if (IS_SERVERLESS && !fs.existsSync(CONTENT_FILE) && fs.existsSync(bundledContent)) {
+    fs.copyFileSync(bundledContent, CONTENT_FILE);
+  }
+} catch (e) {
+  console.warn('Local data folder unavailable:', e.message);
+}
+
 // Initialize local files if not existing
 if (!fs.existsSync(LEADS_FILE)) {
-  fs.writeFileSync(LEADS_FILE, JSON.stringify([], null, 2));
+  safeWrite(LEADS_FILE, []);
 }
 
 // Default content seeded from Figma designs
@@ -64,7 +87,7 @@ const DEFAULT_CONTENT = {
 };
 
 if (!fs.existsSync(CONTENT_FILE)) {
-  fs.writeFileSync(CONTENT_FILE, JSON.stringify(DEFAULT_CONTENT, null, 2));
+  safeWrite(CONTENT_FILE, DEFAULT_CONTENT);
 }
 
 // Initialize Supabase if keys provided
@@ -93,7 +116,7 @@ function readLocalLeads() {
 }
 
 function writeLocalLeads(leads) {
-  fs.writeFileSync(LEADS_FILE, JSON.stringify(leads, null, 2));
+  safeWrite(LEADS_FILE, leads);
 }
 
 function readLocalContent() {
@@ -106,7 +129,7 @@ function readLocalContent() {
 }
 
 function writeLocalContent(content) {
-  fs.writeFileSync(CONTENT_FILE, JSON.stringify(content, null, 2));
+  if (!safeWrite(CONTENT_FILE, content)) throw new Error('Content storage is not writable on this host.');
 }
 
 // Database Operations

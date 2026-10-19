@@ -19,7 +19,10 @@ app.use(express.urlencoded({ extended: true }));
 // Upload configuration for images (Desktop & Mobile CRM updates)
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    const uploadPath = path.join(__dirname, 'public', 'assets', 'images', 'uploads');
+    // Serverless hosts only allow writing to /tmp (files there are temporary)
+    const uploadPath = process.env.VERCEL
+      ? path.join('/tmp', 'uploads')
+      : path.join(__dirname, 'public', 'assets', 'images', 'uploads');
     if (!fs.existsSync(uploadPath)) {
       fs.mkdirSync(uploadPath, { recursive: true });
     }
@@ -58,10 +61,12 @@ app.post('/api/leads', async (req, res) => {
       source: source || 'Website Consultation Form'
     });
 
-    // Send email notification asynchronously
-    sendLeadNotificationEmail(lead).catch(err => {
+    // Send the email notification. On serverless hosts the function stops once the
+    // response is sent, so wait for the email there; locally it can run in the background.
+    const emailJob = sendLeadNotificationEmail(lead).catch(err => {
       console.error('Email sending error:', err);
     });
+    if (process.env.VERCEL) await emailJob;
 
     res.status(201).json({
       success: true,
@@ -188,8 +193,10 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Start Server
-app.listen(PORT, () => {
+// Start the server when run directly (npm start). On Vercel the exported app is used instead.
+module.exports = app;
+
+if (require.main === module) app.listen(PORT, () => {
   console.log(`\n======================================================`);
   console.log(`✨ FURNIQOS Luxury Website Server Running!`);
   console.log(`🌐 Website URL:  http://localhost:${PORT}`);
