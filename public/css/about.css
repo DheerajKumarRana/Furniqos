@@ -1,0 +1,620 @@
+/* ==========================================================================
+   ABOUT PAGE (Figma "About Page", 1440 × 5122)
+   Shared pieces (ticker, header, drawer, CTA banner, footer, modal) come from style.css.
+   ========================================================================== */
+.page-about {
+  background: #F8F9F4;
+  color: #383838;
+}
+
+.ab-container {
+  max-width: 1332px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: content-box;
+}
+
+.ab-split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 80px;
+}
+
+/* ---- Shared type ---- */
+.ab-heading-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.ab-heading-block-lg {
+  gap: 20px;
+}
+
+.ab-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #383838;
+}
+
+.ab-title-xl {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: clamp(36px, 3.6vw, 52px);
+  line-height: 1.22;
+  color: #383838;
+  margin: 0;
+}
+
+.ab-title-lg {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(28px, 2.8vw, 40px);
+  line-height: 1.22;
+  color: #383838;
+  margin: 0;
+}
+
+.ab-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ab-body p,
+.ab-body-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(56, 56, 56, 0.6);
+  margin: 0;
+}
+
+/* ---- Hero (Frame 2147238920) ---- */
+.ab-hero {
+  position: relative;
+  height: 757px;
+  background-color: #2D2016;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.ab-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.ab-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1332px;
+  margin: 0 auto;
+  padding: 333px 24px 0;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ab-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(56px, 6.7vw, 96px);
+  line-height: 1.22;
+  color: #F8F9F4;
+  margin: 0;
+}
+
+.ab-hero-subtitle {
+  max-width: 379px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.4px;
+  color: #F8F9F4;
+  margin: 0;
+}
+
+/* ---- What we do (Frame 2147238927) ---- */
+.ab-intro {
+  padding: 79px 0 46px;
+}
+
+.ab-intro .ab-heading-block {
+  max-width: 666px;
+}
+
+.ab-intro .ab-body {
+  max-width: 532px;
+}
+
+/* ---- Our story (Frame 2147238940) ---- */
+.ab-story {
+  padding: 0 0 100px;
+}
+
+.ab-story-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 75px;
+}
+
+/* Frame 2147238928: 617 × 663 collage */
+.ab-collage {
+  position: relative;
+  flex: 0 1 617px;
+  aspect-ratio: 617 / 663;
+}
+
+.ab-collage-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 86.06%;  /* 531 / 617 */
+  height: 87.63%; /* 581 / 663 */
+  object-fit: cover;
+}
+
+/* Frame 2147238922: inset photo with a page-coloured frame */
+.ab-collage-detail {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 44.25%;  /* 273 / 617 */
+  height: 51.89%; /* 344 / 663 */
+  padding: 19px;
+  background: #F8F9F4;
+  box-sizing: border-box;
+}
+
+.ab-collage-detail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ab-story-text {
+  flex: 0 1 593px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.ab-rule {
+  width: 100%;
+  height: 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid rgba(56, 56, 56, 0.2);
+}
+
+/* ---- Our point of view (Frame 2147238929) ---- */
+.ab-values {
+  padding: 97px 0 96px;
+  background: #422D1F;
+}
+
+.ab-values .ab-label,
+.ab-values .ab-title-xl {
+  color: #F8F9F4;
+}
+
+.ab-values-head .ab-heading-block {
+  max-width: 492px;
+}
+
+.ab-values-intro {
+  max-width: 470px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(248, 249, 244, 0.75);
+  margin: 0;
+}
+
+/* Frame 2147238938: 4 columns separated by hairlines */
+.ab-values-grid {
+  display: grid;
+  grid-template-columns: 313fr 356fr 356fr 309fr;
+  margin-top: 80px;
+  border-top: 1px solid rgba(248, 249, 244, 0.3);
+}
+
+.ab-value {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  min-height: 300px;
+  padding: 29px 0 33px 43px;
+  border-left: 1px solid rgba(248, 249, 244, 0.3);
+  box-sizing: border-box;
+}
+
+.ab-value:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.ab-value-num {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1px;
+  color: rgba(248, 249, 244, 0.6);
+}
+
+.ab-value-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 270px;
+}
+
+.ab-value-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31.7px;
+  color: #F8F9F4;
+  margin: 0;
+}
+
+.ab-value-body p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(248, 249, 244, 0.6);
+  margin: 0;
+}
+
+/* ---- Mission & vision (Frame 2147238947) ---- */
+.ab-mission {
+  padding: 100px 0 90px;
+}
+
+.ab-mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ab-mission-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 47px 38px 49px;
+  border: 1px solid #C5C5C5;
+}
+
+.ab-mission-card + .ab-mission-card {
+  margin-left: -1px; /* share the middle border */
+  padding-left: 35px;
+}
+
+/* ---- Designed for impact (Frame 2147238952) ---- */
+.ab-impact {
+  padding: 0 0 99px;
+}
+
+.ab-impact-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.ab-impact-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: clamp(32px, 3.05vw, 44px);
+  line-height: 1.22;
+  color: #383838;
+  margin: 0;
+}
+
+.ab-impact-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(56, 56, 56, 0.6);
+  margin: 0;
+}
+
+.ab-impact-grid {
+  display: grid;
+  grid-template-columns: 817fr 500fr;
+  gap: 15px;
+}
+
+.ab-impact-card {
+  position: relative;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #D9D9D9;
+}
+
+.ab-impact-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ab-impact-card-wide img {
+  object-position: 70% 50%;
+}
+
+.ab-impact-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Rectangle 15: soft grey fade on the left edge */
+.ab-impact-fade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 138px;
+  background: linear-gradient(90deg, rgba(124, 123, 122, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+}
+
+.ab-impact-text {
+  position: absolute;
+  left: 29px;
+  bottom: 23px;
+  right: 29px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ab-impact-card-narrow .ab-impact-text {
+  left: 26px;
+}
+
+.ab-impact-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 2.7vw, 39px);
+  line-height: 1.23;
+  color: #383838;
+  margin: 0;
+}
+
+.ab-impact-text p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #383838;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .ab-split {
+    gap: 48px;
+  }
+  .ab-story-grid {
+    gap: 48px;
+  }
+  .ab-value {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ab-split,
+  .ab-story-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ab-collage,
+  .ab-story-text {
+    flex: none;
+    width: 100%;
+    max-width: 617px;
+  }
+  .ab-values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ab-value:nth-child(3) {
+    padding-left: 0;
+    border-left: none;
+  }
+  .ab-value:nth-child(n + 3) {
+    border-top: 1px solid rgba(248, 249, 244, 0.3);
+  }
+  .ab-mission-grid {
+    grid-template-columns: 1fr;
+  }
+  .ab-mission-card + .ab-mission-card {
+    margin: -1px 0 0;
+    padding-left: 38px;
+  }
+  .ab-impact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Phone (matches the home page mobile system: 23px gutters, Poppins 14 body)
+   ========================================================================== */
+@media (max-width: 602px) {
+  .ab-container {
+    padding: 0 23px;
+  }
+
+  .ab-hero {
+    height: 560px;
+  }
+  .ab-hero-content {
+    padding: 300px 23px 0;
+    gap: 12px;
+  }
+  .ab-hero-title {
+    font-size: 52px;
+  }
+  .ab-hero-subtitle {
+    font-size: 16px;
+    line-height: 21px;
+    max-width: 280px;
+  }
+
+  .ab-label {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .ab-title-xl {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .ab-title-lg {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .ab-heading-block,
+  .ab-heading-block-lg {
+    gap: 10px;
+  }
+  .ab-body {
+    gap: 15px;
+  }
+  .ab-body p,
+  .ab-body-text,
+  .ab-values-intro,
+  .ab-impact-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .ab-split {
+    gap: 20px;
+  }
+
+  .ab-intro {
+    padding: 50px 0 40px;
+  }
+
+  .ab-story {
+    padding-bottom: 50px;
+  }
+  .ab-story-grid {
+    gap: 30px;
+  }
+  .ab-story-text {
+    gap: 20px;
+  }
+  .ab-collage-detail {
+    padding: 10px;
+  }
+
+  .ab-values {
+    padding: 50px 0;
+  }
+  .ab-values-grid {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+  .ab-value,
+  .ab-value:nth-child(3) {
+    min-height: 0;
+    gap: 20px;
+    padding: 20px 0 24px;
+    border-left: none;
+    border-top: 1px solid rgba(248, 249, 244, 0.3);
+  }
+  .ab-value:first-child {
+    border-top: none;
+  }
+  .ab-value-body {
+    gap: 10px;
+    max-width: none;
+  }
+  .ab-value-title {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .ab-mission {
+    padding: 50px 0;
+  }
+  .ab-mission-card,
+  .ab-mission-card + .ab-mission-card {
+    gap: 15px;
+    padding: 25px 20px;
+  }
+
+  .ab-impact {
+    padding-bottom: 50px;
+  }
+  .ab-impact-head {
+    margin-bottom: 25px;
+  }
+  .ab-impact-title {
+    font-size: 28px;
+  }
+  .ab-impact-card {
+    height: 320px;
+  }
+  /* Keep the text readable where the wide chair photo is cropped narrower */
+  .ab-impact-card-wide img {
+    object-position: 88% 50%;
+  }
+  .ab-impact-card {
+    height: 360px;
+  }
+  .ab-impact-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(248, 249, 244, 0.96) 0%, rgba(248, 249, 244, 0.85) 22%, rgba(248, 249, 244, 0) 50%);
+    pointer-events: none;
+  }
+  .ab-impact-card-narrow img {
+    object-position: 50% 30%;
+  }
+  .ab-impact-fade {
+    display: none;
+  }
+  .ab-impact-text {
+    left: 20px;
+    right: 20px;
+    bottom: 18px;
+  }
+  .ab-impact-card-narrow .ab-impact-text {
+    left: 20px;
+  }
+  .ab-impact-text h3 {
+    font-size: 26px;
+  }
+  .ab-impact-text p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

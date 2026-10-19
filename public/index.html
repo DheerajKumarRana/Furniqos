@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FURNIQOS | Luxury Furniture Sourcing & Turnkey Interiors</title>
+  <meta name="description" content="FURNIQOS brings together premium furniture sourcing, custom kitchens, bespoke wardrobes, and turnkey execution for refined residential and commercial spaces.">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Supabase CDN (Ready for direct client queries if needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- 1. TOP TICKER (Frame 2147238918) -->
+  <div class="top-ticker" id="topTicker">
+    <p class="ticker-text" id="dynamicTickerText">LUXURY FURNITURE SOURCING • PREMIUM CHINA MANUFACTURERS</p>
+  </div>
+
+  <!-- 2. MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      <!-- Left: Navigation Menu Trigger (Frame 2147238842) -->
+      <button class="menu-trigger" id="menuToggle" aria-label="Open Navigation Menu">
+        <div class="menu-lines">
+          <span></span>
+          <span></span>
+        </div>
+        <span class="menu-label">Menu</span>
+      </button>
+
+      <!-- Center spacer keeping left and right buttons balanced for traveling logo -->
+      <div class="header-center-bay" id="headerCenterBay" aria-hidden="true"></div>
+
+      <!-- Right: Contact Us Button (Frame 2147238905) -->
+      <button class="header-cta-btn open-lead-modal" id="headerContactBtn" aria-label="Contact Us">
+        <div class="header-cta-inner">
+          <span class="header-cta-text">Contact us</span>
+          <span class="plus-icon-circle" aria-hidden="true">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 0.5V8.5M0.5 4.5H8.5" stroke="#000000" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- TRAVELING BRAND LOGO (Starts full-sized on Hero Banner, smoothly glides into the middle of the header on scroll) -->
+  <div class="traveling-brand-logo" id="travelingBrandLogo" aria-label="FURNIQOS Logo">
+    <a href="#hero" id="travelingLogoLink" aria-label="FURNIQOS Home">
+      <img src="/assets/images/furniqos_logo_hero.png" alt="FURNIQOS Luxury Furniture" class="traveling-logo-img" id="heroLogoImg">
+    </a>
+  </div>
+
+  <!-- SLIDE-OUT MENU DRAWER -->
+  <div class="menu-drawer" id="menuDrawer" data-native-scroll>
+    <button class="modal-close-btn" id="closeDrawer" aria-label="Close Menu">&times;</button>
+    <ul class="drawer-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#solutions">Categories</a></li>
+      <li><a href="#projects">Featured Projects</a></li>
+      <li><a href="#process">Our Process</a></li>
+      <li><a href="#why-furniqos">Why Furniqos</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/blog">Our Blogs</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/admin" style="font-size: 1.1rem; color: var(--gold-primary);">★ Admin CRM Portal</a></li>
+    </ul>
+  </div>
+
+  <!-- 3. HERO SECTION (Section: 1440x780px) -->
+  <section class="hero-section" id="hero" data-desktop-bg="/assets/images/hero_full_background.jpg" data-mobile-bg="/assets/images/m_hero_mobile.jpg" style="background-image: url('/assets/images/hero_full_background.jpg');">
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-inner-stage">
+      <!-- Frame 71: Rating Badge (top 343px, left 0, width 393px, height 71px) -->
+      <div class="hero-badge-wrap">
+        <div class="verified-glass-badge">
+          <div class="avatar-stack">
+            <img src="/assets/images/05_image_22_895e85a6.jpg" alt="Client 1">
+            <img src="/assets/images/03_image_21_e1372631.jpg" alt="Client 2">
+            <img src="/assets/images/04_image_23_77cbbf6b.jpg" alt="Client 3">
+          </div>
+          <div class="badge-info">
+            <div class="stars-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-num" id="dynamicRating">4.9/5</span>
+            </div>
+            <p class="verified-text" id="dynamicVerifiedText">Build on 220+ Verified Experiences</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frame 2147238881: Brand Logo Lockup Slot (top 464px, width 1332px, height 198px) -->
+      <div class="hero-logo-lockup" id="heroLogoSlot">
+        <!-- Exact footprint spacer for traveling brand logo on the banner -->
+        <div class="hero-logo-spacer" aria-hidden="true"></div>
+      </div>
+
+      <!-- Frame 79: Category selector tabs (top 672px, width 1330px, height 60px) -->
+      <div class="hero-tabs-container">
+        <div class="hero-category-tabs">
+          <div class="category-tab-pill active" data-category="residential">
+            <span class="tab-label">Residential Furniture</span>
+            <div class="tab-indicator-squares">
+              <span class="sq"></span>
+            </div>
+          </div>
+          <div class="category-tab-pill" data-category="commercial">
+            <span class="tab-label">Commercial Furniture</span>
+            <div class="tab-indicator-squares">
+              <span class="sq"></span>
+              <span class="sq"></span>
+            </div>
+          </div>
+          <div class="category-tab-pill" data-category="wardrobes">
+            <span class="tab-label">Wardrobes</span>
+            <div class="tab-indicator-squares">
+              <span class="sq"></span>
+              <span class="sq"></span>
+              <span class="sq"></span>
+            </div>
+          </div>
+          <div class="category-tab-pill" data-category="artefacts">
+            <span class="tab-label">Artefacts & Décor</span>
+            <div class="tab-indicator-squares">
+              <span class="sq"></span>
+              <span class="sq"></span>
+              <span class="sq"></span>
+              <span class="sq"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. COMPLETE SOLUTIONS SECTION -->
+  <section class="solutions-section" id="solutions">
+    <div class="container">
+      <div class="solutions-header">
+        <h2 class="section-title-large" id="solutionsTitle">Complete Solutions for Every Space</h2>
+        <p class="solutions-subtitle" id="solutionsSubtitle">
+          Furniture, kitchens, wardrobes, lighting and décor, thoughtfully sourced for refined residential and commercial spaces.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CATEGORY SHOWCASE CAROUSEL -->
+  <section class="showcase-section">
+    <div class="container">
+      <div class="showcase-slider-container" id="showcaseSlider">
+        <!-- Card 1 -->
+        <div class="showcase-card">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/m_410f9c50.jpg">
+            <img src="/assets/images/35_image_38_f8331a4e.jpg" alt="Living Room Furniture">
+          </picture>
+          <div class="showcase-card-overlay">
+            <span class="showcase-card-tag">Living Room</span>
+            <h3 class="showcase-card-title">Living Room</h3>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="showcase-card">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/m_e24e3934.jpg">
+            <img src="/assets/images/36_image_42_0924bc86.jpg" alt="Bedroom Furniture">
+          </picture>
+          <div class="showcase-card-overlay">
+            <span class="showcase-card-tag">Bedroom</span>
+            <h3 class="showcase-card-title">Bedroom</h3>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="showcase-card">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/m_e35ae665.jpg">
+            <img src="/assets/images/37_image_40_f537c095.jpg" alt="Dining Room Furniture">
+          </picture>
+          <div class="showcase-card-overlay">
+            <span class="showcase-card-tag">Dining Room</span>
+            <h3 class="showcase-card-title">Dining Room</h3>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="showcase-card">
+          <img src="/assets/images/38_image_39_d596c42e.jpg" alt="Office Furniture">
+          <div class="showcase-card-overlay">
+            <span class="showcase-card-tag">Office</span>
+            <h3 class="showcase-card-title">Office</h3>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="showcase-card">
+          <img src="/assets/images/39_image_43_1451e23f.jpg" alt="Home Decor Accessories">
+          <div class="showcase-card-overlay">
+            <span class="showcase-card-tag">Home Decor</span>
+            <h3 class="showcase-card-title">Home Decor</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile: scroll progress bar (Frame 2147238981) -->
+      <div class="showcase-progress" aria-hidden="true"><span class="showcase-progress-thumb" id="showcaseProgress"></span></div>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="sliderPrev" aria-label="Previous">&larr;</button>
+        <button class="slider-btn" id="sliderNext" aria-label="Next">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FEATURED PROJECTS (Frame 2147238899) -->
+  <section class="projects-section" id="projects">
+    <div class="container projects-container">
+      <!-- Section Header (Frame 2147238854) -->
+      <div class="projects-header">
+        <h2 class="projects-title">Featured Projects</h2>
+        <p class="projects-subtitle">
+          Explore spaces defined by distinctive design and thoughtful execution.
+        </p>
+      </div>
+
+      <!-- Projects List (Frame 2147238853) -->
+      <div class="projects-list">
+
+        <!-- Project 01 (Row 1) -->
+        <article class="project-row" data-index="0">
+          <div class="project-num">01</div>
+          <div class="project-media">
+            <img src="/assets/images/20_image_31_188d18d0.jpg" alt="Interior Design" class="project-img">
+          </div>
+          <div class="project-content">
+            <h3 class="project-heading">Interior Design</h3>
+            <div class="project-meta">
+              <h4 class="project-subheading">Residential Spaces</h4>
+              <p class="project-desc">
+                Tailored interiors designed to reflect your lifestyle through thoughtful layouts, premium materials, and timeless aesthetics.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02 (Row 2) -->
+        <article class="project-row" data-index="1">
+          <div class="project-num">02</div>
+          <div class="project-media">
+            <img src="/assets/images/32_image_44_771aa98f.jpg" alt="Space Planning" class="project-img">
+          </div>
+          <div class="project-content">
+            <h3 class="project-heading">Space Planning</h3>
+            <div class="project-meta">
+              <h4 class="project-subheading">Functional Layouts</h4>
+              <p class="project-desc">
+                Optimizing every square meter with smart planning, natural flow, and carefully considered spatial experiences.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03 (Row 3) -->
+        <article class="project-row" data-index="2">
+          <div class="project-num">03</div>
+          <div class="project-media">
+            <img src="/assets/images/33_image_27_247ec275.jpg" alt="Furniture & Styling" class="project-img">
+          </div>
+          <div class="project-content">
+            <h3 class="project-heading">Furniture & Styling</h3>
+            <div class="project-meta">
+              <h4 class="project-subheading">Curated Interiors</h4>
+              <p class="project-desc">
+                Handpicked furniture, lighting, textures, and décor that bring warmth, balance, and character to every space.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 04 (Row 4) -->
+        <article class="project-row" data-index="3">
+          <div class="project-num">04</div>
+          <div class="project-media">
+            <img src="/assets/images/32_image_44_771aa98f.jpg" alt="Renovation Design" class="project-img">
+          </div>
+          <div class="project-content">
+            <h3 class="project-heading">Renovation Design</h3>
+            <div class="project-meta">
+              <h4 class="project-subheading">Modern Transformations</h4>
+              <p class="project-desc">
+                Reimagining existing spaces through contemporary design, quality craftsmanship, and lasting functionality.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. OUR PROCESS -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="process-grid">
+        <div class="process-image-wrap">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/01_image_53_6495d00d.jpg">
+            <img src="/assets/images/process_showcase.jpg" alt="FURNIQOS Design Process">
+          </picture>
+        </div>
+
+        <!-- Frame 55 -->
+        <div class="process-content">
+          <!-- Frame 50 -->
+          <div class="process-row process-row-intro">
+            <h2 class="process-label">Our process</h2>
+            <p class="process-text">We follow a clear, refined workflow that turns your goals into actionable steps, giving you confidence, direction, and transparency throughout the entire project.</p>
+          </div>
+
+          <!-- Frame 51 -->
+          <div class="process-row">
+            <h3 class="process-step-title">Project discovery</h3>
+            <p class="process-text">We learn exactly what you need, how you use your space, and what matters most. This step ensures the project starts with clarity and understanding from day one.</p>
+          </div>
+
+          <!-- Frame 52 -->
+          <div class="process-row">
+            <h3 class="process-step-title">Curation &amp; sourcing</h3>
+            <p class="process-text">We create initial layouts and ideas to explore possibilities. This step lets you see the vision clearly and helps us find the best solution for your space.</p>
+          </div>
+
+          <!-- Frame 53 -->
+          <div class="process-row">
+            <h3 class="process-step-title">Quality &amp; logistics</h3>
+            <p class="process-text">We refine the design, organise schedules, and prepare all the details. This ensures every part of the project is practical, realistic, and ready to move forward smoothly.</p>
+          </div>
+
+          <!-- Frame 54 -->
+          <div class="process-row">
+            <h3 class="process-step-title">Installation</h3>
+            <p class="process-text">We finalise design details, choose materials, and make sure everything works together. This step turns concepts into a clear, actionable plan for the build.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. WHY FURNIQOS (DARK LUXURY SECTION) -->
+  <section class="why-furniqos-section" id="why-furniqos" style="background-image: url('/assets/images/why_furniqos_bg.jpg');">
+    <div class="why-overlay"></div>
+    <div class="why-content">
+      <!-- Frame 48 -->
+      <div class="why-text-block">
+        <h2 class="why-title" id="whyTitle">Why Furniqos</h2>
+        <p class="why-text" id="whyText">
+          From premium furniture to complete interior solutions, every detail is carefully sourced and coordinated. One accountable partner, from design intent to final installation.
+        </p>
+      </div>
+      <!-- Button -->
+      <button class="why-btn open-lead-modal">
+        <span>Know More</span>
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M9 1L13 5L9 9M13 5H1" stroke="#F8F9F4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- 9. TESTIMONIALS -->
+  <section class="testimonials-section" id="testimonials">
+    <!-- Frame 59: header row -->
+    <div class="testimonials-header">
+      <!-- Frame 58 -->
+      <div class="testimonials-intro">
+        <!-- Frame 57 -->
+        <div class="testimonials-heading">
+          <span class="testimonials-label">Testimonials</span>
+          <h2 class="testimonials-title">What Our Clients<br> Say About Our Services</h2>
+        </div>
+        <p class="testimonials-desc">Our work is defined not only by design but by the trust and satisfaction of those we create for. Here’s what our clients share about their journey with us.</p>
+      </div>
+      <!-- Button -->
+      <button class="testimonials-btn open-lead-modal">
+        <span>Get Started</span>
+        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 1L12 5L8 9M12 5H1" stroke="#383838" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Preview / Carousel: the moving strip loops endlessly (cards are cloned in app.js) -->
+    <div class="testimonials-carousel">
+      <div class="testimonials-strip" id="testimonialsStrip">
+        <article class="testimonial-card">
+          <div class="testimonial-body">
+            <h3 class="testimonial-type">Commercial Project</h3>
+            <p class="testimonial-quote">“From concept to completion, our office space balances aesthetics and functionality perfectly, creating an inspiring environment for our team.”</p>
+          </div>
+          <div class="testimonial-client">
+            <img src="/assets/images/03_image_21_e1372631.jpg" alt="Yash Chauhan" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Yash Chauhan</div>
+              <div class="testimonial-location">Kalkaji, New Delhi</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-body">
+            <h3 class="testimonial-type">Quick Setup</h3>
+            <p class="testimonial-quote">“FURNIQOS took complete accountability from procurement to on-site assembly. Truly a stress-free experience, delivered right on time.”</p>
+          </div>
+          <div class="testimonial-client">
+            <img src="/assets/images/04_image_23_77cbbf6b.jpg" alt="Preet Kaur" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Preet Kaur</div>
+              <div class="testimonial-location">Noida, Uttar Pradesh</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-body">
+            <h3 class="testimonial-type">Luxury Villa</h3>
+            <p class="testimonial-quote">“The bespoke Italian dining set and modular wardrobes were sourced seamlessly. Unmatched attention to detail and delivery timelines.”</p>
+          </div>
+          <div class="testimonial-client">
+            <img src="/assets/images/05_image_22_895e85a6.jpg" alt="Aman Raj" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Aman Raj</div>
+              <div class="testimonial-location">Faridabad, Haryana</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-body">
+            <h3 class="testimonial-type">Residential Project</h3>
+            <p class="testimonial-quote">“Every room feels considered and complete. The team understood our lifestyle and turned it into a home that feels truly ours.”</p>
+          </div>
+          <div class="testimonial-client">
+            <img src="/assets/images/03_image_21_e1372631.jpg" alt="Ansh Gupta" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Ansh Gupta</div>
+              <div class="testimonial-location">Mohali, Punjab</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. ABOUT US / SOURCING EXTRAORDINARY -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="about-grid">
+        <!-- Frame 44: Left Content Column -->
+        <div class="about-content">
+          <!-- Frame 43: Header Block -->
+          <div class="about-header-block">
+            <span class="about-label" id="aboutLabel">About us</span>
+            <h2 class="about-title" id="aboutTitle">Sourcing the Extraordinary</h2>
+          </div>
+
+          <!-- Frame 21: Paragraphs & Button Block -->
+          <div class="about-body-block">
+            <!-- Frame 20: Body Paragraphs -->
+            <div class="about-paragraphs">
+              <p id="aboutDesc1">
+                FURNIQOS brings together premium Italian furniture design, global sourcing and seamless execution for refined residential and commercial spaces.
+              </p>
+              <p id="aboutDesc2">
+                From furniture and upholstery to kitchens, wardrobes and curated artefacts, every element is carefully sourced and coordinated to create spaces that feel distinctive, considered and complete.
+              </p>
+            </div>
+
+            <!-- Button: Frame More About Us -->
+            <a href="/about" class="about-outline-btn" aria-label="More About Us">
+              <span>More About Us</span>
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7 1L11 5L7 9M11 5H1" stroke="#383838" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Frame 25: Right Dual Asymmetrical Images -->
+        <div class="about-dual-visual">
+          <div class="about-img-frame frame-left">
+            <img src="/assets/images/about_image60.png" alt="Curated Artefacts & Design" class="about-img">
+          </div>
+          <div class="about-img-frame frame-right">
+            <img src="/assets/images/14_image_62_986cc693.jpg" alt="Luxury living room with walnut panelled wall and grey sectional sofa" id="aboutImage" class="about-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. BLOGS -->
+  <section class="blogs-section" id="blogs">
+    <!-- Frame 19 -->
+    <div class="blogs-inner">
+      <h2 class="blogs-title">Our Blogs</h2>
+
+      <!-- Frame 18 -->
+      <div class="blogs-grid">
+        <a href="/blog" class="blog-card">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/m_0108d55b.jpg">
+            <img src="/assets/images/16_image_56_93187390.jpg" alt="Design styling tips" class="blog-card-img">
+          </picture>
+          <div class="blog-card-body">
+            <span class="blog-tag">Furniture Guides</span>
+            <h3 class="blog-title">Design styling tips</h3>
+          </div>
+        </a>
+
+        <a href="/blog" class="blog-card">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/m_23f30f5b.jpg">
+            <img src="/assets/images/18_image_office_set_up_ideas__c08a256a.jpg" alt="Office setup ideas" class="blog-card-img">
+          </picture>
+          <div class="blog-card-body">
+            <span class="blog-tag">Office Design</span>
+            <h3 class="blog-title">Office setup ideas</h3>
+          </div>
+        </a>
+
+        <a href="/blog" class="blog-card">
+          <picture>
+            <source media="(max-width: 602px)" srcset="/assets/images/m_79746048.jpg">
+            <img src="/assets/images/20_image_31_188d18d0.jpg" alt="Home decor inspiration" class="blog-card-img">
+          </picture>
+          <div class="blog-card-body">
+            <span class="blog-tag">Living Space</span>
+            <h3 class="blog-title">Home decor inspiration</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. LET'S CONNECT (CTA BANNER) -->
+  <section class="cta-section" id="contact">
+    <!-- Frame 27 -->
+    <div class="cta-banner" style="background-image: url('/assets/images/cta_banner_bg.jpg');">
+      <div class="cta-overlay"></div>
+      <div class="cta-glow" aria-hidden="true"></div>
+      <!-- Frame 15 -->
+      <div class="cta-box">
+        <span class="cta-tag" id="ctaTag">Let's Connect</span>
+        <h2 class="cta-title" id="ctaTitle">Let’s Create Something Exceptional</h2>
+        <p class="cta-subtitle" id="ctaSubtitle">
+          Tell us about your space, your vision and the details that matter to you. From the first conversation to final installation, FURNIQOS brings every element together with precision and purpose.
+        </p>
+        <!-- Frame 47 -->
+        <div class="cta-buttons">
+          <button class="cta-btn-primary open-lead-modal">Book a Call</button>
+          <button class="cta-btn-link open-lead-modal">
+            <span>Get in Touch</span>
+            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 1L12 5L8 9M12 5H1" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. MAIN FOOTER (Frame 4) -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <!-- Watermark Brand Logo (image 50) -->
+      <div class="footer-top-watermark">
+        <picture>
+          <source media="(max-width: 602px)" srcset="/assets/images/m_footer_wordmark.png">
+          <img src="/assets/images/furniqos_wordmark_cream.png" alt="FURNIQOS" class="footer-watermark-img">
+        </picture>
+      </div>
+
+      <!-- Links & Contact 4-Column Grid (Frame 13) -->
+      <div class="footer-grid">
+        <!-- Col 1: QUICK LINKS (Frame 8) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: CATEGORY (Frame 9) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CATEGORY</h4>
+          <ul class="footer-links">
+            <li><a href="#solutions">Residential</a></li>
+            <li><a href="#solutions">Commercial</a></li>
+            <li><a href="#solutions">Hospitality</a></li>
+            <li><a href="#solutions">Custom Pieces</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: COMPANY (Frame 10) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: CONTACT (Frame 2147238897) -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">CONTACT</h4>
+          <div class="footer-contact-items">
+            <!-- Email -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 6L12 13L2 6"/>
+              </svg>
+              <a href="mailto:furniqos@gmail.com" class="footer-contact-link">furniqos@gmail.com</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <div class="footer-phones">
+                <a href="tel:+919811271461" class="footer-contact-link">+91 98112 71461</a>, 
+                <a href="tel:+919810028893" class="footer-contact-link">+91 98100 28893</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="footer-contact-row align-top">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span class="footer-contact-text">Unit No. LG-2, Agarwal Cyber Plaza 1 Netaji Subhash Place, Pitampura, Delhi 110034</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Line 1: Divider -->
+      <div class="footer-divider-line"></div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">&copy; 2026 Furniqos. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEAD CAPTURE MODAL -->
+  <div class="modal-overlay" id="leadModal" data-native-scroll>
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeModal">&times;</button>
+      <h3 class="modal-title">Book a Consultation</h3>
+      <p class="modal-subtitle">Share your requirements and our interior design concierge will reach out within 24 hours.</p>
+
+      <form id="leadCaptureForm">
+        <div class="form-group">
+          <label class="form-label" for="leadName">Your Name *</label>
+          <input type="text" id="leadName" class="form-input" placeholder="e.g. Yash Chauhan" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadEmail">Email Address *</label>
+          <input type="email" id="leadEmail" class="form-input" placeholder="e.g. yash@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadPhone">Phone Number</label>
+          <input type="tel" id="leadPhone" class="form-input" placeholder="+91 98765 43210">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadProjectType">Project Type</label>
+          <select id="leadProjectType" class="form-select">
+            <option value="Residential">Residential Villa / Apartment</option>
+            <option value="Commercial">Commercial Office / Co-working</option>
+            <option value="Wardrobes">Bespoke Wardrobes & Kitchens</option>
+            <option value="Styling">Furniture & Styling Sourcing</option>
+            <option value="Turnkey">Turnkey Complete Fit-out</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadMessage">Project Details / Message</label>
+          <textarea id="leadMessage" class="form-textarea" rows="3" placeholder="Tell us about the space area, timeline, and furniture preferences..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn" id="submitLeadBtn">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTICE -->
+  <div class="toast-notice" id="toastNotice">
+    <div id="toastMessage">Inquiry submitted successfully!</div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2474 @@
+[
+  {
+    "id": "353:1570",
+    "name": "Our process",
+    "characters": "Our process",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1571",
+    "name": "We follow a clear, refined workflow that turns your goals into actionable steps, giving you confidence, direction, and transparency throughout the entire project.",
+    "characters": "We follow a clear, refined workflow that turns your goals into actionable steps, giving you confidence, direction, and transparency throughout the entire project.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1574",
+    "name": "Project discovery",
+    "characters": "Project discovery",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "UPPER",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1575",
+    "name": "We learn exactly what you need, how you use your space, and what matters most. This step ensures the project starts with clarity and understanding from day one.",
+    "characters": "We learn exactly what you need, how you use your space, and what matters most. This step ensures the project starts with clarity and understanding from day one.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1578",
+    "name": "curation & sourcing",
+    "characters": "curation & sourcing",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "UPPER",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1579",
+    "name": "We create initial layouts and ideas to explore possibilities. This step lets you see the vision clearly and helps us find the best solution for your space.",
+    "characters": "We create initial layouts and ideas to explore possibilities. This step lets you see the vision clearly and helps us find the best solution for your space.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1582",
+    "name": "quality & logistics",
+    "characters": "quality & logistics",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "UPPER",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1583",
+    "name": "We refine the design, organise schedules, and prepare all the details. This ensures every part of the project is practical, realistic, and ready to move forward smoothly.",
+    "characters": "We refine the design, organise schedules, and prepare all the details. This ensures every part of the project is practical, realistic, and ready to move forward smoothly.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1586",
+    "name": "Installation",
+    "characters": "Installation",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1587",
+    "name": "We finalise design details, choose materials, and make sure everything works together. This step turns concepts into a clear, actionable plan for the build.",
+    "characters": "We finalise design details, choose materials, and make sure everything works together. This step turns concepts into a clear, actionable plan for the build.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1591",
+    "name": "Why Furniqos",
+    "characters": "Why Furniqos",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1592",
+    "name": "From premium furniture to complete interior solutions, every detail is carefully sourced and coordinated. One accountable partner, from design intent to final installation.",
+    "characters": "From premium furniture to complete interior solutions, every detail is carefully sourced and coordinated. One accountable partner, from design intent to final installation.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1594",
+    "name": "Know More",
+    "characters": "Know More",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 15,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 19.421052932739258,
+      "lineHeightPercent": 86.3157958984375,
+      "lineHeightPercentFontSize": 129.47369384765625,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "353:1600",
+    "name": "Testimonials",
+    "characters": "Testimonials",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1601",
+    "name": "What Our Clients  Say About Our Services",
+    "characters": "What Our Clients  Say About Our Services",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 54,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 65.82599639892578,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1602",
+    "name": "Our work is defined not only by design but by the trust and satisfaction of those we create for. Here’s what our clients share about their journey with us.",
+    "characters": "Our work is defined not only by design but by the trust and satisfaction of those we create for. Here’s what our clients share about their journey with us.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1604",
+    "name": "Get Started",
+    "characters": "Get Started",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 18,
+      "lineHeightPercent": 85.71428680419922,
+      "lineHeightPercentFontSize": 128.57142639160156,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "I353:1607;69:1466",
+    "name": "Commercial Project",
+    "characters": "Commercial Project",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1467",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1471",
+    "name": "Yash Chauhan",
+    "characters": "Yash Chauhan",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1472",
+    "name": "Kalkaji, New Delhi",
+    "characters": "Kalkaji, New Delhi",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1476",
+    "name": "Quick Setup",
+    "characters": "Quick Setup",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1477",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1481",
+    "name": "Preet Kaur",
+    "characters": "Preet Kaur",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1482",
+    "name": "Nodia, Uttar Pardesh",
+    "characters": "Nodia, Uttar Pardesh",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1486",
+    "name": "Luxury Villa",
+    "characters": "Luxury Villa",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1487",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1491",
+    "name": "Aman Raj",
+    "characters": "Aman Raj",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1492",
+    "name": "Faridabad, Haryana",
+    "characters": "Faridabad, Haryana",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1496",
+    "name": "Residential Project",
+    "characters": "Residential Project",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1497",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1501",
+    "name": "Ansh Gupta",
+    "characters": "Ansh Gupta",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1502",
+    "name": "Mohali, Punjab",
+    "characters": "Mohali, Punjab",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1506",
+    "name": "Commercial Project",
+    "characters": "Commercial Project",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1507",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1511",
+    "name": "Yash Chauhan",
+    "characters": "Yash Chauhan",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1512",
+    "name": "Kalkaji, New Delhi",
+    "characters": "Kalkaji, New Delhi",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1516",
+    "name": "Commercial Project",
+    "characters": "Commercial Project",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1517",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1521",
+    "name": "Yash Chauhan",
+    "characters": "Yash Chauhan",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1522",
+    "name": "Kalkaji, New Delhi",
+    "characters": "Kalkaji, New Delhi",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1526",
+    "name": "Quick Setup",
+    "characters": "Quick Setup",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1527",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1531",
+    "name": "Preet Kaur",
+    "characters": "Preet Kaur",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1532",
+    "name": "Nodia, Uttar Pardesh",
+    "characters": "Nodia, Uttar Pardesh",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1536",
+    "name": "Luxury Villa",
+    "characters": "Luxury Villa",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1537",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1541",
+    "name": "Aman Raj",
+    "characters": "Aman Raj",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1542",
+    "name": "Faridabad, Haryana",
+    "characters": "Faridabad, Haryana",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1546",
+    "name": "Residential Project",
+    "characters": "Residential Project",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1547",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1551",
+    "name": "Ansh Gupta",
+    "characters": "Ansh Gupta",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1552",
+    "name": "Mohali, Punjab",
+    "characters": "Mohali, Punjab",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1556",
+    "name": "Commercial Project",
+    "characters": "Commercial Project",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1557",
+    "name": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "characters": "“From concept to completion, our office space, aesthetics and functionality perfectly, creating an inspiring environment for our team.”",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1561",
+    "name": "Yash Chauhan",
+    "characters": "Yash Chauhan",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 27,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1607;69:1562",
+    "name": "Kalkaji, New Delhi",
+    "characters": "Kalkaji, New Delhi",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1611",
+    "name": "About us",
+    "characters": "About us",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1612",
+    "name": "Sourcing the Extraordinary",
+    "characters": "Sourcing the Extraordinary",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 66,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 80.4540023803711,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1615",
+    "name": "FURNIQOS brings together premium Italian furniture design, global sourcing and seamless execution for refined residential and commercial spaces.",
+    "characters": "FURNIQOS brings together premium Italian furniture design, global sourcing and seamless execution for refined residential and commercial spaces.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1616",
+    "name": "From furniture and upholstery to kitchens, wardrobes and curated artefacts, every element is carefully sourced and coordinated to create spaces that feel distinctive, considered and complete.",
+    "characters": "From furniture and upholstery to kitchens, wardrobes and curated artefacts, every element is carefully sourced and coordinated to create spaces that feel distinctive, considered and complete.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1618",
+    "name": "More About Us",
+    "characters": "More About Us",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 18,
+      "lineHeightPercent": 85.71428680419922,
+      "lineHeightPercentFontSize": 128.57142639160156,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "353:1626",
+    "name": "Our Blogs",
+    "characters": "Our Blogs",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 28,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 42,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1633",
+    "name": "Furniture Guides",
+    "characters": "Furniture Guides",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 12,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 18,
+      "lineHeightPercent": 100,
+      "lineHeightPercentFontSize": 150,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "353:1634",
+    "name": "Design styling tips",
+    "characters": "Design styling tips",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 28,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 34.13199996948242,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1640",
+    "name": "Office Design",
+    "characters": "Office Design",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 12,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 18,
+      "lineHeightPercent": 100,
+      "lineHeightPercentFontSize": 150,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "353:1641",
+    "name": "Office setup ideas",
+    "characters": "Office setup ideas",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 28,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 34.13199996948242,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1647",
+    "name": "Living Space",
+    "characters": "Living Space",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 12,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 18,
+      "lineHeightPercent": 100,
+      "lineHeightPercentFontSize": 150,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "353:1648",
+    "name": "Home decor inspiration",
+    "characters": "Home decor inspiration",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 28,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 34.13199996948242,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1654",
+    "name": "LET'S CONNECT",
+    "characters": "LET'S CONNECT",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 2.5,
+      "lineHeightPx": 15,
+      "lineHeightPercent": 71.42857360839844,
+      "lineHeightPercentFontSize": 107.14286041259766,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "353:1655",
+    "name": "Let’s Create Something Exceptional",
+    "characters": "Let’s Create Something Exceptional",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 58,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 70.70199584960938,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1656",
+    "name": "Whether it's a full renovation or a single room re",
+    "characters": "Tell us about your space, your vision and the details that matter to you. From the first conversation to final installation, FURNIQOS brings every element together with precision and purpose.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1659",
+    "name": "Book a Call",
+    "characters": "Book a Call",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 18,
+      "lineHeightPercent": 85.71428680419922,
+      "lineHeightPercentFontSize": 128.57142639160156,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "353:1661",
+    "name": "Get in Touch",
+    "characters": "Get in Touch",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 18,
+      "lineHeightPercent": 85.71428680419922,
+      "lineHeightPercentFontSize": 128.57142639160156,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "353:1664",
+    "name": "Complete Solutions for Every Space",
+    "characters": "Complete Solutions for Every Space",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 28,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1,
+      "lineHeightPx": 42,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1665",
+    "name": "Furniture, kitchens, wardrobes, lighting and décor, thoughtfully sourced for refined residential and commercial spaces.",
+    "characters": "Furniture, kitchens, wardrobes, lighting and décor, thoughtfully sourced for refined residential and commercial spaces.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1682",
+    "name": "4.9/5",
+    "characters": "4.9/5",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1683",
+    "name": "Build on 220+ Verified Experiences",
+    "characters": "Build on 220+ Verified Experiences",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1686",
+    "name": "Residential FURNITURE",
+    "characters": "Residential FURNITURE",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1689",
+    "name": "commercial FURNITURE",
+    "characters": "commercial FURNITURE",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1694",
+    "name": "Wardrobes",
+    "characters": "Wardrobes",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1700",
+    "name": "Artefacts & Décor",
+    "characters": "Artefacts & Décor",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textCase": "UPPER",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 20,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 30,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1711",
+    "name": "Menu",
+    "characters": "Menu",
+    "style": {
+      "fontFamily": "Inter",
+      "fontPostScriptName": "Inter-SemiBold",
+      "fontStyle": "Semi Bold",
+      "fontWeight": 600,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 22,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 26.625,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1714",
+    "name": "Contact us",
+    "characters": "Contact us",
+    "style": {
+      "fontFamily": "Inter",
+      "fontPostScriptName": "Inter-SemiBold",
+      "fontStyle": "Semi Bold",
+      "fontWeight": 600,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21.784090042114258,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1722",
+    "name": "LUXURY FURNITURE SOURCING • PREMIUM CHINA MANUFACTURERS",
+    "characters": "LUXURY FURNITURE SOURCING • PREMIUM CHINA MANUFACTURERS ",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1726",
+    "name": "QUICK LINKS",
+    "characters": "QUICK LINKS",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 15,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1.600000023841858,
+      "lineHeightPx": 22.5,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1728",
+    "name": "Home",
+    "characters": "Home",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1729",
+    "name": "About Us",
+    "characters": "About Us",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1730",
+    "name": "Projects",
+    "characters": "Projects",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1731",
+    "name": "Contact",
+    "characters": "Contact",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1733",
+    "name": "CATEGORY",
+    "characters": "CATEGORY",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 15,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1.600000023841858,
+      "lineHeightPx": 22.5,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1735",
+    "name": "Residential",
+    "characters": "Residential",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1736",
+    "name": "Commercial",
+    "characters": "Commercial",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1737",
+    "name": "Hospitality",
+    "characters": "Hospitality",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1738",
+    "name": "Custom Pieces",
+    "characters": "Custom Pieces",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1740",
+    "name": "COMPANY",
+    "characters": "COMPANY",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 15,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1.600000023841858,
+      "lineHeightPx": 22.5,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1742",
+    "name": "About Us",
+    "characters": "About Us",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1743",
+    "name": "Project",
+    "characters": "Project",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1744",
+    "name": "Contact",
+    "characters": "Contact",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1745",
+    "name": "Terms & Condition",
+    "characters": "Terms & Condition",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1746",
+    "name": "CONTACT",
+    "characters": "CONTACT",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 15,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 1.600000023841858,
+      "lineHeightPx": 22.5,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1748",
+    "name": "© 2026 Furniqos. All rights reserved.",
+    "characters": "© 2026 Furniqos. All rights reserved. ",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1752",
+    "name": "furniqos@gmail.com",
+    "characters": "furniqos@gmail.com",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1755",
+    "name": "+91 98112 71461 , +91 98100 28893",
+    "characters": "+91 98112 71461 , +91 98100 28893",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1758",
+    "name": "Unit No. LG-2, Agarwal Cyber Plaza 1 Netaji Subhash Place, Pitampura, Delhi 110034",
+    "characters": "Unit No. LG-2, Agarwal Cyber Plaza 1\nNetaji Subhash Place, Pitampura, Delhi 110034",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": null,
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 21,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1762",
+    "name": "Featured Projects",
+    "characters": "Featured Projects",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 48,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 58.512001037597656,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "353:1763",
+    "name": "Explore spaces defined by distinctive design and thoughtful execution.",
+    "characters": "Explore spaces defined by distinctive design and thoughtful execution.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:683",
+    "name": "01",
+    "characters": "01",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 86,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 129,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:687",
+    "name": "Interior Design",
+    "characters": "Interior Design",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 64,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 74,
+      "lineHeightPercent": 94.85234069824219,
+      "lineHeightPercentFontSize": 115.625,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "I353:1764;97:689",
+    "name": "Residential Spaces",
+    "characters": "Residential Spaces",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "TITLE",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 24,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 36,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:690",
+    "name": "Tailored interiors designed to reflect your lifestyle through thoughtful layouts, premium materials, and timeless aesthetics.",
+    "characters": "Tailored interiors designed to reflect your lifestyle through thoughtful layouts, premium materials, and timeless aesthetics.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:692",
+    "name": "02",
+    "characters": "02",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 86,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 129,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:696",
+    "name": "Space Planning",
+    "characters": "Space Planning",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 64,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 74,
+      "lineHeightPercent": 94.85234069824219,
+      "lineHeightPercentFontSize": 115.625,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "I353:1764;97:698",
+    "name": "Functional Layouts",
+    "characters": "Functional Layouts",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "TITLE",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 24,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 36,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:699",
+    "name": "Optimizing every square meter with smart planning, natural flow, and carefully considered spatial experiences.",
+    "characters": "Optimizing every square meter with smart planning, natural flow, and carefully considered spatial experiences.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:701",
+    "name": "03",
+    "characters": "03",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 86,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 129,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:705",
+    "name": "Furniture & Styling",
+    "characters": "Furniture & Styling",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 62,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 74,
+      "lineHeightPercent": 97.91209411621094,
+      "lineHeightPercentFontSize": 119.3548355102539,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "I353:1764;97:707",
+    "name": "Curated Interiors",
+    "characters": "Curated Interiors",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "TITLE",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 24,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 36,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:708",
+    "name": "Handpicked furniture, lighting, textures, and décor that bring warmth, balance, and character to every space.",
+    "characters": "Handpicked furniture, lighting, textures, and décor that bring warmth, balance, and character to every space.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:710",
+    "name": "04",
+    "characters": "04",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 86,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 129,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:714",
+    "name": "Renovation Design",
+    "characters": "Renovation Design",
+    "style": {
+      "fontFamily": "Montserrat",
+      "fontPostScriptName": "Montserrat-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 61,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 74,
+      "lineHeightPercent": 99.5172119140625,
+      "lineHeightPercentFontSize": 121.31147766113281,
+      "lineHeightUnit": "PIXELS"
+    }
+  },
+  {
+    "id": "I353:1764;97:716",
+    "name": "Modern Transformations",
+    "characters": "Modern Transformations",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-SemiBold",
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "textCase": "TITLE",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 24,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 36,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1764;97:717",
+    "name": "Reimagining existing spaces through contemporary design, quality craftsmanship, and lasting functionality.",
+    "characters": "Reimagining existing spaces through contemporary design, quality craftsmanship, and lasting functionality.",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 16,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 24,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1765;74:1948;74:1892",
+    "name": "Living Room",
+    "characters": "Living Room",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 32,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 48,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1765;74:1949;74:1900",
+    "name": "Bedroom",
+    "characters": "Bedroom",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 32,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 48,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1765;74:1950;74:1896",
+    "name": "Dining room",
+    "characters": "Dining room",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 32,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 48,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1765;74:1951;71:1795",
+    "name": "Office",
+    "characters": "Office",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 32,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 48,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  },
+  {
+    "id": "I353:1765;74:1952;74:1804",
+    "name": "Home Decor",
+    "characters": "Home Decor",
+    "style": {
+      "fontFamily": "Poppins",
+      "fontPostScriptName": "Poppins-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textCase": "UPPER",
+      "textAutoResize": "WIDTH_AND_HEIGHT",
+      "fontSize": 32,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0,
+      "lineHeightPx": 48,
+      "lineHeightPercent": 100,
+      "lineHeightUnit": "INTRINSIC_%"
+    }
+  }
+]

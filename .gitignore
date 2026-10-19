@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Secrets: SMTP password, Supabase keys, Figma token
+.env
+.env.*
+!.env.example
+
+# Customer leads (personal data) and CRM uploads
+data/leads.json
+public/assets/images/uploads/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log

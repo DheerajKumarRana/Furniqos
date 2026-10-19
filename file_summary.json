@@ -1,0 +1,503 @@
+{
+  "name": "Furniqos",
+  "lastModified": "2026-10-12T08:43:08Z",
+  "pages": [
+    {
+      "id": "0:1",
+      "name": "Ideation",
+      "frames": [
+        {
+          "id": "1:3",
+          "name": "image 1",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "6:2",
+          "name": "Hero Section",
+          "type": "SHAPE_WITH_TEXT"
+        },
+        {
+          "id": "6:3",
+          "name": "Category showcase",
+          "type": "SHAPE_WITH_TEXT"
+        },
+        {
+          "id": "6:4",
+          "name": "Featured Projects",
+          "type": "SHAPE_WITH_TEXT"
+        },
+        {
+          "id": "6:5",
+          "name": "Process Overview",
+          "type": "SHAPE_WITH_TEXT"
+        },
+        {
+          "id": "6:6",
+          "name": "Why Furniqos",
+          "type": "SHAPE_WITH_TEXT"
+        },
+        {
+          "id": "6:7",
+          "name": "CTA Banner",
+          "type": "SHAPE_WITH_TEXT"
+        },
+        {
+          "id": "6:8",
+          "name": "Footer",
+          "type": "SHAPE_WITH_TEXT"
+        },
+        {
+          "id": "6:9",
+          "name": "Trust Strip",
+          "type": "SHAPE_WITH_TEXT"
+        },
+        {
+          "id": "6:10",
+          "name": "Testimonials",
+          "type": "SHAPE_WITH_TEXT"
+        },
+        {
+          "id": "6:31",
+          "name": "image 2",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "6:34",
+          "name": "image 3",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "6:37",
+          "name": "image 4",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "6:40",
+          "name": "image 5",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "6:45",
+          "name": "Palatino",
+          "type": "TEXT"
+        },
+        {
+          "id": "6:46",
+          "name": "Poppins",
+          "type": "TEXT"
+        },
+        {
+          "id": "6:50",
+          "name": "image 7",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:61",
+          "name": "Animation of hero section https://movra.framer.website/",
+          "type": "TEXT"
+        },
+        {
+          "id": "8:74",
+          "name": "Animation of Featured Projects section https://xn--ora-cma.framer.website/",
+          "type": "TEXT"
+        },
+        {
+          "id": "8:144",
+          "name": "Animation of Featured Projects section https://xn--ora-cma.framer.website/",
+          "type": "TEXT"
+        },
+        {
+          "id": "12:158",
+          "name": "image 17",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:56",
+          "name": "image 8",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:59",
+          "name": "image 9",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:69",
+          "name": "image 10",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:72",
+          "name": "image 11",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:89",
+          "name": "Screenshot 2026-09-29 at 4.00.00 PM 1",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:109",
+          "name": "image 15",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:129",
+          "name": "Group 1",
+          "type": "GROUP"
+        },
+        {
+          "id": "8:139",
+          "name": "Screenshot 2026-09-29 at 4.11.27 PM 1",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:150",
+          "name": "image 16",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "12:161",
+          "name": "image 18",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "12:167",
+          "name": "Screenshot 2026-09-29 at 5.01.34 PM 1",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "12:169",
+          "name": "Screenshot 2026-09-29 at 5.01.34 PM 2",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "18:20",
+          "name": "Desktop - 1",
+          "type": "FRAME"
+        },
+        {
+          "id": "125:1448",
+          "name": "image 49",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "92:2485",
+          "name": "image 37",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "97:1914",
+          "name": "Desktop - 16",
+          "type": "FRAME"
+        },
+        {
+          "id": "160:961",
+          "name": "Desktop - 17",
+          "type": "FRAME"
+        },
+        {
+          "id": "21:503",
+          "name": "Section",
+          "type": "FRAME"
+        },
+        {
+          "id": "125:1453",
+          "name": "image 19",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "97:1246",
+          "name": "Desktop - 14",
+          "type": "FRAME"
+        },
+        {
+          "id": "46:859",
+          "name": "image 26",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "8:77",
+          "name": "image 12",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "25:66",
+          "name": "Frame 3",
+          "type": "FRAME"
+        },
+        {
+          "id": "28:101",
+          "name": "Frame 3",
+          "type": "FRAME"
+        },
+        {
+          "id": "6:43",
+          "name": "image 6",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "20:56",
+          "name": "BG : #CEC5BA",
+          "type": "TEXT"
+        },
+        {
+          "id": "20:60",
+          "name": "Primary Text : #383838",
+          "type": "TEXT"
+        },
+        {
+          "id": "20:61",
+          "name": "Heading Text : #422D1F",
+          "type": "TEXT"
+        },
+        {
+          "id": "19:55",
+          "name": "Frame 1",
+          "type": "FRAME"
+        },
+        {
+          "id": "41:796",
+          "name": "Frame 34",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "69:1665",
+          "name": "Carousel",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "74:1906",
+          "name": "Frame 35",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "74:1912",
+          "name": "Frame 41",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "74:1918",
+          "name": "Frame 40",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "74:1924",
+          "name": "Frame 36",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "74:1930",
+          "name": "Frame 37",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "74:1984",
+          "name": "Frame 80",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "74:2115",
+          "name": "Frame 84",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "96:396",
+          "name": "image 37",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "96:307",
+          "name": "image 34",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "97:722",
+          "name": "Frame 2147238853",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "102:2249",
+          "name": "iPhone 16 & 17 Pro - 1",
+          "type": "FRAME"
+        },
+        {
+          "id": "285:1057",
+          "name": "iPhone 16 & 17 Pro - 2",
+          "type": "FRAME"
+        },
+        {
+          "id": "137:1869",
+          "name": "Frame 2147238883",
+          "type": "FRAME"
+        },
+        {
+          "id": "137:1944",
+          "name": "image 50",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "137:1951",
+          "name": "Frame 2147238886",
+          "type": "FRAME"
+        },
+        {
+          "id": "135:1663",
+          "name": "image 58",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "163:1346",
+          "name": "Line 9",
+          "type": "LINE"
+        },
+        {
+          "id": "163:1347",
+          "name": "Different Hero Sections",
+          "type": "TEXT"
+        },
+        {
+          "id": "163:1348",
+          "name": "Different Font",
+          "type": "TEXT"
+        },
+        {
+          "id": "163:1349",
+          "name": "Different Project Section",
+          "type": "TEXT"
+        },
+        {
+          "id": "179:1614",
+          "name": "Home Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "215:2803",
+          "name": "About-us Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "202:1981",
+          "name": "image 68",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "200:1934",
+          "name": "Screenshot 2026-10-08 at 1.34.09 PM 1",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "202:1940",
+          "name": "Screenshot 2026-10-08 at 1.37.35 PM 1",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "246:1020",
+          "name": "About Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "267:1302",
+          "name": "Contact Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "300:1015",
+          "name": " Blog Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "249:1172",
+          "name": "image 253559",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "258:1200",
+          "name": "Screenshot 2026-10-09 at 12.09.08 PM 1",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "262:1245",
+          "name": "Frame 2147238953",
+          "type": "COMPONENT_SET"
+        },
+        {
+          "id": "281:1041",
+          "name": "Group 3",
+          "type": "GROUP"
+        },
+        {
+          "id": "300:1013",
+          "name": "image 253566",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "350:1123",
+          "name": "Frame 2147239044",
+          "type": "FRAME"
+        },
+        {
+          "id": "316:1465",
+          "name": " Blog Discription Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "321:1627",
+          "name": "Process Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "372:3008",
+          "name": "Frame 2147239045",
+          "type": "COMPONENT_SET"
+        }
+      ]
+    },
+    {
+      "id": "353:1278",
+      "name": "Final Designs",
+      "frames": [
+        {
+          "id": "353:1331",
+          "name": "iPhone 16 & 17 Pro - 1",
+          "type": "FRAME"
+        },
+        {
+          "id": "353:1563",
+          "name": "Home Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "353:1766",
+          "name": "About Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "353:1921",
+          "name": "Contact Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "353:2050",
+          "name": " Blog Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "353:2167",
+          "name": " Blog Discription Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "353:2297",
+          "name": "Process Page",
+          "type": "FRAME"
+        },
+        {
+          "id": "353:2849",
+          "name": "Animation of Featured Projects section https://xn--ora-cma.framer.website/",
+          "type": "TEXT"
+        }
+      ]
+    }
+  ]
+}

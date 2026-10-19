@@ -1,0 +1,470 @@
+[
+  {
+    "id": "353:1566",
+    "name": "image 53",
+    "path": "Home Page > Frame 2147238900 > Frame 49 > image 53",
+    "imageRef": "6495d00df22bc323c11fbffa4c0dce3cc9a233d5",
+    "bbox": {
+      "x": -3158,
+      "y": 3212,
+      "width": 635,
+      "height": 634
+    }
+  },
+  {
+    "id": "353:1589",
+    "name": "image 33",
+    "path": "Home Page > Frame 33 > image 33",
+    "imageRef": "023dff537088de141cbec2445f4694fb9ff84ec9",
+    "bbox": {
+      "x": -3212,
+      "y": 4017,
+      "width": 1440,
+      "height": 675
+    }
+  },
+  {
+    "id": "I353:1607;69:1469",
+    "name": "image 21",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 37 > Frame 32 > Frame 30 > image 21",
+    "imageRef": "e1372631ef4c1c6d28829168a274ff6372951dda",
+    "bbox": {
+      "x": -3182,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "I353:1607;69:1479",
+    "name": "image 23",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 36 > Frame 32 > Frame 30 > image 23",
+    "imageRef": "77cbbf6ba12af5b92c01ddd7074be2981fc10071",
+    "bbox": {
+      "x": -2861,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "I353:1607;69:1489",
+    "name": "image 22",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 35 > Frame 32 > Frame 30 > image 22",
+    "imageRef": "895e85a6075f41aeadd889969d1f7a2cfbae14d3",
+    "bbox": {
+      "x": -2540,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "I353:1607;69:1499",
+    "name": "image 21",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 34 > Frame 32 > Frame 30 > image 21",
+    "imageRef": "e1372631ef4c1c6d28829168a274ff6372951dda",
+    "bbox": {
+      "x": -2219,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "I353:1607;69:1509",
+    "name": "image 21",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 33 > Frame 32 > Frame 30 > image 21",
+    "imageRef": "e1372631ef4c1c6d28829168a274ff6372951dda",
+    "bbox": {
+      "x": -1898,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "I353:1607;69:1519",
+    "name": "image 21",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 37 > Frame 32 > Frame 30 > image 21",
+    "imageRef": "e1372631ef4c1c6d28829168a274ff6372951dda",
+    "bbox": {
+      "x": -1577,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "I353:1607;69:1529",
+    "name": "image 23",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 36 > Frame 32 > Frame 30 > image 23",
+    "imageRef": "77cbbf6ba12af5b92c01ddd7074be2981fc10071",
+    "bbox": {
+      "x": -1256,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "I353:1607;69:1539",
+    "name": "image 22",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 35 > Frame 32 > Frame 30 > image 22",
+    "imageRef": "895e85a6075f41aeadd889969d1f7a2cfbae14d3",
+    "bbox": {
+      "x": -935,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "I353:1607;69:1549",
+    "name": "image 21",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 34 > Frame 32 > Frame 30 > image 21",
+    "imageRef": "e1372631ef4c1c6d28829168a274ff6372951dda",
+    "bbox": {
+      "x": -614,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "I353:1607;69:1559",
+    "name": "image 21",
+    "path": "Home Page > Frame 61 > Preview > Carousel > Moving Strip > Frame 33 > Frame 32 > Frame 30 > image 21",
+    "imageRef": "e1372631ef4c1c6d28829168a274ff6372951dda",
+    "bbox": {
+      "x": -293,
+      "y": 5382.5,
+      "width": 46,
+      "height": 46
+    }
+  },
+  {
+    "id": "353:1622",
+    "name": "image 60",
+    "path": "Home Page > Frame 45 > Frame 25 > Frame 23 > image 60",
+    "imageRef": "da423b3bef1f1da9012e473ffc58ca38e97a2d8e",
+    "bbox": {
+      "x": -2491,
+      "y": 5868,
+      "width": 254,
+      "height": 318
+    }
+  },
+  {
+    "id": "353:1624",
+    "name": "image 62",
+    "path": "Home Page > Frame 45 > Frame 25 > Frame 24 > image 62",
+    "imageRef": "986cc69396ab6fbe5d0ba8d1620a2a27bcbff74e",
+    "bbox": {
+      "x": -2214,
+      "y": 5728,
+      "width": 385,
+      "height": 458
+    }
+  },
+  {
+    "id": "353:1624",
+    "name": "image 62",
+    "path": "Home Page > Frame 45 > Frame 25 > Frame 24 > image 62",
+    "imageRef": "a7e98c40a1854a8db2102c65b9e8df4d89fe29d9",
+    "bbox": {
+      "x": -2214,
+      "y": 5728,
+      "width": 385,
+      "height": 458
+    }
+  },
+  {
+    "id": "353:1629",
+    "name": "image 56",
+    "path": "Home Page > Frame 19 > Frame 18 > Image (House Sets up Offices) > image 56",
+    "imageRef": "931873907968165f27fa65ab004fdf9525f16968",
+    "bbox": {
+      "x": -3163,
+      "y": 6358,
+      "width": 435,
+      "height": 461
+    }
+  },
+  {
+    "id": "353:1629",
+    "name": "image 56",
+    "path": "Home Page > Frame 19 > Frame 18 > Image (House Sets up Offices) > image 56",
+    "imageRef": "119faaaaa6cb6ef130744d95274d0aabfe3a2052",
+    "bbox": {
+      "x": -3163,
+      "y": 6358,
+      "width": 435,
+      "height": 461
+    }
+  },
+  {
+    "id": "353:1635",
+    "name": "Image (Office set up ideas)",
+    "path": "Home Page > Frame 19 > Frame 18 > Image (Office set up ideas)",
+    "imageRef": "c08a256ab80dbd70d813fafb44c7fbdf390224c3",
+    "bbox": {
+      "x": -2704,
+      "y": 6358,
+      "width": 424,
+      "height": 461
+    }
+  },
+  {
+    "id": "353:1636",
+    "name": "image 56",
+    "path": "Home Page > Frame 19 > Frame 18 > Image (Office set up ideas) > image 56",
+    "imageRef": "a7e98c40a1854a8db2102c65b9e8df4d89fe29d9",
+    "bbox": {
+      "x": -2716,
+      "y": 6358,
+      "width": 448,
+      "height": 461
+    }
+  },
+  {
+    "id": "353:1643",
+    "name": "image 31",
+    "path": "Home Page > Frame 19 > Frame 18 > Image (Machine designing room) > image 31",
+    "imageRef": "188d18d066388e1e10946f6b490f9ad70c0da1ed",
+    "bbox": {
+      "x": -2250,
+      "y": 6359,
+      "width": 424,
+      "height": 460
+    }
+  },
+  {
+    "id": "353:1650",
+    "name": "Section",
+    "path": "Home Page > Frame 27 > Section",
+    "imageRef": "77ab73d2f32ade675bf7b6ea9cb7165bfdf7904b",
+    "bbox": {
+      "x": -3170,
+      "y": 6859,
+      "width": 1398,
+      "height": 600
+    }
+  },
+  {
+    "id": "353:1651",
+    "name": "image 32",
+    "path": "Home Page > Frame 27 > image 32",
+    "imageRef": "6005c8969f693a3076ff6c3ab753d0af204f8453",
+    "bbox": {
+      "x": -3191,
+      "y": 6809,
+      "width": 1398,
+      "height": 678
+    }
+  },
+  {
+    "id": "353:1667",
+    "name": "image 64",
+    "path": "Home Page > Section > image 64",
+    "imageRef": "0cccf502624f09e534db221d012b4d0ad494e7c4",
+    "bbox": {
+      "x": -3212,
+      "y": 437,
+      "width": 1440,
+      "height": 780
+    }
+  },
+  {
+    "id": "353:1667",
+    "name": "image 64",
+    "path": "Home Page > Section > image 64",
+    "imageRef": "d5a3c94fe77970134a4c01ee417eeffd43a6fe27",
+    "bbox": {
+      "x": -3212,
+      "y": 437,
+      "width": 1440,
+      "height": 780
+    }
+  },
+  {
+    "id": "353:1671",
+    "name": "image 22",
+    "path": "Home Page > Section > Frame 71 > Frame 70 > Frame 67 > image 22",
+    "imageRef": "895e85a6075f41aeadd889969d1f7a2cfbae14d3",
+    "bbox": {
+      "x": -3140,
+      "y": 795.1757202148438,
+      "width": 40.64852523803711,
+      "height": 40.64852523803711
+    }
+  },
+  {
+    "id": "353:1672",
+    "name": "image 21",
+    "path": "Home Page > Section > Frame 71 > Frame 70 > Frame 67 > image 21",
+    "imageRef": "e1372631ef4c1c6d28829168a274ff6372951dda",
+    "bbox": {
+      "x": -3108.188232421875,
+      "y": 795.1757202148438,
+      "width": 40.64852523803711,
+      "height": 40.64852523803711
+    }
+  },
+  {
+    "id": "353:1673",
+    "name": "image 23",
+    "path": "Home Page > Section > Frame 71 > Frame 70 > Frame 67 > image 23",
+    "imageRef": "77cbbf6ba12af5b92c01ddd7074be2981fc10071",
+    "bbox": {
+      "x": -3076.376220703125,
+      "y": 795.1757202148438,
+      "width": 40.64852523803711,
+      "height": 40.64852523803711
+    }
+  },
+  {
+    "id": "353:1719",
+    "name": "image 51",
+    "path": "Home Page > Section > Frame 2147238881 > image 51",
+    "imageRef": "0bcd6e9ad1b696ac3bedadbb2b62c62229e354b9",
+    "bbox": {
+      "x": -3158,
+      "y": 915.7264404296875,
+      "width": 148.9075927734375,
+      "height": 168.1097869873047
+    }
+  },
+  {
+    "id": "353:1720",
+    "name": "image 50",
+    "path": "Home Page > Section > Frame 2147238881 > image 50",
+    "imageRef": "0bcd6e9ad1b696ac3bedadbb2b62c62229e354b9",
+    "bbox": {
+      "x": -2944.341552734375,
+      "y": 901.0001831054688,
+      "width": 1118.718994140625,
+      "height": 197.56271362304688
+    }
+  },
+  {
+    "id": "353:1759",
+    "name": "image 50",
+    "path": "Home Page > Frame 4 > image 50",
+    "imageRef": "0bcd6e9ad1b696ac3bedadbb2b62c62229e354b9",
+    "bbox": {
+      "x": -3158,
+      "y": 7524,
+      "width": 1330,
+      "height": 235
+    }
+  },
+  {
+    "id": "I353:1764;179:2049",
+    "name": "image 27",
+    "path": "Home Page > Frame 2147238899 > Frame 2147238853 > 1 > Frame 2147238848 > image 27",
+    "imageRef": "188d18d066388e1e10946f6b490f9ad70c0da1ed",
+    "bbox": {
+      "x": -2904,
+      "y": 2193,
+      "width": 422,
+      "height": 280
+    }
+  },
+  {
+    "id": "I353:1764;97:694",
+    "name": "image 44",
+    "path": "Home Page > Frame 2147238899 > Frame 2147238853 > 2 > Frame 2147238848 > image 44",
+    "imageRef": "771aa98fc6d5fb1d7ed13eec46ad6d7860095b6b",
+    "bbox": {
+      "x": -2904,
+      "y": 2537,
+      "width": 422,
+      "height": 280
+    }
+  },
+  {
+    "id": "I353:1764;97:703",
+    "name": "image 27",
+    "path": "Home Page > Frame 2147238899 > Frame 2147238853 > 3 > Frame 2147238848 > image 27",
+    "imageRef": "247ec27552af5d07e35c7d7b9c44e7e21cf6d838",
+    "bbox": {
+      "x": -2904,
+      "y": 2881,
+      "width": 422,
+      "height": 280
+    }
+  },
+  {
+    "id": "I353:1764;97:712",
+    "name": "image 44",
+    "path": "Home Page > Frame 2147238899 > Frame 2147238853 > 4 > Frame 2147238848 > image 44",
+    "imageRef": "771aa98fc6d5fb1d7ed13eec46ad6d7860095b6b",
+    "bbox": {
+      "x": -2904,
+      "y": 3225,
+      "width": 422,
+      "height": 280
+    }
+  },
+  {
+    "id": "I353:1765;74:1948;179:2102",
+    "name": "image 38",
+    "path": "Home Page > Frame 80 > Frame 42 > image 38",
+    "imageRef": "f8331a4e3b0bc66c7bff5367685badf6ca0e942e",
+    "bbox": {
+      "x": -3252,
+      "y": 1355,
+      "width": 561,
+      "height": 578
+    }
+  },
+  {
+    "id": "I353:1765;74:1949;179:2101",
+    "name": "image 42",
+    "path": "Home Page > Frame 80 > Frame 43 > image 42",
+    "imageRef": "0924bc869ee77b74ae2fe7c8ed66eb533639898c",
+    "bbox": {
+      "x": -2734,
+      "y": 1352,
+      "width": 484,
+      "height": 583
+    }
+  },
+  {
+    "id": "I353:1765;74:1950;179:2103",
+    "name": "image 40",
+    "path": "Home Page > Frame 80 > Frame 44 > image 40",
+    "imageRef": "f537c095d5f03ac4f0e8f5f7448f00bd6ac4414e",
+    "bbox": {
+      "x": -2252,
+      "y": 1355,
+      "width": 480,
+      "height": 578
+    }
+  },
+  {
+    "id": "I353:1765;74:1951;71:1783",
+    "name": "image 39",
+    "path": "Home Page > Frame 80 > Frame 45 > image 39",
+    "imageRef": "d596c42e87faf314e7ceee634f27a68722d09f83",
+    "bbox": {
+      "x": -1772,
+      "y": 1355,
+      "width": 480,
+      "height": 578
+    }
+  },
+  {
+    "id": "I353:1765;74:1952;74:1808",
+    "name": "image 43",
+    "path": "Home Page > Frame 80 > Frame 46 > image 43",
+    "imageRef": "1451e23f903f7d3cd1660e7ea32ac0243b9f37d0",
+    "bbox": {
+      "x": -1292,
+      "y": 1355,
+      "width": 481,
+      "height": 578
+    }
+  }
+]

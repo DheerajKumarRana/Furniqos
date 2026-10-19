@@ -1,0 +1,291 @@
+/* ==========================================================================
+   BLOG PAGE (Figma " Blog Page" 1440 × 2965, mobile "iPhone 16 & 17 Pro - 3")
+   Shared pieces (ticker, header, drawer, footer, modal) come from style.css.
+   ========================================================================== */
+.page-blog {
+  background: #F8F9F4;
+  color: #383838;
+}
+
+.bl-container {
+  max-width: 1332px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: content-box;
+}
+
+/* ---- Hero (Frame 2147238990, 1440 × 756) ---- */
+.bl-hero {
+  position: relative;
+  height: 756px;
+  overflow: hidden;
+  background: #3A2A1E;
+}
+
+.bl-hero-bg,
+.bl-hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bl-hero-bg img {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.bl-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1332px;
+  margin: 0 auto;
+  padding: 333px 24px 0;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bl-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(56px, 6.7vw, 96px);
+  line-height: 1.22;
+  color: #F8F9F4;
+  margin: 0 0 0 -6px;
+}
+
+.bl-hero-subtitle {
+  max-width: 379px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.4px;
+  color: rgba(248, 249, 244, 0.75);
+  margin: 0;
+}
+
+/* ---- Posts grid (Frame 2147238993): 2 wide cards, then rows of 3 ---- */
+.bl-list {
+  padding: 55px 0 80px;
+}
+
+.bl-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.bl-card {
+  position: relative;
+  grid-column: span 2;
+  height: 461px;
+  border-radius: 7px;
+  overflow: hidden;
+  background: #2D2016;
+  cursor: pointer;
+}
+
+.bl-card-wide {
+  grid-column: span 3;
+}
+
+.bl-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(var(--zoom, 1));
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bl-card:hover .bl-card-img {
+  transform: scale(calc(var(--zoom, 1) * 1.05));
+}
+
+/* Rectangle 9 */
+.bl-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+}
+
+/* Frame 2147239057: date pill */
+.bl-date {
+  position: absolute;
+  top: 10px;
+  right: 11px;
+  z-index: 2;
+  padding: 4px 19px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #F8F9F4;
+}
+
+.bl-card-wide .bl-date {
+  top: 13px;
+  right: 15px;
+  padding: 5px 20px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* Frame 17 */
+.bl-card-body {
+  position: absolute;
+  left: 33px;
+  right: 33px;
+  bottom: 23px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.bl-card-wide .bl-card-body {
+  left: 29px;
+}
+
+/* Frame 16 */
+.bl-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.bl-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .bl-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .bl-card,
+  .bl-card-wide {
+    grid-column: span 1;
+    height: 420px;
+  }
+  .bl-card-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+/* ==========================================================================
+   Phone (Figma "iPhone 16 & 17 Pro - 3", 402 wide)
+   ========================================================================== */
+@media (max-width: 602px) {
+  .bl-container {
+    padding: 0 23px;
+  }
+
+  /* 402 × 568 hero, centred text */
+  .bl-hero {
+    height: 568px;
+  }
+  .bl-hero-bg img {
+    object-fit: cover; /* exported from Figma at the exact 402 × 568 crop */
+  }
+  /* Figma crops the first post's photo tighter on mobile */
+  .bl-card:first-child .bl-card-img {
+    --zoom: 1.59;
+    transform-origin: 49% 50%;
+  }
+  .bl-hero-content {
+    align-items: center;
+    padding: 119px 26px 0;
+    gap: 15px;
+    text-align: center;
+  }
+  .bl-hero-title {
+    font-size: 48px;
+    line-height: 58.5px;
+    margin: 0;
+  }
+  .bl-hero-subtitle {
+    max-width: 351px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .bl-list {
+    padding: 40px 0 40px;
+  }
+  .bl-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .bl-card,
+  .bl-card-wide {
+    grid-column: auto;
+    height: auto;
+    aspect-ratio: 357 / 388;
+    border-radius: 6px;
+  }
+  /* The mobile design shows the five most recent posts */
+  .bl-card:nth-child(n + 6) {
+    display: none;
+  }
+  .bl-date,
+  .bl-card-wide .bl-date {
+    top: 20px;
+    right: 20px;
+    padding: 3px 13px;
+    border-width: 0.84px;
+    font-size: 10px;
+    line-height: 12.3px;
+  }
+  .bl-card-body,
+  .bl-card-wide .bl-card-body {
+    left: 26px;
+    right: 26px;
+    bottom: 18px;
+    gap: 12.6px;
+  }
+  .bl-tag {
+    height: 22px;
+    padding: 0 14px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.84px;
+  }
+  .bl-card-title {
+    font-size: 24px;
+    line-height: 29.3px;
+  }
+}

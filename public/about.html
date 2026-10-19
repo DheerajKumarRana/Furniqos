@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | FURNIQOS</title>
+  <meta name="description" content="FURNIQOS works with homeowners, architects and interior designers to source furniture and interior solutions directly from manufacturers, managing procurement, quality checks, logistics and installation.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <!-- Supabase CDN (Ready for direct client queries if needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="page-about">
+
+  <!-- 1. TOP TICKER (Frame 2147238918) -->
+  <div class="top-ticker" id="topTicker">
+    <p class="ticker-text" id="dynamicTickerText">LUXURY FURNITURE SOURCING • PREMIUM CHINA MANUFACTURERS</p>
+  </div>
+
+  <!-- 2. MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      <!-- Left: Navigation Menu Trigger (Frame 2147238842) -->
+      <button class="menu-trigger" id="menuToggle" aria-label="Open Navigation Menu">
+        <div class="menu-lines">
+          <span></span>
+          <span></span>
+        </div>
+        <span class="menu-label">Menu</span>
+      </button>
+
+      <!-- Center spacer keeping left and right buttons balanced for traveling logo -->
+      <!-- Static brand logo (inner pages have no traveling hero logo) -->
+      <a href="/" class="header-static-logo" aria-label="FURNIQOS Home">
+        <img src="/assets/images/furniqos_logo_hero.png" alt="FURNIQOS">
+      </a>
+
+      <!-- Right: Contact Us Button (Frame 2147238905) -->
+      <button class="header-cta-btn open-lead-modal" id="headerContactBtn" aria-label="Contact Us">
+        <div class="header-cta-inner">
+          <span class="header-cta-text">Contact us</span>
+          <span class="plus-icon-circle" aria-hidden="true">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 0.5V8.5M0.5 4.5H8.5" stroke="#000000" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- SLIDE-OUT MENU DRAWER -->
+  <div class="menu-drawer" id="menuDrawer" data-native-scroll>
+    <button class="modal-close-btn" id="closeDrawer" aria-label="Close Menu">&times;</button>
+    <ul class="drawer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#solutions">Categories</a></li>
+      <li><a href="/#projects">Featured Projects</a></li>
+      <li><a href="/#process">Our Process</a></li>
+      <li><a href="/#why-furniqos">Why Furniqos</a></li>
+      <li><a href="/#testimonials">Testimonials</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/blog">Our Blogs</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/admin" style="font-size: 1.1rem; color: var(--gold-primary);">★ Admin CRM Portal</a></li>
+    </ul>
+  </div>
+
+  <!-- ABOUT HERO (Frame 2147238920, 1440 × 757) -->
+  <section class="ab-hero" id="about-hero" style="background-image: url('/assets/images/about_hero_ec0f53d1.jpg');">
+    <div class="ab-hero-overlay"></div>
+    <div class="ab-hero-content">
+      <h1 class="ab-hero-title">About Us</h1>
+      <p class="ab-hero-subtitle">Furniture chosen for real rooms, not just photos.</p>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO (Frame 2147238927) -->
+  <section class="ab-intro" id="what-we-do">
+    <div class="ab-container ab-split">
+      <div class="ab-heading-block">
+        <span class="ab-label">What we do</span>
+        <h2 class="ab-title-xl">Making every detail come together.</h2>
+      </div>
+      <div class="ab-body">
+        <p>FURNIQOS works with homeowners, architects and interior designers to source furniture and interior solutions directly from manufacturers in China. We manage the process beyond selection, including procurement, quality checks, logistics and installation.</p>
+        <p>Whether it’s a home, a villa or a commercial space, we bring the products and people together to help turn your plans into a finished space.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR STORY (Frame 2147238940) -->
+  <section class="ab-story" id="our-story">
+    <div class="ab-container ab-story-grid">
+      <div class="ab-collage">
+        <img src="/assets/images/about_story_main_f04c1341.jpg" alt="Living room with a cream curved sofa and abstract artwork" class="ab-collage-main">
+        <div class="ab-collage-detail">
+          <img src="/assets/images/about_story_detail_d82187c5.jpg" alt="Reading corner with a round mirror and lounge chair">
+        </div>
+      </div>
+      <div class="ab-story-text">
+        <div class="ab-heading-block ab-heading-block-lg">
+          <span class="ab-label">Our story</span>
+          <h2 class="ab-title-lg">Built around the way<br> great spaces come together.</h2>
+        </div>
+        <hr class="ab-rule">
+        <div class="ab-body">
+          <p>A beautiful interior is about more than what you see. It is also about finding the right products, getting the details right and making sure everything comes together as planned.</p>
+          <p>With over 27 years of architecture and interior project experience, we understand what it takes to move from an idea to a finished space. FURNIQOS brings sourcing, procurement and execution under one roof, making the process easier to manage from start to finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR POINT OF VIEW (Frame 2147238929) -->
+  <section class="ab-values" id="our-values">
+    <div class="ab-container">
+      <div class="ab-split ab-values-head">
+        <div class="ab-heading-block ab-heading-block-lg">
+          <span class="ab-label">Our point of view</span>
+          <h2 class="ab-title-xl">Designed around what matters.</h2>
+        </div>
+        <p class="ab-values-intro">Good design should look right, feel right and work for the people using the space. That is what guides the way we source and manage every project.</p>
+      </div>
+
+      <div class="ab-values-grid">
+        <div class="ab-value">
+          <span class="ab-value-num">01</span>
+          <div class="ab-value-body">
+            <h3 class="ab-value-title">Thoughtful<br>Design</h3>
+            <p>Every piece should work with the overall space, from its proportions and finish to the smallest details.</p>
+          </div>
+        </div>
+        <div class="ab-value">
+          <span class="ab-value-num">02</span>
+          <div class="ab-value-body">
+            <h3 class="ab-value-title">Quality that<br>Lasts</h3>
+            <p>We look beyond appearances to the materials, construction and finish that matter in everyday use.</p>
+          </div>
+        </div>
+        <div class="ab-value">
+          <span class="ab-value-num">03</span>
+          <div class="ab-value-body">
+            <h3 class="ab-value-title">The right<br>fit</h3>
+            <p>Every project is different. We source according to its design, requirements, specifications and budget.</p>
+          </div>
+        </div>
+        <div class="ab-value">
+          <span class="ab-value-num">04</span>
+          <div class="ab-value-body">
+            <h3 class="ab-value-title">Personal<br>Service</h3>
+            <p>Clear communication and one point of contact make it easier to keep things moving at every stage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION (Frame 2147238947) -->
+  <section class="ab-mission" id="mission">
+    <div class="ab-container ab-mission-grid">
+      <div class="ab-mission-card">
+        <div class="ab-heading-block ab-heading-block-lg">
+          <span class="ab-label">Our mission</span>
+          <h2 class="ab-title-lg">To Make Better Interiors Easier to Deliver.</h2>
+        </div>
+        <p class="ab-body-text">We bring sourcing, procurement, logistics and installation together, so clients can spend less time coordinating suppliers and more time focusing on the finished space.</p>
+      </div>
+      <div class="ab-mission-card">
+        <div class="ab-heading-block ab-heading-block-lg">
+          <span class="ab-label">Our vision</span>
+          <h2 class="ab-title-lg">To Change How People Source for Their Spaces.</h2>
+        </div>
+        <p class="ab-body-text">We want to make quality furniture and interior solutions more accessible through better sourcing, clearer processes and reliable execution.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGNED FOR IMPACT (Frame 2147238952) -->
+  <section class="ab-impact" id="impact">
+    <div class="ab-container">
+      <div class="ab-impact-head">
+        <h2 class="ab-impact-title">Designed for Impact</h2>
+        <p class="ab-impact-subtitle">The difference is often in the details. Here is what we pay attention to.</p>
+      </div>
+      <div class="ab-impact-grid">
+        <article class="ab-impact-card ab-impact-card-wide">
+          <img src="/assets/images/about_impact_chair_5ad4fb6a.jpg" alt="Tan leather lounge chair on a walnut base">
+          <div class="ab-impact-text">
+            <h3>Ergonomic<br>Precision</h3>
+            <p>Furniture that puts comfort and everyday use first.</p>
+          </div>
+        </article>
+        <article class="ab-impact-card ab-impact-card-narrow">
+          <img src="/assets/images/about_impact_years_5fd4d41b.jpg" alt="Upholstered dining chair with a walnut frame">
+          <div class="ab-impact-fade" aria-hidden="true"></div>
+          <div class="ab-impact-text">
+            <h3>27+ Years</h3>
+            <p>Of architecture and interior project experience.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LET'S CONNECT (Frame 27) — reuses the home page CTA banner styles -->
+  <section class="cta-section ab-cta" id="contact">
+    <div class="cta-banner" style="background-image: url('/assets/images/22_image_32_6005c896.jpg');">
+      <div class="cta-overlay"></div>
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="cta-box">
+        <span class="cta-tag">Let's Connect</span>
+        <h2 class="cta-title">Bring your ideas alive</h2>
+        <p class="cta-subtitle">From concept to completion, we craft interiors and environments that are functional, beautiful, and built around how you live and work. Let’s turn your vision into a space you’ll love.</p>
+        <div class="cta-buttons">
+          <button class="cta-btn-primary open-lead-modal">Book a Call</button>
+          <button class="cta-btn-link open-lead-modal">
+            <span>Get in Touch</span>
+            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 1L12 5L8 9M12 5H1" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <!-- Watermark Brand Logo (image 50) -->
+      <div class="footer-top-watermark">
+        <picture>
+          <source media="(max-width: 602px)" srcset="/assets/images/m_footer_wordmark.png">
+          <img src="/assets/images/furniqos_wordmark_cream.png" alt="FURNIQOS" class="footer-watermark-img">
+        </picture>
+      </div>
+
+      <!-- Links & Contact 4-Column Grid (Frame 13) -->
+      <div class="footer-grid">
+        <!-- Col 1: QUICK LINKS (Frame 8) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: CATEGORY (Frame 9) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CATEGORY</h4>
+          <ul class="footer-links">
+            <li><a href="/#solutions">Residential</a></li>
+            <li><a href="/#solutions">Commercial</a></li>
+            <li><a href="/#solutions">Hospitality</a></li>
+            <li><a href="/#solutions">Custom Pieces</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: COMPANY (Frame 10) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/#projects">Project</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: CONTACT (Frame 2147238897) -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">CONTACT</h4>
+          <div class="footer-contact-items">
+            <!-- Email -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 6L12 13L2 6"/>
+              </svg>
+              <a href="mailto:furniqos@gmail.com" class="footer-contact-link">furniqos@gmail.com</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <div class="footer-phones">
+                <a href="tel:+919811271461" class="footer-contact-link">+91 98112 71461</a>, 
+                <a href="tel:+919810028893" class="footer-contact-link">+91 98100 28893</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="footer-contact-row align-top">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span class="footer-contact-text">Unit No. LG-2, Agarwal Cyber Plaza 1 Netaji Subhash Place, Pitampura, Delhi 110034</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Line 1: Divider -->
+      <div class="footer-divider-line"></div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">&copy; 2026 Furniqos. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEAD CAPTURE MODAL -->
+  <div class="modal-overlay" id="leadModal" data-native-scroll>
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeModal">&times;</button>
+      <h3 class="modal-title">Book a Consultation</h3>
+      <p class="modal-subtitle">Share your requirements and our interior design concierge will reach out within 24 hours.</p>
+
+      <form id="leadCaptureForm">
+        <div class="form-group">
+          <label class="form-label" for="leadName">Your Name *</label>
+          <input type="text" id="leadName" class="form-input" placeholder="e.g. Yash Chauhan" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadEmail">Email Address *</label>
+          <input type="email" id="leadEmail" class="form-input" placeholder="e.g. yash@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadPhone">Phone Number</label>
+          <input type="tel" id="leadPhone" class="form-input" placeholder="+91 98765 43210">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadProjectType">Project Type</label>
+          <select id="leadProjectType" class="form-select">
+            <option value="Residential">Residential Villa / Apartment</option>
+            <option value="Commercial">Commercial Office / Co-working</option>
+            <option value="Wardrobes">Bespoke Wardrobes & Kitchens</option>
+            <option value="Styling">Furniture & Styling Sourcing</option>
+            <option value="Turnkey">Turnkey Complete Fit-out</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadMessage">Project Details / Message</label>
+          <textarea id="leadMessage" class="form-textarea" rows="3" placeholder="Tell us about the space area, timeline, and furniture preferences..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn" id="submitLeadBtn">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTICE -->
+  <div class="toast-notice" id="toastNotice">
+    <div id="toastMessage">Inquiry submitted successfully!</div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

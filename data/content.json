@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "tickerText": "LUXURY FURNITURE SOURCING • PREMIUM CHINA MANUFACTURERS",
+    "rating": "4.9/5",
+    "verifiedText": "Build on 220+ Verified Experiences",
+    "categories": [
+      {
+        "id": "residential",
+        "label": "Residential Furniture",
+        "active": true
+      },
+      {
+        "id": "commercial",
+        "label": "Commercial Furniture",
+        "active": false
+      },
+      {
+        "id": "wardrobes",
+        "label": "Wardrobes",
+        "active": false
+      },
+      {
+        "id": "artefacts",
+        "label": "Artefacts & Décor",
+        "active": false
+      }
+    ],
+    "desktopImage": "/assets/images/hero_full_background.jpg",
+    "mobileImage": "/assets/images/m_hero_mobile.jpg"
+  },
+  "solutions": {
+    "title": "Complete Solutions for Every Space",
+    "subtitle": "Furniture, kitchens, wardrobes, lighting and décor, thoughtfully sourced for refined residential and commercial spaces."
+  },
+  "showcase": [
+    {
+      "title": "Living Room",
+      "image": "/assets/images/35_image_38_f8331a4e.jpg",
+      "tag": "Refined Luxury"
+    },
+    {
+      "title": "Bedroom",
+      "image": "/assets/images/36_image_42_0924bc86.jpg",
+      "tag": "Private Sanctuaries"
+    },
+    {
+      "title": "Dining Room",
+      "image": "/assets/images/37_image_40_f537c095.jpg",
+      "tag": "Artisanal Elegance"
+    },
+    {
+      "title": "Office",
+      "image": "/assets/images/38_image_39_d596c42e.jpg",
+      "tag": "Executive Spaces"
+    },
+    {
+      "title": "Home Decor",
+      "image": "/assets/images/39_image_43_1451e23f.jpg",
+      "tag": "Curated Accents"
+    }
+  ],
+  "whyFurniqos": {
+    "title": "Why Furniqos",
+    "text": "From premium furniture to complete interior solutions, every detail is carefully sourced and coordinated. One accountable partner, from design intent to final installation.",
+    "bgImage": "/assets/images/why_furniqos_bg.jpg"
+  },
+  "about": {
+    "label": "About us",
+    "title": "Sourcing the Extraordinary",
+    "desc1": "FURNIQOS brings together premium Italian furniture design, global sourcing and seamless execution for refined residential and commercial spaces.",
+    "desc2": "From furniture and upholstery to kitchens, wardrobes and curated artefacts, every element is carefully sourced and coordinated to create spaces that feel distinctive, considered and complete.",
+    "image": "/assets/images/14_image_62_986cc693.jpg"
+  },
+  "cta": {
+    "tag": "LET'S CONNECT",
+    "title": "Let’s Create Something Exceptional",
+    "subtitle": "Tell us about your space, your vision and the details that matter to you. From the first conversation to final installation, FURNIQOS brings every element together with precision and purpose.",
+    "bgImage": "/assets/images/cta_banner_bg.jpg"
+  }
+}

@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FURNIQOS | Admin CRM & Lead Management</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body {
+      background-color: #0E0C0A;
+      color: #F8F5F0;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+    .admin-navbar {
+      background: #141210;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .admin-nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .admin-logo {
+      font-family: var(--font-logo);
+      font-size: 1.35rem;
+      letter-spacing: 3px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .crm-badge {
+      background: var(--gold-primary);
+      color: #0E0C0A;
+      font-size: 0.6875rem;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+    }
+    .admin-nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .admin-tab-btn {
+      padding: 8px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition-fast);
+      background: transparent;
+    }
+    .admin-tab-btn.active, .admin-tab-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #FFFFFF;
+    }
+    .view-site-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.875rem;
+      color: var(--gold-primary);
+      border: 1px solid rgba(197, 160, 112, 0.3);
+      padding: 6px 14px;
+      border-radius: 4px;
+    }
+    .view-site-btn:hover {
+      background: var(--gold-primary);
+      color: #0E0C0A;
+    }
+
+    /* Main CRM Container */
+    .admin-content {
+      padding-top: 40px;
+    }
+    .tab-section {
+      display: none;
+    }
+    .tab-section.active {
+      display: block;
+    }
+
+    /* Stats Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 35px;
+    }
+    .stat-card {
+      background: #181512;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 24px;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .stat-value {
+      font-family: var(--font-serif);
+      font-size: 2.25rem;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+
+    /* Filters Bar */
+    .crm-toolbar {
+      background: #181512;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .filters-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .crm-search-input {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+      padding: 10px 16px;
+      color: #FFFFFF;
+      font-size: 0.875rem;
+      min-width: 260px;
+    }
+    .crm-filter-select {
+      background: #181512;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+      padding: 10px 14px;
+      color: #FFFFFF;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+    .crm-actions {
+      display: flex;
+      gap: 12px;
+    }
+    .crm-btn {
+      padding: 10px 18px;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-export {
+      background: rgba(255, 255, 255, 0.08);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .btn-export:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    .btn-refresh {
+      background: var(--gold-primary);
+      color: #0E0C0A;
+      font-weight: 600;
+    }
+
+    /* Leads Table */
+    .table-container {
+      background: #181512;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      overflow-x: auto;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    }
+    .leads-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.875rem;
+    }
+    .leads-table th {
+      background: #201C18;
+      padding: 16px 20px;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .leads-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      vertical-align: middle;
+    }
+    .leads-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Status Pills */
+    .status-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .status-new { background: rgba(59, 130, 246, 0.2); color: #60A5FA; border: 1px solid rgba(59, 130, 246, 0.4); }
+    .status-contacted { background: rgba(245, 158, 11, 0.2); color: #FBBF24; border: 1px solid rgba(245, 158, 11, 0.4); }
+    .status-converted { background: rgba(16, 185, 129, 0.2); color: #34D399; border: 1px solid rgba(16, 185, 129, 0.4); }
+    .status-archived { background: rgba(156, 163, 175, 0.2); color: #9CA3AF; border: 1px solid rgba(156, 163, 175, 0.4); }
+
+    .status-dropdown {
+      background: #211D19;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #FFFFFF;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+
+    .delete-btn {
+      color: #EF4444;
+      background: none;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 4px;
+      transition: var(--transition-fast);
+    }
+    .delete-btn:hover {
+      color: #F87171;
+    }
+
+    /* CMS Section Form Styles */
+    .cms-card {
+      background: #181512;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      padding: 32px;
+      margin-bottom: 30px;
+    }
+    .cms-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .cms-card-subtitle {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .image-preview-box {
+      width: 100%;
+      height: 180px;
+      border-radius: 4px;
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      overflow: hidden;
+      margin-top: 10px;
+      margin-bottom: 12px;
+      background: #100E0C;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-preview-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ADMIN NAVBAR -->
+  <nav class="admin-navbar">
+    <div class="container admin-nav-container">
+      <div class="admin-logo">
+        <span>FURNIQOS</span>
+        <span class="crm-badge">ADMIN CRM</span>
+      </div>
+
+      <div class="admin-nav-links">
+        <button class="admin-tab-btn active" data-tab="leadsTab">📋 Leads & Inquiries</button>
+        <button class="admin-tab-btn" data-tab="cmsTab">🖼️ CMS & Content (Desktop/Mobile)</button>
+        <button class="admin-tab-btn" data-tab="settingsTab">⚡ Supabase & Email</button>
+        <a href="/" target="_blank" class="view-site-btn">View Website &rarr;</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container admin-content">
+
+    <!-- ==========================================
+         TAB 1: LEADS & INQUIRIES MANAGEMENT
+         ========================================== -->
+    <section class="tab-section active" id="leadsTab">
+      
+      <!-- Metrics Overview -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Total Leads Received</div>
+          <div class="stat-value" id="statTotalLeads">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">New / Pending</div>
+          <div class="stat-value" style="color:#60A5FA;" id="statNewLeads">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">In Discussion / Contacted</div>
+          <div class="stat-value" style="color:#FBBF24;" id="statContactedLeads">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Converted Projects</div>
+          <div class="stat-value" style="color:#34D399;" id="statConvertedLeads">0</div>
+        </div>
+      </div>
+
+      <!-- Filters & Toolbar -->
+      <div class="crm-toolbar">
+        <div class="filters-group">
+          <input type="text" id="leadSearchInput" class="crm-search-input" placeholder="Search by name, email, phone...">
+          
+          <select id="leadStatusFilter" class="crm-filter-select">
+            <option value="all">Status: All</option>
+            <option value="New">Status: New</option>
+            <option value="Contacted">Status: Contacted</option>
+            <option value="In Progress">Status: In Progress</option>
+            <option value="Converted">Status: Converted</option>
+            <option value="Archived">Status: Archived</option>
+          </select>
+
+          <select id="leadTypeFilter" class="crm-filter-select">
+            <option value="all">Project Type: All</option>
+            <option value="Residential">Residential</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Wardrobes">Wardrobes</option>
+            <option value="Styling">Styling</option>
+            <option value="Turnkey">Turnkey</option>
+          </select>
+        </div>
+
+        <div class="crm-actions">
+          <a href="/api/leads/export" class="crm-btn btn-export">📥 Export CSV</a>
+          <button id="refreshLeadsBtn" class="crm-btn btn-refresh">↻ Refresh</button>
+        </div>
+      </div>
+
+      <!-- Leads Table -->
+      <div class="table-container">
+        <table class="leads-table">
+          <thead>
+            <tr>
+              <th>Client Name</th>
+              <th>Contact Details</th>
+              <th>Project Type</th>
+              <th>Date & Time</th>
+              <th>Status</th>
+              <th>Message</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="leadsTableBody">
+            <tr>
+              <td colspan="7" style="text-align:center; padding: 40px; color: var(--text-muted);">
+                Loading inquiries from database...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TAB 2: CMS CONTENT & IMAGE MANAGEMENT
+         ========================================== -->
+    <section class="tab-section" id="cmsTab">
+      <div class="cms-card">
+        <h3 class="cms-card-title">Hero Section & Banners</h3>
+        <p class="cms-card-subtitle">Manage text headlines and upload separate images for Desktop and Mobile viewports.</p>
+
+        <div class="form-group">
+          <label class="form-label">Top Ticker Bar Text</label>
+          <input type="text" id="cmsTickerText" class="form-input">
+        </div>
+
+        <div class="image-grid">
+          <div>
+            <label class="form-label">Desktop Hero Banner (1440x780)</label>
+            <div class="image-preview-box">
+              <img id="previewDesktopHero" src="/assets/images/hero_full_background.jpg" alt="Desktop Banner">
+            </div>
+            <input type="file" id="uploadDesktopHero" accept="image/*" class="form-input">
+          </div>
+
+          <div>
+            <label class="form-label">Mobile Hero Banner (400x630)</label>
+            <div class="image-preview-box">
+              <img id="previewMobileHero" src="/assets/images/hero_full_background.jpg" alt="Mobile Banner">
+            </div>
+            <input type="file" id="uploadMobileHero" accept="image/*" class="form-input">
+          </div>
+        </div>
+
+        <div class="image-grid" style="margin-top: 20px;">
+          <div class="form-group">
+            <label class="form-label">Rating Display (e.g. 4.9/5)</label>
+            <input type="text" id="cmsRating" class="form-input">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Verified Experience Text</label>
+            <input type="text" id="cmsVerifiedText" class="form-input">
+          </div>
+        </div>
+      </div>
+
+      <!-- Solutions Section -->
+      <div class="cms-card">
+        <h3 class="cms-card-title">Solutions Section</h3>
+        <p class="cms-card-subtitle">Headline and narrative introducing categories.</p>
+
+        <div class="form-group">
+          <label class="form-label">Section Heading</label>
+          <input type="text" id="cmsSolutionsTitle" class="form-input">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Section Description</label>
+          <textarea id="cmsSolutionsSubtitle" class="form-textarea" rows="2"></textarea>
+        </div>
+      </div>
+
+      <!-- Why Furniqos Section -->
+      <div class="cms-card">
+        <h3 class="cms-card-title">Why Furniqos Section</h3>
+        <p class="cms-card-subtitle">Dark luxury showcase section with glowing sofa & fireplace backdrop.</p>
+
+        <div class="form-group">
+          <label class="form-label">Heading</label>
+          <input type="text" id="cmsWhyTitle" class="form-input">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Narrative</label>
+          <textarea id="cmsWhyText" class="form-textarea" rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- About Us Section -->
+      <div class="cms-card">
+        <h3 class="cms-card-title">About Us (Sourcing the Extraordinary)</h3>
+        <p class="cms-card-subtitle">Company vision and architectural imagery.</p>
+
+        <div class="form-group">
+          <label class="form-label">Heading</label>
+          <input type="text" id="cmsAboutTitle" class="form-input">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Paragraph 1</label>
+          <textarea id="cmsAboutDesc1" class="form-textarea" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Paragraph 2</label>
+          <textarea id="cmsAboutDesc2" class="form-textarea" rows="2"></textarea>
+        </div>
+      </div>
+
+      <div style="text-align: right; margin-top: 20px;">
+        <button id="saveCmsBtn" class="form-submit-btn" style="width: auto; padding: 14px 40px;">
+          💾 Save & Publish Changes
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TAB 3: SUPABASE & EMAIL SETTINGS
+         ========================================== -->
+    <section class="tab-section" id="settingsTab">
+      <div class="cms-card">
+        <h3 class="cms-card-title">Supabase Database Integration</h3>
+        <p class="cms-card-subtitle">Connect your Supabase project to sync leads into PostgreSQL and enable real-time tracking.</p>
+
+        <div class="form-group">
+          <label class="form-label">Supabase Project URL</label>
+          <input type="text" id="cfgSupabaseUrl" class="form-input" placeholder="https://xyzcompany.supabase.co">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Supabase Anon Public Key</label>
+          <input type="password" id="cfgSupabaseKey" class="form-input" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...">
+        </div>
+
+        <div style="background: rgba(197, 160, 112, 0.1); border: 1px solid rgba(197, 160, 112, 0.3); padding: 16px; border-radius: 4px; font-size: 0.875rem; color: #E8E2D9; margin-top: 15px;">
+          💡 <strong>Supabase SQL Table Helper</strong>: If you just created a new Supabase project, execute this SQL in Supabase SQL Editor:
+          <pre style="background:#110F0D; padding: 12px; border-radius: 4px; margin-top: 8px; overflow-x: auto; color:#BAAFA4;">
+CREATE TABLE IF NOT EXISTS leads (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  phone TEXT,
+  project_type TEXT,
+  message TEXT,
+  status TEXT DEFAULT 'New',
+  source TEXT,
+  created_at TIMESTAMPTZ DEFAULT now()
+);</pre>
+        </div>
+      </div>
+
+      <div class="cms-card">
+        <h3 class="cms-card-title">Email Notifications (SMTP / Gmail / Resend)</h3>
+        <p class="cms-card-subtitle">Configure where new lead notification emails are dispatched.</p>
+
+        <div class="form-group">
+          <label class="form-label">Notification Recipient Email</label>
+          <input type="email" id="cfgAdminEmail" class="form-input" value="admin@furniqos.com">
+        </div>
+
+        <p style="font-size:0.8125rem; color: var(--text-muted);">
+          Note: You can configure <code>SMTP_HOST</code>, <code>SMTP_USER</code>, and <code>SMTP_PASS</code> directly in your <code>.env</code> file for instant email dispatch.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- TOAST -->
+  <div class="toast-notice" id="adminToast">
+    <div id="adminToastMsg">Success!</div>
+  </div>
+
+  <script>
+    // Tab Switching
+    const tabBtns = document.querySelectorAll('.admin-tab-btn');
+    const tabSections = document.querySelectorAll('.tab-section');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabSections.forEach(s => s.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetId = btn.getAttribute('data-tab');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+
+    // Toast Utility
+    function showToast(msg, isError = false) {
+      const t = document.getElementById('adminToast');
+      const m = document.getElementById('adminToastMsg');
+      m.textContent = msg;
+      t.style.borderLeftColor = isError ? '#EF4444' : 'var(--gold-primary)';
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3500);
+    }
+
+    // ----------------------------------------
+    // LEADS MANAGEMENT
+    // ----------------------------------------
+    let allLeads = [];
+
+    async function loadLeads() {
+      const search = document.getElementById('leadSearchInput').value;
+      const status = document.getElementById('leadStatusFilter').value;
+      const type = document.getElementById('leadTypeFilter').value;
+
+      const params = new URLSearchParams();
+      if (search) params.append('search', search);
+      if (status !== 'all') params.append('status', status);
+      if (type !== 'all') params.append('project_type', type);
+
+      try {
+        const res = await fetch('/api/leads?' + params.toString());
+        const data = await res.json();
+        if (data.success) {
+          allLeads = data.leads;
+          renderLeadsTable(allLeads);
+          updateMetrics(allLeads);
+        }
+      } catch (e) {
+        console.error(e);
+        showToast('Failed to load leads', true);
+      }
+    }
+
+    function updateMetrics(leads) {
+      document.getElementById('statTotalLeads').textContent = leads.length;
+      document.getElementById('statNewLeads').textContent = leads.filter(l => l.status === 'New').length;
+      document.getElementById('statContactedLeads').textContent = leads.filter(l => l.status === 'Contacted').length;
+      document.getElementById('statConvertedLeads').textContent = leads.filter(l => l.status === 'Converted').length;
+    }
+
+    function renderLeadsTable(leads) {
+      const tbody = document.getElementById('leadsTableBody');
+      if (leads.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; padding:40px; color:var(--text-muted);">No inquiries found matching current filters.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = leads.map(l => {
+        const dateStr = new Date(l.created_at).toLocaleDateString('en-US', {
+          month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit'
+        });
+
+        const statusClass = 'status-' + (l.status || 'new').toLowerCase().replace(' ', '-');
+
+        return `
+          <tr>
+            <td>
+              <strong style="color:#FFF;">${escapeHtml(l.name)}</strong>
+              <div style="font-size:0.75rem; color:var(--text-muted);">${escapeHtml(l.source || 'Website')}</div>
+            </td>
+            <td>
+              <div><a href="mailto:${escapeHtml(l.email)}" style="color:#DFC094;">${escapeHtml(l.email)}</a></div>
+              <div style="color:var(--text-muted); font-size:0.8125rem;">${escapeHtml(l.phone || '—')}</div>
+            </td>
+            <td>
+              <span style="background:rgba(255,255,255,0.06); padding:4px 8px; border-radius:4px;">
+                ${escapeHtml(l.project_type)}
+              </span>
+            </td>
+            <td style="color:var(--text-muted); font-size:0.8125rem;">${dateStr}</td>
+            <td>
+              <select class="status-dropdown" onchange="updateLeadStatus('${l.id}', this.value)">
+                <option value="New" ${l.status === 'New' ? 'selected' : ''}>New</option>
+                <option value="Contacted" ${l.status === 'Contacted' ? 'selected' : ''}>Contacted</option>
+                <option value="In Progress" ${l.status === 'In Progress' ? 'selected' : ''}>In Progress</option>
+                <option value="Converted" ${l.status === 'Converted' ? 'selected' : ''}>Converted</option>
+                <option value="Archived" ${l.status === 'Archived' ? 'selected' : ''}>Archived</option>
+              </select>
+            </td>
+            <td style="max-width:240px; color:var(--text-muted); font-size:0.8125rem;">
+              ${escapeHtml(l.message || '—')}
+            </td>
+            <td>
+              <button class="delete-btn" onclick="deleteLead('${l.id}')" title="Delete Inquiry">&times;</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    async function updateLeadStatus(id, newStatus) {
+      try {
+        const res = await fetch(`/api/leads/${id}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ status: newStatus })
+        });
+        if (res.ok) {
+          showToast(`Status updated to ${newStatus}`);
+          loadLeads();
+        }
+      } catch (e) {
+        showToast('Error updating status', true);
+      }
+    }
+
+    async function deleteLead(id) {
+      if (!confirm('Are you sure you want to delete this lead?')) return;
+      try {
+        const res = await fetch(`/api/leads/${id}`, { method: 'DELETE' });
+        if (res.ok) {
+          showToast('Lead deleted.');
+          loadLeads();
+        }
+      } catch (e) {
+        showToast('Delete failed', true);
+      }
+    }
+
+    document.getElementById('leadSearchInput').addEventListener('input', debounce(loadLeads, 300));
+    document.getElementById('leadStatusFilter').addEventListener('change', loadLeads);
+    document.getElementById('leadTypeFilter').addEventListener('change', loadLeads);
+    document.getElementById('refreshLeadsBtn').addEventListener('click', loadLeads);
+
+    function debounce(func, wait) {
+      let timeout;
+      return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+      };
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str).replace(/[&<>"']/g, function(m) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
+      });
+    }
+
+    // ----------------------------------------
+    // CMS CONTENT & IMAGE MANAGEMENT
+    // ----------------------------------------
+    let siteContent = {};
+
+    async function loadContent() {
+      try {
+        const res = await fetch('/api/content');
+        const data = await res.json();
+        if (data.success && data.content) {
+          siteContent = data.content;
+          populateCmsForm(siteContent);
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    function populateCmsForm(c) {
+      if (c.hero?.tickerText) document.getElementById('cmsTickerText').value = c.hero.tickerText;
+      if (c.hero?.rating) document.getElementById('cmsRating').value = c.hero.rating;
+      if (c.hero?.verifiedText) document.getElementById('cmsVerifiedText').value = c.hero.verifiedText;
+      if (c.hero?.desktopImage) document.getElementById('previewDesktopHero').src = c.hero.desktopImage;
+      if (c.hero?.mobileImage) document.getElementById('previewMobileHero').src = c.hero.mobileImage;
+
+      if (c.solutions?.title) document.getElementById('cmsSolutionsTitle').value = c.solutions.title;
+      if (c.solutions?.subtitle) document.getElementById('cmsSolutionsSubtitle').value = c.solutions.subtitle;
+
+      if (c.whyFurniqos?.title) document.getElementById('cmsWhyTitle').value = c.whyFurniqos.title;
+      if (c.whyFurniqos?.text) document.getElementById('cmsWhyText').value = c.whyFurniqos.text;
+
+      if (c.about?.title) document.getElementById('cmsAboutTitle').value = c.about.title;
+      if (c.about?.desc1) document.getElementById('cmsAboutDesc1').value = c.about.desc1;
+      if (c.about?.desc2) document.getElementById('cmsAboutDesc2').value = c.about.desc2;
+    }
+
+    // Image Upload Handlers
+    async function handleImageUpload(inputEl, previewEl, keyPath) {
+      const file = inputEl.files[0];
+      if (!file) return;
+
+      const formData = new FormData();
+      formData.append('image', file);
+
+      try {
+        showToast('Uploading image...');
+        const res = await fetch('/api/upload', { method: 'POST', body: formData });
+        const data = await res.json();
+        if (data.success && data.url) {
+          previewEl.src = data.url;
+          if (keyPath === 'hero.desktop') {
+            if (!siteContent.hero) siteContent.hero = {};
+            siteContent.hero.desktopImage = data.url;
+          } else if (keyPath === 'hero.mobile') {
+            if (!siteContent.hero) siteContent.hero = {};
+            siteContent.hero.mobileImage = data.url;
+          }
+          showToast('Image uploaded successfully!');
+        }
+      } catch (e) {
+        showToast('Image upload failed', true);
+      }
+    }
+
+    document.getElementById('uploadDesktopHero').addEventListener('change', (e) => {
+      handleImageUpload(e.target, document.getElementById('previewDesktopHero'), 'hero.desktop');
+    });
+
+    document.getElementById('uploadMobileHero').addEventListener('change', (e) => {
+      handleImageUpload(e.target, document.getElementById('previewMobileHero'), 'hero.mobile');
+    });
+
+    // Save CMS Form
+    document.getElementById('saveCmsBtn').addEventListener('click', async () => {
+      const updated = {
+        hero: {
+          ...siteContent.hero,
+          tickerText: document.getElementById('cmsTickerText').value,
+          rating: document.getElementById('cmsRating').value,
+          verifiedText: document.getElementById('cmsVerifiedText').value
+        },
+        solutions: {
+          title: document.getElementById('cmsSolutionsTitle').value,
+          subtitle: document.getElementById('cmsSolutionsSubtitle').value
+        },
+        whyFurniqos: {
+          ...siteContent.whyFurniqos,
+          title: document.getElementById('cmsWhyTitle').value,
+          text: document.getElementById('cmsWhyText').value
+        },
+        about: {
+          ...siteContent.about,
+          title: document.getElementById('cmsAboutTitle').value,
+          desc1: document.getElementById('cmsAboutDesc1').value,
+          desc2: document.getElementById('cmsAboutDesc2').value
+        }
+      };
+
+      try {
+        const res = await fetch('/api/content', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(updated)
+        });
+        const data = await res.json();
+        if (data.success) {
+          siteContent = data.content;
+          showToast('Published! Website updated live.');
+        }
+      } catch (e) {
+        showToast('Error saving content', true);
+      }
+    });
+
+    // Initial load
+    loadLeads();
+    loadContent();
+  </script>
+</body>
+</html>
