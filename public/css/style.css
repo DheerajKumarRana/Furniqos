@@ -215,12 +215,8 @@ button, input, select, textarea {
   max-height: clamp(140px, 23vh, 185px);
   display: block;
   object-fit: contain;
+  /* One constant shadow: it shrinks with the logo, so nothing re-renders mid-animation */
   filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.75));
-  transition: filter 0.3s ease;
-}
-
-.traveling-brand-logo.docked .traveling-logo-img {
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.45));
 }
 
 /* Menu Trigger (Frame 2147238842 - Left) */

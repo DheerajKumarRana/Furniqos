@@ -1,232 +1,12 @@
 // public/js/app.js - Frontend Interactivity & API Connection
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 0. Section-by-section smooth scrolling (desktop and touch).
-  //    One wheel flick / swipe / arrow / PageDown = one glide to the next stop. Stops are each section's
-  //    top, each card in the Featured Projects stack, and viewport-sized steps inside sections
-  //    taller than the screen. The glide is a critically damped spring: it eases in from rest,
-  //    never overshoots, and if the user keeps scrolling it re-targets the next stop mid-glide
-  //    while keeping its velocity, so even fast scrolling slides through sections without a
-  //    stop-start jolt. Horizontal swipes on carousels stay native.
+  // Scrolling is native. Clicking a menu/anchor link uses the browser's own smooth scroll.
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const SNAP_NAV_H = 62;          // fixed header height once scrolled
-  const GESTURE_GAP_MS = 200;     // a pause longer than this starts a new wheel gesture
-  const CHAIN_MS = 650;           // while scrolling continuously, take another step this often
-  const SPRING_OMEGA = 6.2;       // spring stiffness: higher = faster glides (≈0.8s per step)
-  const MAX_STEPS_AHEAD = 2;      // how far fast scrolling may queue beyond the current position
-
-  const snapEnabled = () => !prefersReducedMotion;
-  const currentScroll = () => window.pageYOffset || document.documentElement.scrollTop;
-  const maxScroll = () => document.documentElement.scrollHeight - window.innerHeight;
-  const docTop = (el) => el.getBoundingClientRect().top + currentScroll();
-
-  function getSnapStops() {
-    const vh = window.innerHeight;
-    const stops = [0];
-
-    document.querySelectorAll('body > section, body > footer').forEach((section) => {
-      const top = Math.round(docTop(section));
-
-      // Featured Projects: one stop per card arriving on the stack
-      if (section.id === 'projects' && projectRows.length && projectRowH) {
-        let flowTop = docTop(projectsList);
-        projectRows.forEach((row) => {
-          stops.push(Math.round(flowTop - projectsStackTop));
-          flowTop += row.offsetHeight;
-        });
-        return;
-      }
-
-      stops.push(top);
-      // Sections taller than the screen: step through them a screen at a time
-      const bottom = top + section.offsetHeight;
-      let y = top;
-      while (y + vh < bottom - 40) {
-        y = Math.min(y + (vh - SNAP_NAV_H - 40), bottom - vh);
-        stops.push(Math.round(y));
-      }
-    });
-
-    const max = maxScroll();
-    stops.push(max);
-    return [...new Set(stops.map((y) => Math.max(0, Math.min(max, y))))].sort((a, b) => a - b);
-  }
-
-  // ---- Spring animator -------------------------------------------------------------------
-  const spring = { active: false, pos: 0, vel: 0, target: 0, lastTime: 0, lastSetY: 0, raf: null };
-
-  function springFrame(now) {
-    // User dragged the scrollbar / used find-in-page mid-glide: hand control back to them
-    if (Math.abs(currentScroll() - spring.lastSetY) > 3) {
-      stopSpring();
-      return;
-    }
-
-    const dt = Math.min(0.05, (now - spring.lastTime) / 1000 || 0.016);
-    spring.lastTime = now;
-
-    // Critically damped spring, integrated in small sub-steps for stability at any frame rate
-    const k = SPRING_OMEGA * SPRING_OMEGA;
-    const c = 2 * SPRING_OMEGA;
-    const subSteps = Math.ceil(dt / 0.004);
-    const h = dt / subSteps;
-    for (let i = 0; i < subSteps; i++) {
-      const accel = k * (spring.target - spring.pos) - c * spring.vel;
-      spring.vel += accel * h;
-      spring.pos += spring.vel * h;
-    }
-
-    const settled = Math.abs(spring.target - spring.pos) < 0.5 && Math.abs(spring.vel) < 8;
-    if (settled) spring.pos = spring.target;
-
-    window.scrollTo(0, spring.pos); // html has scroll-behavior: auto, so this is an instant jump
-    spring.lastSetY = currentScroll();
-
-    if (settled) {
-      stopSpring();
-    } else {
-      spring.raf = requestAnimationFrame(springFrame);
-    }
-  }
-
-  function stopSpring() {
-    if (spring.raf) cancelAnimationFrame(spring.raf);
-    spring.raf = null;
-    spring.active = false;
-    spring.vel = 0;
-  }
-
-  function animateScrollTo(targetY) {
-    const endY = Math.max(0, Math.min(maxScroll(), Math.round(targetY)));
-    if (!spring.active) {
-      spring.pos = currentScroll();
-      spring.vel = 0;
-      spring.lastSetY = spring.pos;
-      spring.lastTime = performance.now();
-      spring.active = true;
-      spring.raf = requestAnimationFrame(springFrame);
-    }
-    // Re-targeting keeps the current velocity, so a mid-glide change of target stays fluid
-    spring.target = endY;
-  }
-
-  // ---- Stepping between stops ------------------------------------------------------------
-  function snapStep(direction) {
-    const stops = getSnapStops();
-    const here = currentScroll();
-    // Continue from where the glide is heading if we're still moving the same way
-    const base = spring.active && Math.sign(spring.target - here) === direction ? spring.target : here;
-
-    const next = direction > 0
-      ? stops.find((s) => s > base + 4)
-      : [...stops].reverse().find((s) => s < base - 4);
-    if (next === undefined) return;
-
-    // Don't let a very fast scroll queue up the whole page
-    const stepsAhead = stops.filter((s) => (direction > 0 ? s > here + 4 && s <= next : s < here - 4 && s >= next)).length;
-    if (stepsAhead > MAX_STEPS_AHEAD) return;
-
-    animateScrollTo(next);
-  }
-
-  const isModalOpen = () => document.getElementById('leadModal')?.classList.contains('active');
-
-  // ---- Wheel / trackpad -------------------------------------------------------------------
-  // One step per gesture. A gesture is a burst of wheel events; trackpad momentum is part of
-  // the same gesture. Holding a continuous scroll keeps chaining steps every CHAIN_MS.
-  const wheel = { lastTime: 0, lastAbs: 0, lastDir: 0, lastStepTime: 0, peakAbs: 0 };
-
-  window.addEventListener('wheel', (e) => {
-    if (!snapEnabled() || e.ctrlKey) return;                     // ctrl+wheel = browser zoom
-    if (e.target.closest && e.target.closest('[data-native-scroll]')) return;
-    if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;         // horizontal sliders
-    e.preventDefault();
-    if (isModalOpen() || e.deltaY === 0) return;
-
-    const now = performance.now();
-    const abs = Math.abs(e.deltaY);
-    const dir = e.deltaY > 0 ? 1 : -1;
-
-    const pause = now - wheel.lastTime > GESTURE_GAP_MS;
-    const reversed = dir !== wheel.lastDir;
-    // A fresh flick on a trackpad shows up as a sudden jump in delta during the momentum tail
-    const accelerated = abs > wheel.lastAbs * 1.6 && abs > 15 && now - wheel.lastStepTime > 250;
-    // Sustained scrolling keeps moving through sections. A trackpad's momentum tail fades far
-    // below the flick's peak speed, so it never counts; a held mouse-wheel spin stays near it.
-    wheel.peakAbs = Math.max(wheel.peakAbs, abs);
-    const sustained = now - wheel.lastStepTime > CHAIN_MS && abs >= 40 && abs >= wheel.peakAbs * 0.8;
-
-    wheel.lastTime = now;
-    wheel.lastAbs = abs;
-    wheel.lastDir = dir;
-
-    if (pause || reversed || accelerated || sustained) {
-      wheel.lastStepTime = now;
-      wheel.peakAbs = abs;
-      snapStep(dir);
-    }
-  }, { passive: false });
-
-  // ---- Touch (phones & tablets) ----------------------------------------------------------
-  // A vertical swipe = one smooth step, exactly like a wheel flick on desktop. Horizontal
-  // swipes are left alone so the showcase / testimonial / blog carousels still swipe natively.
-  const SWIPE_MIN_PX = 30;
-  const touch = { startX: 0, startY: 0, axis: null, active: false };
-
-  window.addEventListener('touchstart', (e) => {
-    touch.active = false;
-    if (!snapEnabled() || e.touches.length !== 1 || isModalOpen()) return;
-    if (e.target.closest && e.target.closest('[data-native-scroll]')) return;
-    touch.startX = e.touches[0].clientX;
-    touch.startY = e.touches[0].clientY;
-    touch.axis = null;
-    touch.active = true;
-  }, { passive: true });
-
-  window.addEventListener('touchmove', (e) => {
-    if (!touch.active) return;
-    if (e.touches.length !== 1) { touch.active = false; return; } // pinch-zoom: hands off
-    const dx = e.touches[0].clientX - touch.startX;
-    const dy = e.touches[0].clientY - touch.startY;
-    if (!touch.axis && Math.abs(dx) + Math.abs(dy) > 6) {
-      touch.axis = Math.abs(dy) > Math.abs(dx) ? 'y' : 'x';
-    }
-    // Vertical drags are ours: stop the browser from scrolling natively
-    if (touch.axis === 'y' && e.cancelable) e.preventDefault();
-  }, { passive: false });
-
-  window.addEventListener('touchend', (e) => {
-    if (!touch.active || touch.axis !== 'y') return;
-    touch.active = false;
-    const dy = e.changedTouches[0].clientY - touch.startY;
-    if (Math.abs(dy) < SWIPE_MIN_PX) return;
-    snapStep(dy < 0 ? 1 : -1); // finger moves up = scroll down
-  }, { passive: true });
-
-  // ---- Keyboard ---------------------------------------------------------------------------
-  window.addEventListener('keydown', (e) => {
-    if (!snapEnabled() || isModalOpen()) return;
-    const active = document.activeElement;
-    const tag = (active?.tagName || '').toLowerCase();
-    if (['input', 'textarea', 'select', 'button'].includes(tag) || active?.isContentEditable) return;
-
-    const down = ['ArrowDown', 'PageDown'].includes(e.key) || (e.key === ' ' && !e.shiftKey);
-    const up = ['ArrowUp', 'PageUp'].includes(e.key) || (e.key === ' ' && e.shiftKey);
-    if (!down && !up && e.key !== 'Home' && e.key !== 'End') return;
-    e.preventDefault();
-    if (e.key === 'Home') animateScrollTo(0);
-    else if (e.key === 'End') animateScrollTo(maxScroll());
-    else snapStep(down ? 1 : -1);
-  });
-
-  // Smoothly scroll to a target (element or Y position)
   function smoothScrollTo(target) {
-    const y = typeof target === 'number' ? target : docTop(target);
-    if (prefersReducedMotion) {
-      window.scrollTo(0, y);
-    } else {
-      animateScrollTo(y);
-    }
+    const behavior = prefersReducedMotion ? 'auto' : 'smooth';
+    if (typeof target === 'number') window.scrollTo({ top: target, behavior });
+    else target.scrollIntoView({ behavior, block: 'start' });
   }
 
   // In-page anchor links (#projects, #contact, …) glide instead of jumping
@@ -247,9 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroSlot = document.getElementById('heroLogoSlot');
 
   let metrics = null;
-  let targetProgress = 0;
-  let currentProgress = 0;
-  let isLoopActive = false;
 
   function recalculateMetrics() {
     if (!travelingLogo || !heroSlot || !header) return;
@@ -308,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     metrics = {
       startY,
       targetY,
+      dockY: measureDockY(),
       targetScale,
       dockX,
       scrollEnd,
@@ -317,67 +95,59 @@ document.addEventListener('DOMContentLoaded', () => {
     travelingLogo.style.width = `${heroWidth}px`;
   }
 
-  // Smooth sinusoidal ease-in-out curve
+  // Smooth ease-in-out curve
   function easeInOutSin(t) {
     return 0.5 - 0.5 * Math.cos(Math.PI * t);
   }
 
-  function renderAtProgress(progress) {
+  // Scrolled-header centre, measured once per resize (not every frame): it is the dock target
+  function measureDockY() {
+    const wasScrolled = header.classList.contains('scrolled');
+    const prevTransition = header.style.transition;
+    header.style.transition = 'none';
+    header.classList.add('scrolled');
+    const h = header.offsetHeight;
+    if (!wasScrolled) header.classList.remove('scrolled');
+    void header.offsetHeight; // apply the restore before re-enabling transitions
+    header.style.transition = prevTransition;
+    const logoTop = parseFloat(getComputedStyle(travelingLogo).top) || 0;
+    return h / 2 - logoTop;
+  }
+
+  let headerIsScrolled = null;
+  let isDocked = null;
+
+  // Everything (position, scale, sideways shift) comes from one scroll value, so the logo
+  // moves in lockstep with the page and never drifts or wobbles.
+  function renderAtScroll(scrollY) {
     if (!travelingLogo || !metrics) return;
+    const { startY, dockY, targetScale, dockX, scrollEnd } = metrics;
 
-    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
-    const { startY, targetY, targetScale, dockX } = metrics;
-
-    // Update header glass backdrop
-    if (scrollY > 30) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+    const scrolled = scrollY > 30;
+    if (scrolled !== headerIsScrolled) {
+      headerIsScrolled = scrolled;
+      header.classList.toggle('scrolled', scrolled);
     }
 
-    // Apply smooth curve
+    const progress = Math.min(1, Math.max(0, scrollY / scrollEnd));
     const eased = easeInOutSin(progress);
 
-    // Dock target = centre of the header as it is right now (its height differs between
-    // desktop, tablet and phone once scrolled), minus the logo's CSS `top` offset.
-    const dockY = header.classList.contains('scrolled')
-      ? header.offsetHeight / 2 - (parseFloat(getComputedStyle(travelingLogo).top) || 0)
-      : targetY;
-
-    // Natural position moves up with scroll; eased lifts it into the header
-    const naturalY = startY - scrollY;
+    const naturalY = startY - scrollY;              // where the logo sits in the hero right now
     const currentY = naturalY + (dockY - naturalY) * eased;
-    const currentScale = 1.0 + (targetScale - 1.0) * eased;
-
-    // GPU-accelerated transform: keeps X at 50vw center, centers Y at currentY, scales around center
+    const currentScale = 1 + (targetScale - 1) * eased;
     const currentX = dockX * eased;
-    travelingLogo.style.transform = `translate3d(-50%, ${currentY}px, 0) translate(${currentX}px, -50%) scale(${currentScale})`;
+    travelingLogo.style.transform =
+      `translate3d(calc(-50% + ${currentX.toFixed(2)}px), calc(${currentY.toFixed(2)}px - 50%), 0) scale(${currentScale.toFixed(4)})`;
 
-    if (progress > 0.88) {
-      travelingLogo.classList.add('docked');
-    } else {
-      travelingLogo.classList.remove('docked');
+    const docked = progress >= 1;
+    if (docked !== isDocked) {
+      isDocked = docked;
+      travelingLogo.classList.toggle('docked', docked);
     }
   }
 
-  function startPhysicsLoop() {
-    function loop() {
-      const diff = targetProgress - currentProgress;
-      if (Math.abs(diff) > 0.0003) {
-        currentProgress += diff * 0.18; // smooth damping
-        renderAtProgress(currentProgress);
-      } else if (currentProgress !== targetProgress) {
-        currentProgress = targetProgress;
-        renderAtProgress(currentProgress);
-      }
-      requestAnimationFrame(loop);
-    }
-    if (!isLoopActive) {
-      isLoopActive = true;
-      requestAnimationFrame(loop);
-    }
-  }
-
+  // Render at most once per animation frame
+  let renderQueued = false;
   function onScrollUpdate() {
     if (!metrics) recalculateMetrics();
     if (!metrics) {
@@ -385,15 +155,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (header) header.classList.toggle('scrolled', (window.pageYOffset || document.documentElement.scrollTop) > 30);
       return;
     }
-    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
-    const { scrollEnd } = metrics;
-
-    targetProgress = Math.min(1, Math.max(0, scrollY / scrollEnd));
-
-    // Instant render if user is at top
-    if (scrollY === 0 && currentProgress === 0) {
-      renderAtProgress(0);
-    }
+    if (renderQueued) return;
+    renderQueued = true;
+    requestAnimationFrame(() => {
+      renderQueued = false;
+      renderAtScroll(window.pageYOffset || document.documentElement.scrollTop);
+    });
   }
 
   window.addEventListener('scroll', onScrollUpdate, { passive: true });
@@ -412,10 +179,9 @@ document.addEventListener('DOMContentLoaded', () => {
     onScrollUpdate();
   });
 
-  // Initial setup & start physics RAF loop
+  // Initial setup
   recalculateMetrics();
   onScrollUpdate();
-  startPhysicsLoop();
 
   // Clicking logo while scrolled glides smoothly back to top
   if (travelingLogo) {
