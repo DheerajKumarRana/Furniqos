@@ -180,6 +180,10 @@ app.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'contact.html'));
 });
 
+app.get('/process', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'process.html'));
+});
+
 app.get('/blog', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'blog.html'));
 });

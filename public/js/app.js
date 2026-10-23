@@ -379,6 +379,85 @@ document.addEventListener('DOMContentLoaded', () => {
     updateShowcaseProgress();
   }
 
+  // 5c. Process page scroll animations
+  //   - steps: a dark line fills the centre line, dots light up as it reaches them
+  //   - delivery timeline: the section pins, the line fills and each point reveals in turn
+  const prSteps = document.querySelector('.pr-steps');
+  const prTimeline = document.querySelector('.pr-timeline');
+  if (prSteps && prTimeline && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const page = document.body;
+    const stepItems = [...prSteps.querySelectorAll('.pr-step')];
+    const timeList = prTimeline.querySelector('.pr-time-list');
+    const timeItems = [...prTimeline.querySelectorAll('.pr-time-item')];
+    const pin = prTimeline.querySelector('.pr-timeline-pin');
+    page.classList.add('pr-anim');
+
+    let lineTop = 0, lineLen = 0, itemFractions = [], pinnable = false;
+
+    function measureProcess() {
+      const line = getComputedStyle(prSteps, '::before');
+      lineTop = parseFloat(line.top) || 0;
+      lineLen = parseFloat(line.height) || prSteps.offsetHeight;
+
+      // Pin only when the whole timeline fits on screen
+      prTimeline.classList.remove('is-pinned');
+      pinnable = pin.offsetHeight + 60 < window.innerHeight;
+      prTimeline.classList.toggle('is-pinned', pinnable);
+      prTimeline.style.setProperty('--pr-runway', `${window.innerHeight + Math.max(900, window.innerHeight * 1.4)}px`);
+
+      // Where each dot sits along the timeline line (0..1), so it reveals as the fill reaches it
+      const vertical = window.innerWidth <= 602;
+      timeList.style.setProperty('--pr-tfill', 1);
+      const lr = timeList.getBoundingClientRect();
+      itemFractions = timeItems.map((item) => {
+        const d = item.querySelector('.pr-dot').getBoundingClientRect();
+        return vertical
+          ? (d.top + d.height / 2 - lr.top - 11) / Math.max(1, lr.height - 61)
+          : (d.left + d.width / 2 - lr.left) / Math.max(1, lr.width);
+      });
+    }
+
+    function renderProcess() {
+      const vh = window.innerHeight;
+      const anchor = vh * 0.55;
+
+      // Steps line
+      const r = prSteps.getBoundingClientRect();
+      const fill = Math.max(0, Math.min(lineLen, anchor - (r.top + lineTop)));
+      prSteps.style.setProperty('--pr-fill', `${fill.toFixed(1)}px`);
+      stepItems.forEach((step) => {
+        const d = step.querySelector('.pr-dot').getBoundingClientRect();
+        step.classList.toggle('is-active', d.top + d.height / 2 <= anchor);
+      });
+
+      // Delivery timeline
+      let p;
+      if (pinnable) {
+        const t = prTimeline.getBoundingClientRect();
+        const travel = Math.max(1, prTimeline.offsetHeight - vh);
+        p = (-t.top) / travel;                          // 0 when pinned, 1 when released
+        p = Math.max(0, Math.min(1, (p - 0.05) / 0.8)); // short pause before and after
+      } else {
+        const lr = timeList.getBoundingClientRect();
+        p = Math.max(0, Math.min(1, (vh * 0.85 - lr.top) / (vh * 0.6)));
+      }
+      timeList.style.setProperty('--pr-tfill', p.toFixed(4));
+      timeItems.forEach((item, i) => item.classList.toggle('is-revealed', p >= itemFractions[i] - 0.01));
+    }
+
+    let prQueued = false;
+    const requestProcess = () => {
+      if (prQueued) return;
+      prQueued = true;
+      requestAnimationFrame(() => { prQueued = false; renderProcess(); });
+    };
+    const remeasure = () => { measureProcess(); renderProcess(); };
+    window.addEventListener('scroll', requestProcess, { passive: true });
+    window.addEventListener('resize', remeasure, { passive: true });
+    window.addEventListener('load', remeasure);
+    remeasure();
+  }
+
   // 5b. Testimonials moving strip: repeat the card set until it is wider than the screen,
   //     then render it twice so the CSS marquee (translateX -50%) loops without a seam.
   const testimonialsStrip = document.getElementById('testimonialsStrip');

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Process | FURNIQOS</title>
+  <meta name="description" content="How FURNIQOS works: furniture sourced directly from factories in China, inspected at both ends, imported with full compliance and delivered to your door.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/process.css">
+  <!-- Supabase CDN (Ready for direct client queries if needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="page-process">
+
+  <!-- 1. TOP TICKER (Frame 2147238918) -->
+  <div class="top-ticker" id="topTicker">
+    <p class="ticker-text" id="dynamicTickerText">LUXURY FURNITURE SOURCING • PREMIUM CHINA MANUFACTURERS</p>
+  </div>
+
+  <!-- 2. MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      <!-- Left: Navigation Menu Trigger (Frame 2147238842) -->
+      <button class="menu-trigger" id="menuToggle" aria-label="Open Navigation Menu">
+        <div class="menu-lines">
+          <span></span>
+          <span></span>
+        </div>
+        <span class="menu-label">Menu</span>
+      </button>
+
+      <!-- Center spacer keeping left and right buttons balanced for traveling logo -->
+      <!-- Static brand logo (inner pages have no traveling hero logo) -->
+      <a href="/" class="header-static-logo" aria-label="FURNIQOS Home">
+        <img src="/assets/images/furniqos_logo_hero.png" alt="FURNIQOS">
+      </a>
+
+      <!-- Right: Contact Us Button (Frame 2147238905) -->
+      <button class="header-cta-btn open-lead-modal" id="headerContactBtn" aria-label="Contact Us">
+        <div class="header-cta-inner">
+          <span class="header-cta-text">Contact us</span>
+          <span class="plus-icon-circle" aria-hidden="true">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 0.5V8.5M0.5 4.5H8.5" stroke="#000000" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- SLIDE-OUT MENU DRAWER -->
+  <div class="menu-drawer" id="menuDrawer">
+    <button class="modal-close-btn" id="closeDrawer" aria-label="Close Menu">&times;</button>
+    <ul class="drawer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#solutions">Categories</a></li>
+      <li><a href="/#projects">Featured Projects</a></li>
+      <li><a href="/process">Our Process</a></li>
+      <li><a href="/#why-furniqos">Why Furniqos</a></li>
+      <li><a href="/#testimonials">Testimonials</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/blog">Our Blogs</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/admin" style="font-size: 1.1rem; color: var(--gold-primary);">★ Admin CRM Portal</a></li>
+    </ul>
+  </div>
+
+  <!-- PROCESS HERO -->
+  <section class="pr-hero" id="process-hero">
+    <picture class="pr-hero-bg">
+      <source media="(max-width: 602px)" srcset="/assets/images/process_hero_mobile.jpg">
+      <img src="/assets/images/process_hero.jpg" alt="" aria-hidden="true">
+    </picture>
+    <div class="pr-container pr-hero-content">
+      <span class="pr-hero-label">Our Process</span>
+      <h1 class="pr-hero-title">Sourced directly.<br>Checked twice.<br>Priced honestly.</h1>
+      <div class="pr-hero-intro">
+        <p>FURNIQOS furniture is made by factories in China and imported by us directly. There is no distributor or multi-layer retail chain between the maker and you – that is where the saving comes from, not from lowering the standard of the piece.</p>
+        <ul class="pr-chips">
+          <li>We buy from the factory</li>
+          <li>We inspect at both ends</li>
+          <li>We show you the cost</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FROM SOURCE TO YOUR SPACE -->
+  <section class="pr-steps-section" id="steps">
+    <div class="pr-container">
+      <div class="pr-intro">
+        <span class="pr-label">From source to your space</span>
+        <h2 class="pr-title">A clear path, at every step.</h2>
+        <p class="pr-sub">Five stages connect the first selection to delivery and support.</p>
+      </div>
+      <ol class="pr-steps">
+        <li class="pr-step is-left">
+          <div class="pr-step-text">
+            <span class="pr-num">01</span>
+            <h3 class="pr-step-title">Sourcing</h3>
+            <p class="pr-step-desc">We shortlist manufacturers for each category – sofas, dining, beds, storage – based on their production capability, material options and past export work. We order against a confirmed specification: dimensions, wood or board type, upholstery, finish.</p>
+          </div>
+          <span class="pr-dot" aria-hidden="true"></span>
+          <div class="pr-step-media"><img src="/assets/images/process_step1.jpg" alt="Inspector checking a walnut dining table in a furniture factory" loading="lazy"></div>
+        </li>
+        <li class="pr-step is-right">
+          <div class="pr-step-text">
+            <span class="pr-num">02</span>
+            <h3 class="pr-step-title">Quality check in China</h3>
+            <p class="pr-step-desc">Before the goods leave the factory, they are inspected against the agreed specification – dimensions, joinery, finish, upholstery stitching, hardware. Anything that does not match is corrected at the factory, before freight is paid for.</p>
+          </div>
+          <span class="pr-dot" aria-hidden="true"></span>
+          <div class="pr-step-media"><img src="/assets/images/process_step2.jpg" alt="Two inspectors measuring a wooden chair at the factory" loading="lazy"></div>
+        </li>
+        <li class="pr-step is-left">
+          <div class="pr-step-text">
+            <span class="pr-num">03</span>
+            <h3 class="pr-step-title">Import compliance</h3>
+            <p class="pr-step-desc">FURNIQOS handles customs documentation, applicable duties and GST. Wooden packaging used for export has to meet international treatment standards (ISPM 15) so that the shipment clears without delay.</p>
+          </div>
+          <span class="pr-dot" aria-hidden="true"></span>
+          <div class="pr-step-media"><img src="/assets/images/process_step3.jpg" alt="Customs officer checking wrapped furniture at a port" loading="lazy"></div>
+        </li>
+        <li class="pr-step is-right">
+          <div class="pr-step-text">
+            <span class="pr-num">04</span>
+            <h3 class="pr-step-title">Re-check on arrival</h3>
+            <p class="pr-step-desc">Sea freight is rough on furniture. Once the container reaches India, we unpack and inspect each piece again for transit damage, moisture and finish defects. Damaged pieces are not delivered to you.</p>
+          </div>
+          <span class="pr-dot" aria-hidden="true"></span>
+          <div class="pr-step-media"><img src="/assets/images/process_step4.jpg" alt="Team unpacking and inspecting a chair after arrival" loading="lazy"></div>
+        </li>
+        <li class="pr-step is-left">
+          <div class="pr-step-text">
+            <span class="pr-num">05</span>
+            <h3 class="pr-step-title">Dispatch</h3>
+            <p class="pr-step-desc">Cleared pieces are packed for domestic transit and sent to your address. We confirm the delivery slot with you before the vehicle leaves.</p>
+          </div>
+          <span class="pr-dot" aria-hidden="true"></span>
+          <div class="pr-step-media"><img src="/assets/images/process_step5.jpg" alt="Delivery team loading a wrapped sofa into a truck" loading="lazy"></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PRICING, EXPLAINED -->
+  <section class="pr-pricing" id="pricing">
+    <div class="pr-container pr-pricing-grid">
+      <div class="pr-pricing-head">
+        <span class="pr-label">Pricing, explained</span>
+        <h2 class="pr-title">Why it costs less – and what we don't cut</h2>
+        <p class="pr-pricing-text">A piece bought through a conventional retail chain typically passes through several sellers, each adding a margin. FURNIQOS removes the middle layers. The cost of making, shipping and clearing the piece stays; the stacked margins do not.</p>
+      </div>
+      <ol class="pr-price-list">
+          <li class="pr-price-row">
+            <span class="pr-num">01</span>
+            <div>
+              <h3 class="pr-price-title">Manufacturing</h3>
+              <p class="pr-price-desc">Paid directly to the factory. Material and finishing standards are set in the specification, not reduced.</p>
+            </div>
+          </li>
+          <li class="pr-price-row">
+            <span class="pr-num">02</span>
+            <div>
+              <h3 class="pr-price-title">Intermediary margins</h3>
+              <p class="pr-price-desc">Reduced. No distributor or multi-layer retail markup between factory and customer.</p>
+            </div>
+          </li>
+          <li class="pr-price-row">
+            <span class="pr-num">03</span>
+            <div>
+              <h3 class="pr-price-title">Freight and customs</h3>
+              <p class="pr-price-desc">Included. Sea freight, customs duties and GST are part of the price you see.</p>
+            </div>
+          </li>
+          <li class="pr-price-row">
+            <span class="pr-num">04</span>
+            <div>
+              <h3 class="pr-price-title">Inspection (2 stages)</h3>
+              <p class="pr-price-desc">Kept. Every piece is checked at the factory before shipping and again when it arrives in India.</p>
+            </div>
+          </li>
+          <li class="pr-price-row">
+            <span class="pr-num">05</span>
+            <div>
+              <h3 class="pr-price-title">Showroom overheads</h3>
+              <p class="pr-price-desc">Removed. You are not paying for the rent and running costs of a large retail showroom.</p>
+            </div>
+          </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DELIVERY TIMELINE -->
+  <section class="pr-timeline" id="delivery">
+    <div class="pr-timeline-pin">
+    <div class="pr-container">
+      <div class="pr-intro pr-intro-center">
+        <span class="pr-label">From order to arrival</span>
+        <h2 class="pr-title">Your delivery timeline.</h2>
+        <p class="pr-sub">What happens after you confirm your order, and when.</p>
+      </div>
+      <ol class="pr-time-list">
+        <li class="pr-time-item">
+          <span class="pr-dot" aria-hidden="true"></span>
+          <span class="pr-num">01</span>
+          <h3 class="pr-time-title">Order placed</h3>
+          <span class="pr-time-day">Day 1</span>
+        </li>
+        <li class="pr-time-item">
+          <span class="pr-dot" aria-hidden="true"></span>
+          <span class="pr-num">02</span>
+          <h3 class="pr-time-title">Processing</h3>
+          <span class="pr-time-day">Day 2 – 4</span>
+        </li>
+        <li class="pr-time-item">
+          <span class="pr-dot" aria-hidden="true"></span>
+          <span class="pr-num">03</span>
+          <h3 class="pr-time-title">Dispatch</h3>
+          <span class="pr-time-day">Day 5</span>
+        </li>
+        <li class="pr-time-item">
+          <span class="pr-dot" aria-hidden="true"></span>
+          <span class="pr-num">04</span>
+          <h3 class="pr-time-title">Delivered</h3>
+          <span class="pr-time-day">Day 6 – 7</span>
+        </li>
+      </ol>
+    </div>
+    </div>
+  </section>
+
+  <!-- LET'S CONNECT -->
+  <section class="cta-section pr-cta" id="contact">
+    <div class="cta-banner" style="background-image: url('/assets/images/22_image_32_6005c896.jpg');">
+      <div class="cta-overlay"></div>
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="cta-box">
+        <span class="cta-tag">Let's Connect</span>
+        <h2 class="cta-title"><span class="pr-desktop-only">Bring your ideas alive</span><span class="pr-mobile-only">Let’s Create Something Exceptional</span></h2>
+        <p class="cta-subtitle">From concept to completion, we craft interiors and environments that are functional, beautiful, and built around how you live and work. Let’s turn your vision into a space you’ll love.</p>
+        <div class="cta-buttons">
+          <button class="cta-btn-primary open-lead-modal">Book a Call</button>
+          <a href="/contact" class="cta-btn-link">
+            <span>Get in Touch</span>
+            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 1L12 5L8 9M12 5H1" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <!-- Watermark Brand Logo (image 50) -->
+      <div class="footer-top-watermark">
+        <picture>
+          <source media="(max-width: 602px)" srcset="/assets/images/m_footer_wordmark.png">
+          <img src="/assets/images/furniqos_wordmark_cream.png" alt="FURNIQOS" class="footer-watermark-img">
+        </picture>
+      </div>
+
+      <!-- Links & Contact 4-Column Grid (Frame 13) -->
+      <div class="footer-grid">
+        <!-- Col 1: QUICK LINKS (Frame 8) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blogs</a></li>
+            <li><a href="/process">Our Process</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: CATEGORY (Frame 9) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CATEGORY</h4>
+          <ul class="footer-links">
+            <li><a href="/#solutions">Residential</a></li>
+            <li><a href="/#solutions">Commercial</a></li>
+            <li><a href="/#solutions">Hospitality</a></li>
+            <li><a href="/#solutions">Custom Pieces</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: COMPANY (Frame 10) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/#projects">Project</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: CONTACT (Frame 2147238897) -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">CONTACT</h4>
+          <div class="footer-contact-items">
+            <!-- Email -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 6L12 13L2 6"/>
+              </svg>
+              <a href="mailto:furniqos@gmail.com" class="footer-contact-link">furniqos@gmail.com</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <div class="footer-phones">
+                <a href="tel:+919811271461" class="footer-contact-link">+91 98112 71461</a>, 
+                <a href="tel:+919810028893" class="footer-contact-link">+91 98100 28893</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="footer-contact-row align-top">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span class="footer-contact-text">Unit No. LG-2, Agarwal Cyber Plaza 1 Netaji Subhash Place, Pitampura, Delhi 110034</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Line 1: Divider -->
+      <div class="footer-divider-line"></div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">&copy; 2026 Furniqos. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEAD CAPTURE MODAL -->
+  <div class="modal-overlay" id="leadModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeModal">&times;</button>
+      <h3 class="modal-title">Book a Consultation</h3>
+      <p class="modal-subtitle">Share your requirements and our interior design concierge will reach out within 24 hours.</p>
+
+      <form id="leadCaptureForm">
+        <div class="form-group">
+          <label class="form-label" for="leadName">Your Name *</label>
+          <input type="text" id="leadName" class="form-input" placeholder="e.g. Yash Chauhan" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadEmail">Email Address *</label>
+          <input type="email" id="leadEmail" class="form-input" placeholder="e.g. yash@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadPhone">Phone Number</label>
+          <input type="tel" id="leadPhone" class="form-input" placeholder="+91 98765 43210">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadProjectType">Project Type</label>
+          <select id="leadProjectType" class="form-select">
+            <option value="Residential">Residential Villa / Apartment</option>
+            <option value="Commercial">Commercial Office / Co-working</option>
+            <option value="Wardrobes">Bespoke Wardrobes & Kitchens</option>
+            <option value="Styling">Furniture & Styling Sourcing</option>
+            <option value="Turnkey">Turnkey Complete Fit-out</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadMessage">Project Details / Message</label>
+          <textarea id="leadMessage" class="form-textarea" rows="3" placeholder="Tell us about the space area, timeline, and furniture preferences..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn" id="submitLeadBtn">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTICE -->
+  <div class="toast-notice" id="toastNotice">
+    <div id="toastMessage">Inquiry submitted successfully!</div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

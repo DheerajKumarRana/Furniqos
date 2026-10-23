@@ -823,12 +823,7 @@ button, input, select, textarea {
   border-top: 1px solid rgba(56, 56, 56, 0.3);
   position: sticky;
   top: var(--projects-stack-top, 170px);
-  box-shadow: 0 -18px 40px -24px rgba(0, 0, 0, 0.18);
   cursor: pointer;
-}
-
-.project-row:first-child {
-  box-shadow: none;
 }
 
 .project-row:last-child {

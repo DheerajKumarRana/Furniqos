@@ -1,0 +1,746 @@
+/* ==========================================================================
+   PROCESS PAGE (Figma "Process Page" 1440 × 5688, mobile "iPhone 16 & 17 Pro - 8")
+   Shared pieces (ticker, header, drawer, CTA banner, footer, modal) come from style.css.
+   ========================================================================== */
+.page-process {
+  background: #F8F9F4;
+  color: #383838;
+}
+
+.pr-container {
+  max-width: 1332px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: content-box;
+}
+
+.pr-mobile-only {
+  display: none;
+}
+
+/* Shared type */
+.pr-label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #383838;
+}
+
+.pr-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: clamp(34px, 3.35vw, 48px);
+  line-height: 1.22;
+  color: #383838;
+  margin: 20px 0 0;
+}
+
+.pr-sub {
+  max-width: 651px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(56, 56, 56, 0.75);
+  margin: 20px 0 0;
+}
+
+.pr-num {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: rgba(56, 56, 56, 0.6);
+}
+
+/* Timeline dot: 21px ring + 8px centre */
+.pr-dot {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border: 0.7px solid #B4B4B4;
+  border-radius: 50%;
+  background: #F8F9F4;
+  box-sizing: border-box;
+}
+
+.pr-dot::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #818181;
+  transform: translate(-50%, -50%);
+}
+
+/* ---- Hero (1440 × 789) ---- */
+.pr-hero {
+  position: relative;
+  height: 789px;
+  overflow: hidden;
+  background: #3A2A1E;
+}
+
+.pr-hero-bg,
+.pr-hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pr-hero-bg img {
+  object-fit: cover;
+}
+
+.pr-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 192px;
+}
+
+.pr-hero-label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #F8F9F4;
+}
+
+.pr-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(44px, 4.45vw, 64px);
+  line-height: 1.0625;
+  color: #F8F9F4;
+  margin: 50px 0 0;
+}
+
+.pr-hero-intro {
+  max-width: 736px;
+  margin-top: 42px;
+  padding-top: 39px;
+  border-top: 1px solid rgba(248, 249, 244, 0.3);
+}
+
+.pr-hero-intro p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(248, 249, 244, 0.7);
+  margin: 0;
+}
+
+.pr-chips {
+  display: flex;
+  gap: 10px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pr-chips li {
+  flex-shrink: 0;
+  height: 35px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(248, 249, 244, 0.5);
+  border-radius: 100px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(248, 249, 244, 0.75);
+  white-space: nowrap;
+}
+
+/* ---- From source to your space: alternating steps on a centre line ---- */
+.pr-steps-section {
+  padding: 68px 0 92px;
+}
+
+.pr-intro .pr-title {
+  margin-top: 20px;
+}
+
+.pr-steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  margin: 115px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Line 24: the vertical spine through the middle */
+.pr-steps::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -47px;
+  bottom: -32px;
+  width: 1px;
+  background: rgba(56, 56, 56, 0.5);
+}
+
+.pr-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 323px;
+}
+
+.pr-step-text {
+  box-sizing: border-box;
+}
+
+.pr-step-media img {
+  display: block;
+  width: 100%;
+  max-width: 538px;
+  aspect-ratio: 538 / 323;
+  object-fit: cover;
+  border-radius: 5px;
+  background: #DFDFDF;
+}
+
+/* Text on the left, photo on the right (steps 1, 3, 5) */
+.pr-step.is-left .pr-step-text { grid-column: 1; grid-row: 1; padding-left: 28px; max-width: 535px; }
+.pr-step.is-left .pr-step-media { grid-column: 2; grid-row: 1; padding-left: 99px; }
+/* Photo on the left, text on the right (steps 2, 4) */
+.pr-step.is-right .pr-step-media { grid-column: 1; grid-row: 1; padding-left: 28px; }
+.pr-step.is-right .pr-step-text { grid-column: 2; grid-row: 1; padding-left: 130px; max-width: 637px; box-sizing: border-box; }
+
+.pr-step > .pr-dot {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pr-step-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36.6px;
+  color: #383838;
+  margin: 70px 0 0;
+}
+
+.pr-step-desc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(56, 56, 56, 0.6);
+  margin: 20px 0 0;
+}
+
+/* ---- Pricing, explained (brown band) ---- */
+.pr-pricing {
+  padding: 58px 0;
+  background: #422D1F;
+}
+
+.pr-pricing-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 573px) minmax(0, 636px);
+  justify-content: space-between;
+  column-gap: 60px;
+  align-items: start;
+}
+
+.pr-pricing .pr-label,
+.pr-pricing .pr-title {
+  color: #F8F9F4;
+}
+
+.pr-pricing-text {
+  max-width: 573px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(248, 249, 244, 0.75);
+  margin: 20px 0 0;
+}
+
+.pr-price-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid rgba(248, 249, 244, 0.3);
+}
+
+.pr-price-row {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  padding: 25px 7px 25px 7px;
+  border-top: 1px solid rgba(248, 249, 244, 0.3);
+}
+
+.pr-price-row .pr-num {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(248, 249, 244, 0.6);
+}
+
+.pr-price-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31.7px;
+  color: #F8F9F4;
+  margin: 0;
+}
+
+.pr-price-desc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(248, 249, 244, 0.6);
+  margin: 10px 0 0;
+}
+
+/* ---- Delivery timeline (horizontal) ---- */
+.pr-timeline {
+  padding: 70px 0 80px;
+}
+
+.pr-intro-center {
+  text-align: center;
+}
+
+.pr-intro-center .pr-sub {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pr-time-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 327px));
+  margin: 60px 0 0;
+  padding: 0 0 0 71px;
+  list-style: none;
+}
+
+/* Line 25: the horizontal rule through the dots */
+.pr-time-list::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  height: 1px;
+  background: rgba(56, 56, 56, 0.5);
+}
+
+.pr-time-item {
+  position: relative;
+  padding-top: 46px;
+}
+
+.pr-time-item .pr-dot {
+  left: 1px;
+  top: 0;
+  z-index: 1;
+}
+
+.pr-time-item .pr-num {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.pr-time-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36.6px;
+  color: #383838;
+  margin: 40px 0 0;
+}
+
+/* Figma shows the day ranges in [brackets] */
+.pr-time-day::before { content: '['; }
+.pr-time-day::after { content: ']'; }
+
+.pr-time-day {
+  display: block;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(56, 56, 56, 0.6);
+}
+
+/* ---- CTA: shared banner, 40px gap before the footer ---- */
+.pr-cta {
+  padding-bottom: 40px;
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .pr-step.is-left .pr-step-media,
+  .pr-step.is-right .pr-step-text {
+    padding-left: 60px;
+  }
+  .pr-step.is-left .pr-step-text,
+  .pr-step.is-right .pr-step-media {
+    padding-left: 0;
+    padding-right: 40px;
+  }
+  .pr-step-title {
+    margin-top: 30px;
+  }
+  .pr-pricing-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .pr-time-list {
+    padding-left: 30px;
+  }
+  .pr-time-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+/* ==========================================================================
+   Phone (Figma "iPhone 16 & 17 Pro - 8", 402 wide)
+   ========================================================================== */
+@media (max-width: 602px) {
+  .pr-desktop-only {
+    display: none !important;
+  }
+  .pr-mobile-only {
+    display: inline;
+  }
+  .pr-container {
+    padding: 0 23px;
+  }
+
+  .pr-label,
+  .pr-hero-label {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .pr-title {
+    font-size: 22px;
+    line-height: 26.8px;
+    margin-top: 5px;
+  }
+  .pr-sub {
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(56, 56, 56, 0.6);
+    margin-top: 10px;
+  }
+  .pr-num {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  /* Hero */
+  .pr-hero {
+    height: 637px;
+  }
+  /* Figma: the 402 x 869 photo is shown from the top, full width, cut off at 637 */
+  .pr-hero-bg img {
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+  .pr-hero-content {
+    padding-top: 140px;
+  }
+  .pr-hero-title {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36.6px;
+    margin-top: 30px;
+  }
+  .pr-hero-intro {
+    margin-top: 11px;
+    padding-top: 21px;
+  }
+  .pr-hero-intro p {
+    padding-left: 2px;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(248, 249, 244, 0.75);
+  }
+  /* Chips scroll sideways, running off the right edge as in the design */
+  .pr-chips {
+    margin: 30px -23px 0 0;
+    padding-right: 23px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .pr-chips::-webkit-scrollbar {
+    display: none;
+  }
+  .pr-chips li {
+    height: 29px;
+    padding: 0 28px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  /* Steps: one column, line and dots on the left, photo under the text */
+  .pr-steps-section {
+    padding: 40px 0 70px;
+  }
+  .pr-steps {
+    gap: 41px;
+    margin-top: 50px;
+    padding-left: 30px;
+  }
+  .pr-steps::before {
+    left: 0;
+    top: 8px;
+    bottom: 0;
+  }
+  .pr-step {
+    display: block;
+    min-height: 0;
+  }
+  .pr-step.is-left .pr-step-text,
+  .pr-step.is-right .pr-step-text,
+  .pr-step.is-left .pr-step-media,
+  .pr-step.is-right .pr-step-media {
+    padding: 0;
+    max-width: none;
+  }
+  .pr-step > .pr-dot {
+    left: -40px;
+    top: 0;
+    transform: none;
+  }
+  .pr-step-title {
+    font-size: 18px;
+    line-height: 21.9px;
+    margin-top: 25px;
+  }
+  .pr-step-desc {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 5px;
+  }
+  .pr-step-media {
+    margin-top: 15px;
+  }
+  .pr-step-media img {
+    max-width: none;
+    aspect-ratio: 328 / 197;
+    border-radius: 3px;
+  }
+
+  /* Pricing */
+  .pr-pricing {
+    padding: 52px 0 51px;
+  }
+  .pr-pricing .pr-container {
+    padding: 0 21px;
+  }
+  .pr-pricing .pr-title {
+    font-size: 26px;
+    line-height: 31.7px;
+    margin-top: 10px;
+  }
+  .pr-pricing-text {
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(248, 249, 244, 0.6);
+    margin-top: 15px;
+  }
+  .pr-pricing-grid {
+    row-gap: 30px;
+  }
+  .pr-price-row {
+    grid-template-columns: 54px 1fr;
+    padding: 20px 0 22px;
+  }
+  .pr-price-title {
+    font-size: 18px;
+    line-height: 21.9px;
+  }
+  .pr-price-desc {
+    margin-top: 0;
+  }
+
+  /* Delivery timeline: vertical, line on the left */
+  .pr-timeline {
+    padding: 50px 0 70px;
+  }
+  .pr-timeline .pr-title {
+    font-size: 24px;
+    line-height: 29.3px;
+    margin-top: 15px;
+  }
+  .pr-timeline .pr-sub {
+    color: rgba(56, 56, 56, 0.75);
+    margin-top: 5px;
+  }
+  .pr-time-list {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    margin: 60px 0 0;
+    padding: 0 0 0 98px;
+  }
+  .pr-time-list::before {
+    left: 72px;
+    right: auto;
+    top: 11px;
+    bottom: 50px;
+    width: 1px;
+    height: auto;
+  }
+  .pr-time-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 10px;
+    padding-top: 0;
+  }
+  .pr-time-item .pr-dot {
+    left: -36px;
+    top: 0;
+  }
+  .pr-time-item .pr-num {
+    flex-basis: 100%;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .pr-time-title {
+    font-size: 20px;
+    line-height: 24.4px;
+    margin-top: 15px;
+  }
+  .pr-time-day {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .pr-cta {
+    padding-bottom: 0;
+  }
+}
+
+/* ==========================================================================
+   SCROLL ANIMATIONS (driven by app.js; everything is shown without JS)
+   ========================================================================== */
+/* Steps: dark line fills the centre line; dots light up as it reaches them */
+.pr-steps::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -47px;
+  width: 1px;
+  height: var(--pr-fill, 0px);
+  background: #383838;
+  pointer-events: none;
+}
+
+.pr-anim .pr-step > .pr-dot,
+.pr-anim .pr-time-item .pr-dot {
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pr-anim .pr-step > .pr-dot::after,
+.pr-anim .pr-time-item .pr-dot::after {
+  background: #C9C9C4;
+  transition: background 0.4s ease;
+}
+
+.pr-anim .pr-step.is-active > .pr-dot,
+.pr-anim .pr-time-item.is-revealed .pr-dot {
+  border-color: #383838;
+  box-shadow: 0 0 0 4px rgba(56, 56, 56, 0.08);
+}
+
+.pr-anim .pr-step.is-active > .pr-dot::after,
+.pr-anim .pr-time-item.is-revealed .pr-dot::after {
+  background: #383838;
+}
+
+/* Delivery timeline: the section pins while the line fills and the points reveal */
+.pr-timeline.is-pinned {
+  height: var(--pr-runway, 250vh);
+  padding: 0;
+}
+
+.pr-timeline.is-pinned .pr-timeline-pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.pr-time-list::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 1px;
+  width: calc(100% * var(--pr-tfill, 1));
+  background: #383838;
+  pointer-events: none;
+}
+
+.pr-anim .pr-time-item > :not(.pr-dot) {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pr-anim .pr-time-item.is-revealed > :not(.pr-dot) {
+  opacity: 1;
+  transform: none;
+}
+
+.pr-anim .pr-time-item.is-revealed > .pr-time-title { transition-delay: 0.08s; }
+.pr-anim .pr-time-item.is-revealed > .pr-time-day { transition-delay: 0.16s; }
+
+@media (max-width: 602px) {
+  .pr-steps::after {
+    left: 0;
+    top: 8px;
+  }
+  .pr-time-list::after {
+    left: 72px;
+    top: 11px;
+    width: 1px;
+    height: calc((100% - 61px) * var(--pr-tfill, 1));
+  }
+  .pr-timeline.is-pinned .pr-timeline-pin {
+    padding-top: 30px;
+  }
+}
