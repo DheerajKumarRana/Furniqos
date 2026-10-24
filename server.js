@@ -180,6 +180,23 @@ app.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'contact.html'));
 });
 
+app.get('/products', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'products.html'));
+});
+
+app.get('/projects', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'projects.html'));
+});
+
+// Project case studies: /projects/<slug> -> public/project-<slug>.html
+app.get('/projects/:slug', (req, res, next) => {
+  const slug = String(req.params.slug).toLowerCase();
+  if (!/^[a-z0-9-]+$/.test(slug)) return next();
+  const file = path.join(__dirname, 'public', `project-${slug}.html`);
+  if (!fs.existsSync(file)) return res.redirect('/projects');
+  res.sendFile(file);
+});
+
 app.get('/process', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'process.html'));
 });

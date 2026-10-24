@@ -1,0 +1,297 @@
+/* ==========================================================================
+   PROJECT DETAIL PAGE (Figma "Project Discription Page" 1440 × 5204,
+   mobile "iPhone 16 & 17 Pro - 6"). Shared pieces come from style.css.
+   ========================================================================== */
+.page-project {
+  background: #F8F9F4;
+  color: #383838;
+}
+
+.pd-container {
+  max-width: 1332px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: content-box;
+}
+
+.pd-mobile-only {
+  display: none;
+}
+
+/* ---- Title block ---- */
+.pd-head {
+  padding-top: 182px;
+}
+
+.pd-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(48px, 5.15vw, 74px);
+  line-height: 1.22;
+  color: #383838;
+  margin: 0;
+}
+
+.pd-intro {
+  max-width: 797px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(56, 56, 56, 0.75);
+  margin: 10px 0 0;
+}
+
+.pd-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.pd-category {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #383838;
+}
+
+.pd-date {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(56, 56, 56, 0.75);
+}
+
+/* Main photo: 1332 × 608 inside the content width */
+.pd-hero-img {
+  display: block;
+  width: calc(100% - 48px);
+  max-width: 1332px;
+  aspect-ratio: 1332 / 608;
+  margin: 15px auto 0;
+  object-fit: cover;
+  background: #D9D9D9;
+}
+
+/* Project / Client / Date / Budget */
+.pd-facts {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 15px 0 0;
+}
+
+.pd-facts dt {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #383838;
+}
+
+.pd-facts dd {
+  margin: 5px 0 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(56, 56, 56, 0.75);
+}
+
+/* ---- Story ---- */
+.pd-story {
+  padding: 80px 0 80px;
+}
+
+.pd-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: clamp(32px, 3.05vw, 44px);
+  line-height: 1.22;
+  color: #383838;
+  margin: 50px 0 0;
+}
+
+.pd-h2-lg {
+  font-size: clamp(34px, 3.35vw, 48px);
+}
+
+.pd-container > .pd-h2:first-child {
+  margin-top: 0;
+}
+
+.pd-text {
+  max-width: 1048px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(56, 56, 56, 0.75);
+  margin: 10px 0 0;
+}
+
+.pd-wide-img {
+  display: block;
+  width: calc(100% - 48px);
+  max-width: 1332px;
+  aspect-ratio: 1332 / 557;
+  margin: 51px auto 49px;
+  object-fit: cover;
+  background: #D9D9D9;
+}
+
+.pd-wide-img + .pd-container > .pd-h2:first-child {
+  margin-top: 0;
+}
+
+/* Photo mosaic: 3 × 3 grid of 424px columns and 390px rows */
+.pd-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, auto);
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.pd-g {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #D9D9D9;
+}
+
+.pd-g1 { grid-column: 1 / span 2; grid-row: 1; aspect-ratio: 878 / 390; }
+.pd-g2 { grid-column: 3; grid-row: 1 / span 2; }
+.pd-g3 { grid-column: 1; grid-row: 2 / span 2; }
+.pd-g4 { grid-column: 2; grid-row: 2; aspect-ratio: 424 / 390; }
+.pd-g5 { grid-column: 2 / span 2; grid-row: 3; aspect-ratio: 878 / 390; }
+
+.pd-cta {
+  padding-bottom: 40px;
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+@media (max-width: 900px) {
+  .pd-gallery {
+    gap: 16px;
+  }
+  .pd-facts {
+    flex-wrap: wrap;
+  }
+  .pd-facts > div {
+    flex: 1 1 40%;
+  }
+}
+
+/* ==========================================================================
+   Phone (Figma "iPhone 16 & 17 Pro - 6", 402 wide)
+   ========================================================================== */
+@media (max-width: 602px) {
+  .pd-desktop-only {
+    display: none !important;
+  }
+  .pd-mobile-only {
+    display: inline;
+  }
+  .pd-container {
+    padding: 0 23px;
+  }
+
+  .pd-head {
+    padding-top: 115px;
+  }
+  .pd-title {
+    font-size: 36px;
+    line-height: 43.9px;
+  }
+  .pd-intro {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  /* The mobile design leaves out the category / date row */
+  .pd-meta {
+    display: none;
+  }
+  .pd-hero-img {
+    width: 100%;
+    aspect-ratio: 402 / 345;
+    margin-top: 25px;
+  }
+  .pd-facts {
+    display: grid;
+    grid-template-columns: 242px 1fr;
+    row-gap: 20px;
+    column-gap: 0;
+    margin-top: 25px;
+    padding-left: 0;
+  }
+  .pd-facts dt {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .pd-facts dd {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .pd-story {
+    padding: 50px 0 50px;
+  }
+  .pd-h2,
+  .pd-h2-lg {
+    font-size: 22px;
+    line-height: 26.8px;
+    margin-top: 30px;
+  }
+  .pd-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .pd-wide-img {
+    width: 100%;
+    aspect-ratio: 402 / 444;
+    margin: 30px 0 25px;
+  }
+
+  /* Mosaic: wide, two squares, wide (the tall bedroom photo is left out) */
+  .pd-story > .pd-container:has(.pd-gallery) {
+    padding: 0 12px;
+  }
+  .pd-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+    margin: 50px 0;
+  }
+  .pd-g1,
+  .pd-g5 {
+    grid-column: 1 / span 2;
+    grid-row: auto;
+    aspect-ratio: 378 / 210;
+  }
+  .pd-g2 {
+    display: none;
+  }
+  .pd-g3,
+  .pd-g4 {
+    grid-row: auto;
+    grid-column: auto;
+    aspect-ratio: 181 / 210;
+  }
+  .pd-g4 { order: 1; }
+  .pd-g3 { order: 2; }
+  .pd-g5 { order: 3; }
+
+  .pd-cta {
+    padding-bottom: 0;
+  }
+}

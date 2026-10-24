@@ -1,0 +1,288 @@
+/* ==========================================================================
+   PRODUCTS PAGE (Figma "Product Page" 1440 × 3279, mobile "iPhone 16 & 17 Pro - 10")
+   Shared pieces (ticker, header, drawer, CTA banner, footer, modal) come from style.css.
+   ========================================================================== */
+.page-products {
+  background: #F8F9F4;
+  color: #383838;
+}
+
+.pdt-container {
+  max-width: 1333px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: content-box;
+}
+
+.pdt-mobile-only {
+  display: none;
+}
+
+/* ---- Hero (1440 × 330) ---- */
+.pdt-hero {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+  background: #3A2A1E;
+}
+
+.pdt-hero-bg,
+.pdt-hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pdt-hero-bg img {
+  object-fit: cover;
+}
+
+.pdt-hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 138px 24px 0;
+  text-align: center;
+}
+
+.pdt-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(52px, 5.15vw, 74px);
+  line-height: 1.22;
+  color: #F8F9F4;
+  margin: 0;
+}
+
+.pdt-hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(248, 249, 244, 0.7);
+  margin: 0;
+}
+
+/* ---- Room tabs ---- */
+.pdt-list {
+  padding: 30px 0 70px;
+}
+
+.pdt-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 24px;
+  margin-bottom: 60px;
+}
+
+.pdt-tab {
+  flex-shrink: 0;
+  min-width: 145px;
+  height: 53px;
+  padding: 0 20px;
+  background: transparent;
+  border: 1px solid rgba(56, 56, 56, 0.3);
+  border-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #383838;
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.pdt-tab:hover {
+  border-color: rgba(56, 56, 56, 0.6);
+}
+
+.pdt-tab.is-active {
+  background: rgba(66, 45, 31, 0.05);
+  font-weight: 600;
+}
+
+/* ---- Product grid: 3 columns of 431px squares ---- */
+.pdt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.pdt-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pdt-card[hidden] {
+  display: none;
+}
+
+.pdt-card-media {
+  display: block;
+  overflow: hidden;
+  background: #EDEDE8;
+}
+
+.pdt-card-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pdt-card:hover .pdt-card-media img {
+  transform: scale(1.04);
+}
+
+.pdt-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.4px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+/* Rooms without products yet */
+.pdt-empty {
+  max-width: 520px;
+  margin: 20px auto 40px;
+  text-align: center;
+}
+
+.pdt-empty p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(56, 56, 56, 0.75);
+  margin: 0 0 20px;
+}
+
+.pdt-empty-btn {
+  padding: 10px 22px;
+  background: transparent;
+  border: 1.5px solid rgba(56, 56, 56, 0.5);
+  border-radius: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #383838;
+  cursor: pointer;
+}
+
+.pdt-empty-btn:hover {
+  background: #422D1F;
+  border-color: #422D1F;
+  color: #F8F9F4;
+}
+
+.pdt-cta {
+  padding-bottom: 40px;
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+@media (max-width: 900px) {
+  .pdt-tabs {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .pdt-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .pdt-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================================================
+   Phone (Figma "iPhone 16 & 17 Pro - 10", 402 wide)
+   ========================================================================== */
+@media (max-width: 602px) {
+  .pdt-desktop-only {
+    display: none !important;
+  }
+  .pdt-mobile-only {
+    display: inline;
+  }
+  .pdt-container {
+    padding: 0 22px;
+  }
+
+  .pdt-hero {
+    height: 447px;
+  }
+  .pdt-hero-content {
+    max-width: 260px;
+    margin: 0 auto;
+    gap: 15px;
+    padding: 119px 0 0;
+  }
+  .pdt-hero-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58.5px;
+  }
+  .pdt-hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.1px;
+    color: rgba(248, 249, 244, 0.75);
+  }
+
+  .pdt-list {
+    padding: 11px 0 60px;
+  }
+  .pdt-tabs {
+    gap: 12px;
+    padding: 0 17px;
+    margin-bottom: 32px;
+  }
+  .pdt-tab {
+    min-width: 107px;
+    height: 39px;
+    padding: 0 12px;
+    border-width: 0.74px;
+    font-size: 12px;
+    line-height: 14.6px;
+  }
+
+  .pdt-grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .pdt-card {
+    gap: 8px;
+  }
+  .pdt-card-media img {
+    aspect-ratio: 358 / 274;
+    object-position: 50% 100%;
+  }
+  .pdt-card-title {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+  /* The mobile design lists the first eight pieces */
+  .pdt-card:nth-child(n + 9) {
+    display: none;
+  }
+
+  .pdt-cta {
+    padding-bottom: 0;
+  }
+}

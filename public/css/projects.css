@@ -1,0 +1,230 @@
+/* ==========================================================================
+   PROJECTS PAGE (Figma "Project Page" 1440 × 4434, mobile "iPhone 16 & 17 Pro - 5")
+   Shared pieces (ticker, header, drawer, CTA banner, footer, modal) come from style.css.
+   ========================================================================== */
+.page-projects {
+  background: #F8F9F4;
+  color: #383838;
+}
+
+.pj-container {
+  max-width: 1294px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: content-box;
+}
+
+.pj-mobile-only {
+  display: none;
+}
+
+/* ---- Hero (1440 × 753) ---- */
+.pj-hero {
+  position: relative;
+  height: 753px;
+  overflow: hidden;
+  background: #1E1A17;
+}
+
+.pj-hero-bg,
+.pj-hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pj-hero-bg img {
+  object-fit: cover; /* exported from Figma with its 50% dark overlay */
+}
+
+.pj-hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 577px;
+  margin: 0 auto;
+  padding: 151px 0 0;
+  text-align: center;
+}
+
+.pj-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(52px, 5.15vw, 74px);
+  line-height: 1.22;
+  color: #F8F9F4;
+  margin: 0;
+}
+
+.pj-hero-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.9px;
+  color: rgba(248, 249, 244, 0.7);
+  margin: 0;
+}
+
+/* ---- Project grid: 2 columns, 629 × 418 images ---- */
+.pj-list {
+  padding: 60px 0 100px;
+}
+
+.pj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 35px;
+  row-gap: 60px;
+}
+
+.pj-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.pj-card-media {
+  overflow: hidden;
+  background: #DFDFDF;
+}
+
+.pj-card-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 629 / 418;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pj-card:hover .pj-card-media img {
+  transform: scale(1.04);
+}
+
+.pj-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.pj-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pj-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.3px;
+  text-transform: capitalize;
+  color: #383838;
+  margin: 0;
+}
+
+.pj-arrow {
+  flex-shrink: 0;
+  margin-right: 3px;
+  transition: transform 0.3s ease;
+}
+
+.pj-card:hover .pj-arrow {
+  transform: translate(2px, -2px);
+}
+
+.pj-card-desc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(56, 56, 56, 0.75);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+@media (max-width: 900px) {
+  .pj-grid {
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+  .pj-card-title {
+    font-size: 20px;
+    line-height: 24.4px;
+  }
+  .pj-card-desc {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+/* ==========================================================================
+   Phone (Figma "iPhone 16 & 17 Pro - 5", 402 wide)
+   ========================================================================== */
+@media (max-width: 602px) {
+  .pj-desktop-only {
+    display: none !important;
+  }
+  .pj-mobile-only {
+    display: inline;
+  }
+  .pj-container {
+    padding: 0 23px;
+  }
+
+  .pj-hero {
+    height: 568px;
+  }
+  .pj-hero-content {
+    max-width: 284px;
+    gap: 15px;
+    padding: 119px 0 0;
+  }
+  .pj-hero-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58.5px;
+  }
+  .pj-hero-subtitle {
+    font-size: 14px;
+    line-height: 17.1px;
+    color: rgba(248, 249, 244, 0.75);
+  }
+
+  .pj-list {
+    padding: 50px 0;
+  }
+  .pj-grid {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  /* The mobile design shows the first six projects */
+  .pj-card:nth-child(n + 7) {
+    display: none;
+  }
+  .pj-card-media img {
+    aspect-ratio: 357 / 238;
+  }
+  .pj-card-body {
+    margin-top: 12px;
+  }
+  .pj-card-title {
+    font-size: 18px;
+    line-height: 21.9px;
+  }
+  .pj-arrow {
+    width: 10px;
+    height: 10px;
+  }
+  .pj-card-desc {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

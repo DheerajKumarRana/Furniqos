@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa Lumière | FURNIQOS Projects</title>
+  <meta name="description" content="Villa Lumière by FURNIQOS: a contemporary living and dining project furnished with sofas, a dining set and storage sourced directly from manufacturers.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/project-detail.css">
+  <!-- Supabase CDN (Ready for direct client queries if needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="page-project header-light">
+
+  <!-- 1. TOP TICKER (Frame 2147238918) -->
+  <div class="top-ticker" id="topTicker">
+    <p class="ticker-text" id="dynamicTickerText">LUXURY FURNITURE SOURCING • PREMIUM CHINA MANUFACTURERS</p>
+  </div>
+
+  <!-- 2. MAIN HEADER -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      <!-- Left: Navigation Menu Trigger (Frame 2147238842) -->
+      <button class="menu-trigger" id="menuToggle" aria-label="Open Navigation Menu">
+        <div class="menu-lines">
+          <span></span>
+          <span></span>
+        </div>
+        <span class="menu-label">Menu</span>
+      </button>
+
+      <!-- Center spacer keeping left and right buttons balanced for traveling logo -->
+      <!-- Static brand logo (inner pages have no traveling hero logo) -->
+      <a href="/" class="header-static-logo" aria-label="FURNIQOS Home">
+        <img src="/assets/images/furniqos_logo_hero.png" alt="FURNIQOS">
+      </a>
+
+      <!-- Right: Contact Us Button (Frame 2147238905) -->
+      <button class="header-cta-btn open-lead-modal" id="headerContactBtn" aria-label="Contact Us">
+        <div class="header-cta-inner">
+          <span class="header-cta-text">Contact us</span>
+          <span class="plus-icon-circle" aria-hidden="true">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 0.5V8.5M0.5 4.5H8.5" stroke="#000000" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- SLIDE-OUT MENU DRAWER -->
+  <div class="menu-drawer" id="menuDrawer">
+    <button class="modal-close-btn" id="closeDrawer" aria-label="Close Menu">&times;</button>
+    <ul class="drawer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#solutions">Categories</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/process">Our Process</a></li>
+      <li><a href="/#why-furniqos">Why Furniqos</a></li>
+      <li><a href="/#testimonials">Testimonials</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/blog">Our Blogs</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/admin" style="font-size: 1.1rem; color: var(--gold-primary);">★ Admin CRM Portal</a></li>
+    </ul>
+  </div>
+
+  <!-- PROJECT HEADER -->
+  <section class="pd-head" id="project-intro">
+    <div class="pd-container">
+      <h1 class="pd-title">Villa Lumière</h1>
+      <p class="pd-intro">A contemporary retreat where warm materials, natural light, and architectural simplicity create an atmosphere of effortless luxury.</p>
+      <div class="pd-meta">
+        <span class="pd-category">Luxury Residential Project</span>
+        <time class="pd-date" datetime="2026-01-16">January 16, 2026</time>
+      </div>
+    </div>
+    <img src="/assets/images/villa_hero.jpg" alt="Bedroom with a cream upholstered bed, linen curtains and warm lighting" class="pd-hero-img">
+    <div class="pd-container">
+      <dl class="pd-facts">
+        <div><dt>Project</dt><dd>Private Residence</dd></div>
+        <div><dt>Client</dt><dd>Private family</dd></div>
+        <div><dt>Date</dt><dd>January 2026</dd></div>
+        <div><dt>Budget</dt><dd>₹ 18,50,000</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- PROJECT STORY -->
+  <article class="pd-story" id="project-story">
+    <div class="pd-container">
+      <h2 class="pd-h2 pd-h2-lg">Overview</h2>
+      <p class="pd-text">This project furnished the open living and dining area of a three-bedroom apartment. FURNIQOS supplied a three-seater and two-seater sofa set, a six-seater dining table with chairs, and a low storage unit, all sourced from our manufacturing partners in China and delivered ready to place.</p>
+    </div>
+    <img src="/assets/images/villa_overview.jpg" alt="Study with a walnut desk, cream chair and framed artwork" class="pd-wide-img" loading="lazy">
+    <div class="pd-container">
+      <h2 class="pd-h2">The Problem</h2>
+      <p class="pd-text">The client wanted solid, good-looking furniture but found local showroom prices for that quality too high. They also worried about buying imported pieces without seeing them first, and the living and dining area was narrow, so oversized pieces would not fit.</p>
+      <h2 class="pd-h2">The Solution</h2>
+      <p class="pd-text">We picked sofas and a dining table in sizes that matched the floor plan, and shared exact dimensions before ordering. Every piece went through our quality check at the factory and a second check after arriving in India, with photos sent to the client at each stage, so they could see what they were getting before it reached their home.</p>
+    </div>
+
+    <div class="pd-container">
+      <div class="pd-gallery">
+        <img src="/assets/images/villa_g1.jpg" alt="Living room with a cream sofa and round coffee table" class="pd-g pd-g1" loading="lazy">
+        <img src="/assets/images/villa_g2.jpg" alt="Bedroom with a built-in walnut shelf" class="pd-g pd-g2" loading="lazy">
+        <img src="/assets/images/villa_g3.jpg" alt="Hallway with an arched mirror and console" class="pd-g pd-g3" loading="lazy">
+        <img src="/assets/images/villa_g4.jpg" alt="Bedroom corner with an upholstered bed" class="pd-g pd-g4" loading="lazy">
+        <img src="/assets/images/villa_g5.jpg" alt="Dining area with a wooden table and six chairs" class="pd-g pd-g5" loading="lazy">
+      </div>
+    </div>
+
+    <div class="pd-container">
+      <h2 class="pd-h2 pd-h2-lg">Project Outcome</h2>
+      <p class="pd-text">The family now has a living and dining space that fits the room, feels considered and was delivered on budget. Each piece arrived checked and ready to place, and the savings from buying direct went into the quality of the furniture rather than into retail margins.</p>
+    </div>
+  </article>
+
+  <!-- LET'S CONNECT -->
+  <section class="cta-section pd-cta" id="contact">
+    <div class="cta-banner" style="background-image: url('/assets/images/22_image_32_6005c896.jpg');">
+      <div class="cta-overlay"></div>
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="cta-box">
+        <span class="cta-tag">Let's Connect</span>
+        <h2 class="cta-title"><span class="pd-desktop-only">Bring your ideas alive</span><span class="pd-mobile-only">Let’s Create Something Exceptional</span></h2>
+        <p class="cta-subtitle">From concept to completion, we craft interiors and environments that are functional, beautiful, and built around how you live and work. Let’s turn your vision into a space you’ll love.</p>
+        <div class="cta-buttons">
+          <button class="cta-btn-primary open-lead-modal">Book a Call</button>
+          <a href="/contact" class="cta-btn-link">
+            <span>Get in Touch</span>
+            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 1L12 5L8 9M12 5H1" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <!-- Watermark Brand Logo (image 50) -->
+      <div class="footer-top-watermark">
+        <picture>
+          <source media="(max-width: 602px)" srcset="/assets/images/m_footer_wordmark.png">
+          <img src="/assets/images/furniqos_wordmark_cream.png" alt="FURNIQOS" class="footer-watermark-img">
+        </picture>
+      </div>
+
+      <!-- Links & Contact 4-Column Grid (Frame 13) -->
+      <div class="footer-grid">
+        <!-- Col 1: QUICK LINKS (Frame 8) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blogs</a></li>
+            <li><a href="/process">Our Process</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: CATEGORY (Frame 9) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CATEGORY</h4>
+          <ul class="footer-links">
+            <li><a href="/#solutions">Residential</a></li>
+            <li><a href="/#solutions">Commercial</a></li>
+            <li><a href="/#solutions">Hospitality</a></li>
+            <li><a href="/#solutions">Custom Pieces</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: COMPANY (Frame 10) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/projects">Project</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: CONTACT (Frame 2147238897) -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">CONTACT</h4>
+          <div class="footer-contact-items">
+            <!-- Email -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 6L12 13L2 6"/>
+              </svg>
+              <a href="mailto:furniqos@gmail.com" class="footer-contact-link">furniqos@gmail.com</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="footer-contact-row">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <div class="footer-phones">
+                <a href="tel:+919811271461" class="footer-contact-link">+91 98112 71461</a>, 
+                <a href="tel:+919810028893" class="footer-contact-link">+91 98100 28893</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="footer-contact-row align-top">
+              <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CEC5BA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span class="footer-contact-text">Unit No. LG-2, Agarwal Cyber Plaza 1 Netaji Subhash Place, Pitampura, Delhi 110034</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Line 1: Divider -->
+      <div class="footer-divider-line"></div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">&copy; 2026 Furniqos. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEAD CAPTURE MODAL -->
+  <div class="modal-overlay" id="leadModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeModal">&times;</button>
+      <h3 class="modal-title">Book a Consultation</h3>
+      <p class="modal-subtitle">Share your requirements and our interior design concierge will reach out within 24 hours.</p>
+
+      <form id="leadCaptureForm">
+        <div class="form-group">
+          <label class="form-label" for="leadName">Your Name *</label>
+          <input type="text" id="leadName" class="form-input" placeholder="e.g. Yash Chauhan" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadEmail">Email Address *</label>
+          <input type="email" id="leadEmail" class="form-input" placeholder="e.g. yash@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadPhone">Phone Number</label>
+          <input type="tel" id="leadPhone" class="form-input" placeholder="+91 98765 43210">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadProjectType">Project Type</label>
+          <select id="leadProjectType" class="form-select">
+            <option value="Residential">Residential Villa / Apartment</option>
+            <option value="Commercial">Commercial Office / Co-working</option>
+            <option value="Wardrobes">Bespoke Wardrobes & Kitchens</option>
+            <option value="Styling">Furniture & Styling Sourcing</option>
+            <option value="Turnkey">Turnkey Complete Fit-out</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="leadMessage">Project Details / Message</label>
+          <textarea id="leadMessage" class="form-textarea" rows="3" placeholder="Tell us about the space area, timeline, and furniture preferences..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn" id="submitLeadBtn">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTICE -->
+  <div class="toast-notice" id="toastNotice">
+    <div id="toastMessage">Inquiry submitted successfully!</div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

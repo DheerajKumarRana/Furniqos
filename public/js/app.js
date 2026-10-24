@@ -458,6 +458,35 @@ document.addEventListener('DOMContentLoaded', () => {
     remeasure();
   }
 
+  // 5d. Products page: room tabs filter the grid; clicking a product pre-fills the enquiry
+  const productGrid = document.getElementById('productGrid');
+  if (productGrid) {
+    const tabs = [...document.querySelectorAll('.pdt-tab')];
+    const items = [...productGrid.querySelectorAll('.pdt-card')];
+    const empty = document.getElementById('productEmpty');
+    tabs.forEach((tab) => tab.addEventListener('click', () => {
+      tabs.forEach((t) => {
+        t.classList.toggle('is-active', t === tab);
+        t.setAttribute('aria-selected', t === tab ? 'true' : 'false');
+      });
+      let shown = 0;
+      items.forEach((item) => {
+        const match = item.dataset.room === tab.dataset.room;
+        item.hidden = !match;
+        if (match) shown++;
+      });
+      empty.hidden = shown > 0;
+      empty.dataset.room = tab.textContent.trim();
+    }));
+
+    const message = document.getElementById('leadMessage');
+    document.querySelectorAll('.page-products .open-lead-modal').forEach((btn) => btn.addEventListener('click', () => {
+      if (!message) return;
+      if (btn.dataset.product) message.value = `I'm interested in the ${btn.dataset.product}. Please share pricing and availability.`;
+      else if (btn.classList.contains('pdt-empty-btn')) message.value = `I'm looking for ${empty.dataset.room.toLowerCase()} furniture.`;
+    }));
+  }
+
   // 5b. Testimonials moving strip: repeat the card set until it is wider than the screen,
   //     then render it twice so the CSS marquee (translateX -50%) loops without a seam.
   const testimonialsStrip = document.getElementById('testimonialsStrip');
