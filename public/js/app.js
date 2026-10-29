@@ -62,8 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menuToggle');
     const ctaBtn = document.getElementById('headerContactBtn');
     if (menuBtn && ctaBtn) {
+      // Measure the buttons as they look in the docked (scrolled) header
+      const wasScrolled = header.classList.contains('scrolled');
+      header.classList.add('no-anim');
+      header.classList.add('scrolled');
       const menuRight = menuBtn.getBoundingClientRect().right;
       const ctaLeft = ctaBtn.getBoundingClientRect().left;
+      if (!wasScrolled) header.classList.remove('scrolled');
+      void header.offsetHeight;
+      header.classList.remove('no-anim');
       if (isMobile) {
         // Phones/tablets: dock the logo midway between "Menu" and "Contact us" so the
         // space on both sides of it is identical, and size it to leave >= 16px each side.

@@ -3458,3 +3458,24 @@ button, input, select, textarea {
 .header-light .main-header:not(.scrolled) .plus-icon-circle svg path {
   stroke: #FFFFFF;
 }
+
+/* Phone: compact "Contact us" pill once the header turns black on scroll */
+@media (max-width: 602px) {
+  .main-header.scrolled .header-cta-btn {
+    width: auto;
+    height: 23px;
+    padding: 0 7px 0 7px;
+  }
+  .main-header.scrolled .header-cta-text {
+    font-size: 8.5px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+  }
+}
+
+/* Used by app.js while measuring the docked header: no transitions, so sizes are final */
+.main-header.no-anim,
+.main-header.no-anim * {
+  transition: none !important;
+}
