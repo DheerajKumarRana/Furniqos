@@ -205,28 +205,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menuToggle');
   const menuDrawer = document.getElementById('menuDrawer');
   const closeDrawer = document.getElementById('closeDrawer');
+  const drawerBackdrop = document.getElementById('drawerBackdrop');
 
   if (menuToggle && menuDrawer) {
-    menuToggle.addEventListener('click', () => {
-      menuDrawer.classList.add('active');
-    });
+    const setDrawer = (open) => {
+      menuDrawer.classList.toggle('active', open);
+      if (drawerBackdrop) drawerBackdrop.classList.toggle('active', open);
+      document.body.classList.toggle('drawer-open', open);
+      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
 
-    closeDrawer.addEventListener('click', () => {
-      menuDrawer.classList.remove('active');
-    });
+    menuToggle.addEventListener('click', () => setDrawer(true));
+    closeDrawer.addEventListener('click', () => setDrawer(false));
+    if (drawerBackdrop) drawerBackdrop.addEventListener('click', () => setDrawer(false));
 
-    // Close when clicking outside
-    document.addEventListener('click', (e) => {
-      if (menuDrawer.classList.contains('active') && 
-          !menuDrawer.contains(e.target) && 
-          !menuToggle.contains(e.target)) {
-        menuDrawer.classList.remove('active');
-      }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menuDrawer.classList.contains('active')) setDrawer(false);
     });
 
     // Close when clicking a link
     menuDrawer.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => menuDrawer.classList.remove('active'));
+      link.addEventListener('click', () => setDrawer(false));
     });
   }
 
